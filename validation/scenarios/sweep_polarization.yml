@@ -1,0 +1,12 @@
+sweep:
+  parameter: polarization_fidelity
+  values: [0.8, 0.85, 0.9, 0.95, 0.98, 1.0]
+
+base:
+  distance_km: 10.0
+  attenuation_db_per_km: 0.2
+  detector_efficiency: 0.8
+  dark_count_rate_hz: 10.0
+  num_photons: 100000
+  sample_fraction: 0.1
+  seed: 42

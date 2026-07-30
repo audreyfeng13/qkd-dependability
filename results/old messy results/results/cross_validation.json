@@ -1,0 +1,64 @@
+[
+  {
+    "platform": "qfabric",
+    "scenario_name": "fabric_1km",
+    "photons_sent": 10000,
+    "photons_received": 7686,
+    "sifted_bits": 3811,
+    "qber": 0.013123359580052493,
+    "raw_key_rate": 0.3811,
+    "secure_key_rate": 0.2738,
+    "elapsed_seconds": 74.12490582466125,
+    "extra": {
+      "source": "FABRIC testbed",
+      "qber_sample_bits": 381
+    }
+  },
+  {
+    "platform": "qfabric_sim",
+    "scenario_name": "fabric_1km",
+    "photons_sent": 10000,
+    "photons_received": 7645,
+    "sifted_bits": 3832,
+    "qber": 0.012526096033402923,
+    "raw_key_rate": 0.3832,
+    "secure_key_rate": 0.2756,
+    "elapsed_seconds": 0.0,
+    "extra": {
+      "loss_probability": 0.045007413978564004,
+      "final_key_bits": 2756,
+      "qber_sample_bits": 3832,
+      "sampled_qber": 0.013054830287206266
+    }
+  },
+  {
+    "platform": "sequence",
+    "scenario_name": "fabric_1km",
+    "photons_sent": 10000,
+    "photons_received": 0,
+    "sifted_bits": 5120,
+    "qber": 0.0080078125,
+    "raw_key_rate": 0.512,
+    "secure_key_rate": 0.4431095102761525,
+    "elapsed_seconds": 0.0,
+    "extra": {
+      "sequence_version": "unknown",
+      "num_keys": 20,
+      "qber_sample_bits": 5120
+    }
+  },
+  {
+    "platform": "netsquid",
+    "scenario_name": "fabric_1km",
+    "photons_sent": 0,
+    "photons_received": 0,
+    "sifted_bits": 0,
+    "qber": 0.0,
+    "raw_key_rate": 0.0,
+    "secure_key_rate": 0.0,
+    "elapsed_seconds": 0.0,
+    "extra": {
+      "error": "netsquid not installed"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "condition": "baseline_run_1",
+    "qber": 0.012987012987012988,
+    "sifted_bits": 3858,
+    "final_key_bits": 2778,
+    "secure_key_rate": 0.2778,
+    "elapsed_seconds": 48.34452986717224,
+    "key_bits_per_sec": 57.462550729785185
+  }
+]

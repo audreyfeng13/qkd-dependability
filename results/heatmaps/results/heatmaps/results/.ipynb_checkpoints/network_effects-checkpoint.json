@@ -1,0 +1,63 @@
+[
+  {
+    "condition": "baseline",
+    "qber": 0.007978723404255319,
+    "sifted_bits": 3764,
+    "final_key_bits": 2933,
+    "secure_key_rate": 0.2933,
+    "elapsed_seconds": 52.412317752838135,
+    "key_bits_per_sec": 55.96012780490284
+  },
+  {
+    "condition": "latency_25ms",
+    "delay_ms": 25,
+    "qber": 0.005249343832020997,
+    "sifted_bits": 3815,
+    "final_key_bits": 3109,
+    "secure_key_rate": 0.3109,
+    "elapsed_seconds": 60.40471172332764,
+    "key_bits_per_sec": 51.46949486722471
+  },
+  {
+    "condition": "latency_100ms",
+    "delay_ms": 100,
+    "qber": 0.005277044854881266,
+    "sifted_bits": 3793,
+    "final_key_bits": 3089,
+    "secure_key_rate": 0.3089,
+    "elapsed_seconds": 90.94468069076538,
+    "key_bits_per_sec": 33.9657028485632
+  },
+  {
+    "condition": "jitter_50pm20ms",
+    "delay_ms": 50,
+    "jitter_ms": 20,
+    "qber": 0.007792207792207792,
+    "sifted_bits": 3859,
+    "final_key_bits": 3017,
+    "secure_key_rate": 0.3017,
+    "elapsed_seconds": 54.700756788253784,
+    "key_bits_per_sec": 55.154629974842656
+  },
+  {
+    "condition": "loss_1pct",
+    "loss_pct": 1.0,
+    "qber": 0.010230179028132993,
+    "sifted_bits": 3919,
+    "final_key_bits": 2947,
+    "secure_key_rate": 0.2947,
+    "elapsed_seconds": 50.30346441268921,
+    "key_bits_per_sec": 58.584434181766014
+  },
+  {
+    "condition": "asymmetric_100_10",
+    "alice_delay_ms": 100,
+    "bob_delay_ms": 10,
+    "qber": 0.013123359580052493,
+    "sifted_bits": 3811,
+    "final_key_bits": 2738,
+    "secure_key_rate": 0.2738,
+    "elapsed_seconds": 74.12490582466125,
+    "key_bits_per_sec": 36.93765232534125
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "scenario_name": "fabric_1km",
+  "photons_sent": 10000,
+  "photons_received": 7634,
+  "photons_lost": 2366,
+  "dark_counts": 0,
+  "sifted_bits": 3858,
+  "qber": 0.012987012987012988,
+  "qber_confidence": [
+    0.0016775553649391248,
+    0.02429647060908685
+  ],
+  "raw_key_rate": 0.3858,
+  "secure_key_rate": 0.2778,
+  "final_key_bits": 2778,
+  "elapsed_seconds": 48.34452986717224,
+  "start_time": "2026-07-29T23:03:24",
+  "end_time": "2026-07-29T23:04:12",
+  "config": {
+    "name": "fabric_1km",
+    "channel": {
+      "distance_km": 1.0,
+      "attenuation_db_per_km": 0.2,
+      "polarization_fidelity": 0.98
+    },
+    "detector": {
+      "efficiency": 0.8,
+      "dark_count_rate": 10.0,
+      "dead_time": 0.0,
+      "timing_jitter": 0.0
+    },
+    "protocol": {
+      "num_photons": 10000,
+      "send_rate_hz": 10000.0,
+      "sample_fraction": 0.1,
+      "wavelength": 0
+    },
+    "seed": 42
+  },
+  "loss_rate": 0.2366,
+  "detection_rate": 0.7634
+}

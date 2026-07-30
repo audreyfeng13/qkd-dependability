@@ -1,0 +1,14 @@
+[
+  {
+    "condition": "lhs_0",
+    "loss_pct": 3.46,
+    "delay_ms": 26.9,
+    "jitter_ms": 18.9,
+    "qber": 0.06459948320413436,
+    "sifted_bits": 3870,
+    "final_key_bits": 1076,
+    "secure_key_rate": 0.1076,
+    "elapsed_seconds": 49.026509046554565,
+    "key_bits_per_sec": 21.947310157822017
+  }
+]

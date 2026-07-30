@@ -1,0 +1,16 @@
+name: lhs_7
+channel:
+  distance_km: 20.1
+  attenuation_db_per_km: 0.356
+  polarization_fidelity: 0.816
+detector:
+  efficiency: 0.8
+  dark_count_rate: 10.0
+  dead_time: 0.0
+  timing_jitter: 0.0
+protocol:
+  num_photons: 10000
+  send_rate_hz: 10000.0
+  sample_fraction: 0.1
+  wavelength: 0
+seed: 42

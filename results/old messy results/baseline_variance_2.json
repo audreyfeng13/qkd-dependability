@@ -1,0 +1,92 @@
+[
+  {
+    "condition": "baseline_run_1",
+    "qber": 0.0106951871657754,
+    "sifted_bits": 3749,
+    "final_key_bits": 2798,
+    "secure_key_rate": 0.2798,
+    "elapsed_seconds": 48.88309717178345,
+    "key_bits_per_sec": 57.23859906354453
+  },
+  {
+    "condition": "baseline_run_2",
+    "qber": 0.013227513227513227,
+    "sifted_bits": 3785,
+    "final_key_bits": 2715,
+    "secure_key_rate": 0.2715,
+    "elapsed_seconds": 48.90328574180603,
+    "key_bits_per_sec": 55.517741984339175
+  },
+  {
+    "condition": "baseline_run_3",
+    "qber": 0.010362694300518135,
+    "sifted_bits": 3862,
+    "final_key_bits": 2897,
+    "secure_key_rate": 0.2897,
+    "elapsed_seconds": 49.332096576690674,
+    "key_bits_per_sec": 58.724445159073724
+  },
+  {
+    "condition": "baseline_run_4",
+    "qber": 0.015665796344647518,
+    "sifted_bits": 3833,
+    "final_key_bits": 2647,
+    "secure_key_rate": 0.2647,
+    "elapsed_seconds": 48.11012506484985,
+    "key_bits_per_sec": 55.01960338768579
+  },
+  {
+    "condition": "baseline_run_5",
+    "qber": 0.010498687664041995,
+    "sifted_bits": 3814,
+    "final_key_bits": 2855,
+    "secure_key_rate": 0.2855,
+    "elapsed_seconds": 50.377615213394165,
+    "key_bits_per_sec": 56.67199584391851
+  },
+  {
+    "condition": "baseline_run_6",
+    "qber": 0.007772020725388601,
+    "sifted_bits": 3862,
+    "final_key_bits": 3019,
+    "secure_key_rate": 0.3019,
+    "elapsed_seconds": 49.312403202056885,
+    "key_bits_per_sec": 61.22191992204658
+  },
+  {
+    "condition": "baseline_run_7",
+    "qber": 0.013157894736842105,
+    "sifted_bits": 3806,
+    "final_key_bits": 2733,
+    "secure_key_rate": 0.2733,
+    "elapsed_seconds": 48.817667722702026,
+    "key_bits_per_sec": 55.98382977909151
+  },
+  {
+    "condition": "baseline_run_8",
+    "qber": 0.015544041450777202,
+    "sifted_bits": 3867,
+    "final_key_bits": 2675,
+    "secure_key_rate": 0.2675,
+    "elapsed_seconds": 49.56032419204712,
+    "key_bits_per_sec": 53.974626752527456
+  },
+  {
+    "condition": "baseline_run_9",
+    "qber": 0.010443864229765013,
+    "sifted_bits": 3833,
+    "final_key_bits": 2872,
+    "secure_key_rate": 0.2872,
+    "elapsed_seconds": 47.96391701698303,
+    "key_bits_per_sec": 59.87834561099512
+  },
+  {
+    "condition": "baseline_run_10",
+    "qber": 0.01832460732984293,
+    "sifted_bits": 3825,
+    "final_key_bits": 2534,
+    "secure_key_rate": 0.2534,
+    "elapsed_seconds": 48.94116735458374,
+    "key_bits_per_sec": 51.77645195180801
+  }
+]

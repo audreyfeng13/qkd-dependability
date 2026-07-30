@@ -1,0 +1,42 @@
+{
+  "scenario_name": "dist_50",
+  "photons_sent": 10000,
+  "photons_received": 7656,
+  "photons_lost": 2344,
+  "dark_counts": 0,
+  "sifted_bits": 3843,
+  "qber": 0.005208333333333333,
+  "qber_confidence": [
+    0.0,
+    0.012407892648530617
+  ],
+  "raw_key_rate": 0.3843,
+  "secure_key_rate": 0.3133,
+  "final_key_bits": 3133,
+  "elapsed_seconds": 38.854546308517456,
+  "start_time": "2026-07-28T17:20:02",
+  "end_time": "2026-07-28T17:20:41",
+  "config": {
+    "name": "dist_50",
+    "channel": {
+      "distance_km": 50,
+      "attenuation_db_per_km": 0.2,
+      "polarization_fidelity": 0.98
+    },
+    "detector": {
+      "efficiency": 0.8,
+      "dark_count_rate": 10.0,
+      "dead_time": 0.0,
+      "timing_jitter": 0.0
+    },
+    "protocol": {
+      "num_photons": 10000,
+      "send_rate_hz": 10000.0,
+      "sample_fraction": 0.1,
+      "wavelength": 0
+    },
+    "seed": 42
+  },
+  "loss_rate": 0.2344,
+  "detection_rate": 0.7656
+}
