@@ -1,0 +1,10 @@
+# Core dependencies for QKD dependability and QFabric emulation
+numpy>=1.22.0
+pyyaml>=6.0
+matplotlib>=3.5.0
+scipy>=1.8.0
+pandas>=1.4.0
+scikit-learn>=1.0.0
+
+# Optional test dependencies
+pytest>=7.0.0

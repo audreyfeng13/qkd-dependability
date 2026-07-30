@@ -351,9 +351,9 @@ def run_all_scenarios_on_fabric(slice_obj, scenarios_dir="validation/scenarios",
             "backends": [b.to_payload() for b in backends if b],
         })
         # Rewrite after every point so an interrupted sweep keeps what it has.
-        (results_dir / "all_scenarios.json").write_text(_json.dumps(rows, indent=2))
+        (results_dir / "quantum_classical_sweep.json").write_text(_json.dumps(rows, indent=2))
 
-    print(f"\nSaved all-scenario results -> {results_dir / 'all_scenarios.json'} "
+    print(f"\nSaved all-scenario results -> {results_dir / 'quantum_classical_sweep.json'} "
           f"({len(rows)} points)")
     return rows
 
@@ -818,6 +818,7 @@ def clear_classical_netem(slice_obj):
 
 def run_network_conditions_experiment(
     slice_obj, scenario_path="validation/scenarios/fabric_1km.yml", conditions=None,
+    save_network_effects_json=True,
 ):
     """Measure the effect of CLASSICAL-channel conditions on BB84.
 
@@ -890,11 +891,673 @@ def run_network_conditions_experiment(
             print(f"  {name}: QBER={row.get('qber')}, elapsed={row.get('elapsed_seconds')}s, "
                   f"bits/s={row.get('key_bits_per_sec')}")
             rows.append(row)
-            (results_dir / "network_effects.json").write_text(_json.dumps(rows, indent=2))
+    finally:
+        clear_classical_netem(slice_obj)
+    if save_network_effects_json:
+        (results_dir / "network_effects.json").write_text(_json.dumps(rows, indent=2))
+        print(f"\nSaved -> {results_dir / 'network_effects.json'} ({len(rows)} conditions)")
+
+    return rows
+
+def run_joint_fault_atten_experiment(slice_obj, attenuations, conditions, n_runs=1):
+    """Run classical conditions under multiple attenuation scenarios."""
+    all_rows = []
+    total = len(attenuations) * len(conditions) * n_runs
+    done = 0
+    
+    for alpha in attenuations:
+        scenario_content = f"""name: atten_{alpha}
+channel:
+  distance_km: 10.0
+  attenuation_db_per_km: {alpha}
+  polarization_fidelity: 0.98
+detector:
+  efficiency: 0.8
+  dark_count_rate: 10.0
+  dead_time: 0.0
+  timing_jitter: 0.0
+protocol:
+  num_photons: 10000
+  send_rate_hz: 10000.0
+  sample_fraction: 0.1
+  wavelength: 0
+seed: 42
+"""
+        scenario_path = f'/home/fabric/work/qfabric/validation/scenarios/temp_atten_{alpha}.yml'
+        with open(scenario_path, 'w') as f:
+            f.write(scenario_content)
+        
+        for run in range(n_runs):
+            rows = df.run_network_conditions_experiment(
+                slice_obj, scenario_path, conditions=conditions
+            )
+            for row in rows:
+                row['attenuation'] = alpha
+                row['run'] = run + 1
+                all_rows.append(row)
+            done += len(conditions)
+            print(f"Progress: {done}/{total} runs complete")
+    
+    import json
+    with open('/home/fabric/work/qfabric/results/joint_fault_atten_results.json', 'w') as f:
+        json.dump(all_rows, f, indent=2)
+    
+    return all_rows
+
+
+def run_joint_fault_dist_experiment(slice_obj, distances, conditions, n_runs=1):
+    """Run classical conditions under multiple distance scenarios."""
+    all_rows = []
+    total = len(distances) * len(conditions) * n_runs
+    done = 0
+    
+    for L in distances:
+        scenario_content = f"""name: dist_{L}
+channel:
+  distance_km: {L}
+  attenuation_db_per_km: 0.2
+  polarization_fidelity: 0.98
+detector:
+  efficiency: 0.8
+  dark_count_rate: 10.0
+  dead_time: 0.0
+  timing_jitter: 0.0
+protocol:
+  num_photons: 10000
+  send_rate_hz: 10000.0
+  sample_fraction: 0.1
+  wavelength: 0
+seed: 42
+"""
+        scenario_path = f'/home/fabric/work/qfabric/validation/scenarios/temp_dist_{L}.yml'
+        with open(scenario_path, 'w') as f:
+            f.write(scenario_content)
+        
+        for run in range(n_runs):
+            rows = df.run_network_conditions_experiment(
+                slice_obj, scenario_path, conditions=conditions
+            )
+            for row in rows:
+                row['distance'] = L
+                row['run'] = run + 1
+                all_rows.append(row)
+            done += len(conditions)
+            print(f"Progress: {done}/{total} runs complete")
+    
+    import json
+    with open('/home/fabric/work/qfabric/results/joint_fault_dist_results.json', 'w') as f:
+        json.dump(all_rows, f, indent=2)
+    
+    return all_rows
+
+def run_joint_fault_pf_experiment(slice_obj, polarization_fidelities, conditions, n_runs=1):
+    """Run classical conditions under multiple distance scenarios."""
+    all_rows = []
+    total = len(polarization_fidelities) * len(conditions) * n_runs
+    done = 0
+    
+    for pf in polarization_fidelities:
+        scenario_content = f"""name: polarization_fidelity_{pf}
+channel:
+  distance_km: 10.0
+  attenuation_db_per_km: 0.2
+  polarization_fidelity: {pf}
+detector:
+  efficiency: 0.8
+  dark_count_rate: 10.0
+  dead_time: 0.0
+  timing_jitter: 0.0
+protocol:
+  num_photons: 10000
+  send_rate_hz: 10000.0
+  sample_fraction: 0.1
+  wavelength: 0
+seed: 42
+"""
+        scenario_path = f'/home/fabric/work/qfabric/validation/scenarios/temp_pf_{pf}.yml'
+        with open(scenario_path, 'w') as f:
+            f.write(scenario_content)
+        
+        for run in range(n_runs):
+            rows = df.run_network_conditions_experiment(
+                slice_obj, scenario_path, conditions=conditions
+            )
+            for row in rows:
+                row['polarization_fidelity'] = pf
+                row['run'] = run + 1
+                all_rows.append(row)
+            done += len(conditions)
+            print(f"Progress: {done}/{total} runs complete")
+    
+    import json
+    with open('/home/fabric/work/qfabric/results/joint_fault_pf_results.json', 'w') as f:
+        json.dump(all_rows, f, indent=2)
+    
+    return all_rows
+
+def run_single_axis_sweeps(
+    slice_obj,
+    scenario_path="validation/scenarios/fabric_1km.yml",
+    n_runs=5,
+    port=5100,
+    save_json=True,
+):
+    """Single-parameter sweeps (one axis at a time, all else at baseline) across
+    classical, quantum, and detector fault axes. No asymmetric, no joint faults.
+
+    Classical (latency, jitter, loss) -> apply_classical_netem on the unmodified
+    scenario. Quantum/detector (attenuation, distance, polarization_fidelity,
+    dark_count_rate, efficiency) -> override the base scenario's channel/detector
+    block, write a tmp yaml, reconfigure the switch via configure_switch, same
+    pattern as run_all_scenarios_on_fabric.
+
+    Every run: pkill -9 stale-process cleanup, port-free wait, mtime freshness
+    check on the result file (contamination fix from run_joint_fault_atten_experiment).
+    Rewrites results/single_axis_sweeps.json after every run.
+    """
+    import json as _json
+    import time as _time
+    import yaml
+
+    AXES = {
+        "latency_ms":            [1, 50, 100, 150, 200],
+        "jitter_ms":              [5, 10, 20, 30, 50],   # delay_ms held at 50
+        "loss_pct":               [1, 5, 10, 13, 15],
+        "attenuation_db_per_km":  [0.1, 0.2, 0.3, 0.35, 0.4],
+        "distance_km":            [1, 10, 50, 75, 100],
+        "polarization_fidelity":  [0.8, 0.85, 0.9, 0.95, 1.0],
+        "dark_count_rate_hz":     [100, 1_000, 10_000, 100_000, 1_000_000],
+        "efficiency":             [0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+    }
+    CLASSICAL_AXES = {"latency_ms", "jitter_ms", "loss_pct"}
+
+    results_dir = PROJECT_DIR / "results"
+    tmp_dir = results_dir / "_tmp_single_axis"
+    tmp_dir.mkdir(parents=True, exist_ok=True)
+    bob_path = results_dir / "fabric_bob_results.json"
+
+    alice = slice_obj.get_node("alice")
+    bob = slice_obj.get_node("bob")
+    switch = slice_obj.get_node("switch")
+    alice_mac = alice.get_interface(network_name="net_alice_switch").get_mac()
+    bob_mac = bob.get_interface(network_name="net_switch_bob").get_mac()
+    sw_alice_mac = switch.get_interface(network_name="net_alice_switch").get_mac()
+
+    base_scenario_dict = yaml.safe_load((PROJECT_DIR / scenario_path).read_text())
+
+    def _cleanup_stale_processes():
+        for node in (alice, bob):
+            try:
+                node.execute("pkill -9 -f qne.cli || true")
+            except Exception as e:
+                print(f"    (cleanup warning on {node.get_name()}: {e})")
+
+    def _wait_for_port_free(node, timeout_s=15, poll_s=0.5):
+        deadline = _time.time() + timeout_s
+        while _time.time() < deadline:
+            try:
+                stdout, stderr = node.execute(f"ss -ltn | grep ':{port} ' || true")
+            except Exception:
+                stdout = ""
+            if not stdout.strip():
+                return True
+            _time.sleep(poll_s)
+        print(f"    !! port {port} still held on {node.get_name()} after {timeout_s}s")
+        return False
+
+    def _run_one(scenario_path_for_run, row_meta, run_idx):
+        _cleanup_stale_processes()
+        _wait_for_port_free(bob)
+        bob_path.unlink(missing_ok=True)
+        run_start = _time.time()
+        try:
+            run_bb84(slice_obj, scenario_path_for_run, alice_mac, bob_mac,
+                     sw_alice_mac=sw_alice_mac, bob_data_ip="10.10.1.2")
+        except Exception as e:
+            print(f"  !! run failed under {row_meta}: {e}")
+
+        row = {**row_meta, "run": run_idx}
+        txt = bob_path.read_text().strip() if bob_path.exists() else ""
+        if txt and bob_path.stat().st_mtime >= run_start:
+            try:
+                d = _json.loads(txt)
+                elapsed = d.get("elapsed_seconds", 0.0) or 0.0
+                fk = d.get("final_key_bits", 0)
+                row.update({
+                    "qber": d.get("qber", 0.0),
+                    "sifted_bits": d.get("sifted_bits", 0),
+                    "final_key_bits": fk,
+                    "secure_key_rate": d.get("secure_key_rate", 0.0),
+                    "elapsed_seconds": elapsed,
+                    "key_bits_per_sec": (fk / elapsed) if elapsed > 0 else 0.0,
+                })
+            except _json.JSONDecodeError:
+                row["error"] = "invalid results json"
+        elif txt:
+            row["error"] = "stale result (older than this run) — discarded"
+        else:
+            row["error"] = "no result (run failed/timed out under this condition)"
+        return row
+
+    rows = []
+    try:
+        for axis, values in AXES.items():
+            for val in values:
+                if axis in CLASSICAL_AXES:
+                    if axis == "latency_ms":
+                        netem_kw, name = {"delay_ms": val}, f"latency_{val}ms"
+                    elif axis == "jitter_ms":
+                        netem_kw, name = {"delay_ms": 50, "jitter_ms": val}, f"jitter_50pm{val}ms"
+                    else:
+                        netem_kw, name = {"loss_pct": val}, f"loss_{val}pct".replace(".", "p")
+
+                    for run_idx in range(1, n_runs + 1):
+                        print(f"\n##### axis={axis} value={val} (run {run_idx}/{n_runs}) #####")
+                        clear_classical_netem(slice_obj)
+                        apply_classical_netem(slice_obj, **netem_kw)
+                        row = _run_one(scenario_path, {"axis": axis, "value": val, "condition": name}, run_idx)
+                        rows.append(row)
+                        if save_json:
+                            (results_dir / "single_axis_sweeps.json").write_text(_json.dumps(rows, indent=2))
+                        clear_classical_netem(slice_obj)
+
+                else:
+                    cfg_dict = _json.loads(_json.dumps(base_scenario_dict))  # deep copy
+                    cfg_dict.setdefault("channel", {})
+                    cfg_dict.setdefault("detector", {})
+                    if axis == "attenuation_db_per_km":
+                        cfg_dict["channel"]["attenuation_db_per_km"] = val
+                    elif axis == "distance_km":
+                        cfg_dict["channel"]["distance_km"] = val
+                    elif axis == "polarization_fidelity":
+                        cfg_dict["channel"]["polarization_fidelity"] = val
+                    elif axis == "dark_count_rate_hz":
+                        cfg_dict["detector"]["dark_count_rate"] = val
+                    elif axis == "efficiency":
+                        cfg_dict["detector"]["efficiency"] = val
+
+                    name = f"{axis}_{val}"
+                    safe = name.replace(".", "p").replace(",", "")
+                    tmp_path = tmp_dir / f"{safe}.yml"
+                    tmp_path.write_text(yaml.safe_dump(cfg_dict))
+                    rel = str(tmp_path.relative_to(PROJECT_DIR))
+                    config = ScenarioConfig.from_dict(cfg_dict)
+
+                    for run_idx in range(1, n_runs + 1):
+                        print(f"\n##### axis={axis} value={val} (run {run_idx}/{n_runs}) #####")
+                        configure_switch(slice_obj, config.loss_threshold_u32)
+                        row = _run_one(rel, {"axis": axis, "value": val, "condition": name}, run_idx)
+                        rows.append(row)
+                        if save_json:
+                            (results_dir / "single_axis_sweeps.json").write_text(_json.dumps(rows, indent=2))
     finally:
         clear_classical_netem(slice_obj)
 
-    print(f"\nSaved -> {results_dir / 'network_effects.json'} ({len(rows)} conditions)")
+    if save_json:
+        print(f"\nSaved -> {results_dir / 'single_axis_sweeps.json'} ({len(rows)} rows)")
+    return rows
+
+def run_joint_axis_sweep(
+    slice_obj, axis1, axis2, values1, values2,
+    scenario_path="validation/scenarios/fabric_1km.yml",
+    n_runs=3, port=5100, save_json=True,
+):
+    """Sweep two fault axes jointly (full grid of values1 x values2), all
+    else at baseline. Supports mixing classical (netem) and quantum/detector
+    (scenario yaml) axes in the same call — e.g. polarization_fidelity x loss_pct.
+
+    axis1/axis2 must be one of:
+      classical: 'latency_ms', 'jitter_ms', 'loss_pct'
+      scenario:  'attenuation_db_per_km', 'distance_km', 'polarization_fidelity',
+                 'dark_count_rate_hz', 'efficiency'
+
+    Same contamination guards as run_single_axis_sweeps (pkill -9, port-wait,
+    mtime freshness check). Writes results/joint_{axis1}_x_{axis2}.json after
+    every run.
+    """
+    import json as _json
+    import time as _time
+    import yaml
+
+    CLASSICAL_AXES = {"latency_ms", "jitter_ms", "loss_pct"}
+    SCENARIO_FIELD = {
+        "attenuation_db_per_km": ("channel", "attenuation_db_per_km"),
+        "distance_km":           ("channel", "distance_km"),
+        "polarization_fidelity": ("channel", "polarization_fidelity"),
+        "dark_count_rate_hz":    ("detector", "dark_count_rate"),
+        "efficiency":            ("detector", "efficiency"),
+    }
+
+    results_dir = PROJECT_DIR / "results"
+    tmp_dir = results_dir / "_tmp_joint"
+    tmp_dir.mkdir(parents=True, exist_ok=True)
+    bob_path = results_dir / "fabric_bob_results.json"
+
+    alice = slice_obj.get_node("alice")
+    bob = slice_obj.get_node("bob")
+    switch = slice_obj.get_node("switch")
+    alice_mac = alice.get_interface(network_name="net_alice_switch").get_mac()
+    bob_mac = bob.get_interface(network_name="net_switch_bob").get_mac()
+    sw_alice_mac = switch.get_interface(network_name="net_alice_switch").get_mac()
+
+    base_scenario_dict = yaml.safe_load((PROJECT_DIR / scenario_path).read_text())
+
+    def _cleanup_stale_processes():
+        for node in (alice, bob):
+            try:
+                node.execute("pkill -9 -f qne.cli || true")
+            except Exception as e:
+                print(f"    (cleanup warning on {node.get_name()}: {e})")
+
+    def _wait_for_port_free(node, timeout_s=15, poll_s=0.5):
+        deadline = _time.time() + timeout_s
+        while _time.time() < deadline:
+            try:
+                stdout, stderr = node.execute(f"ss -ltn | grep ':{port} ' || true")
+            except Exception:
+                stdout = ""
+            if not stdout.strip():
+                return True
+            _time.sleep(poll_s)
+        print(f"    !! port {port} still held on {node.get_name()} after {timeout_s}s")
+        return False
+
+    def _apply_classical(kwargs):
+        clear_classical_netem(slice_obj)
+        if kwargs:
+            apply_classical_netem(slice_obj, **kwargs)
+
+    def _build_scenario(overrides):
+        cfg = _json.loads(_json.dumps(base_scenario_dict))  # deep copy
+        cfg.setdefault("channel", {})
+        cfg.setdefault("detector", {})
+        for axis, val in overrides.items():
+            section, field = SCENARIO_FIELD[axis]
+            cfg[section][field] = val
+        return cfg
+
+    def _netem_kwargs_for(axis, val):
+        if axis == "latency_ms":
+            return {"delay_ms": val}
+        if axis == "jitter_ms":
+            return {"delay_ms": 50, "jitter_ms": val}
+        if axis == "loss_pct":
+            return {"loss_pct": val}
+        raise ValueError(f"unknown classical axis {axis}")
+
+    def _run_one(scenario_path_for_run, row_meta, run_idx):
+        _cleanup_stale_processes()
+        _wait_for_port_free(bob)
+        bob_path.unlink(missing_ok=True)
+        run_start = _time.time()
+        try:
+            run_bb84(slice_obj, scenario_path_for_run, alice_mac, bob_mac,
+                     sw_alice_mac=sw_alice_mac, bob_data_ip="10.10.1.2")
+        except Exception as e:
+            print(f"  !! run failed under {row_meta}: {e}")
+
+        row = {**row_meta, "run": run_idx}
+        txt = bob_path.read_text().strip() if bob_path.exists() else ""
+        if txt and bob_path.stat().st_mtime >= run_start:
+            try:
+                d = _json.loads(txt)
+                elapsed = d.get("elapsed_seconds", 0.0) or 0.0
+                fk = d.get("final_key_bits", 0)
+                row.update({
+                    "qber": d.get("qber", 0.0),
+                    "sifted_bits": d.get("sifted_bits", 0),
+                    "final_key_bits": fk,
+                    "secure_key_rate": d.get("secure_key_rate", 0.0),
+                    "elapsed_seconds": elapsed,
+                    "key_bits_per_sec": (fk / elapsed) if elapsed > 0 else 0.0,
+                })
+            except _json.JSONDecodeError:
+                row["error"] = "invalid results json"
+        elif txt:
+            row["error"] = "stale result (older than this run) — discarded"
+        else:
+            row["error"] = "no result (run failed/timed out under this condition)"
+        return row
+
+    rows = []
+    try:
+        for v1 in values1:
+            for v2 in values2:
+                is1_classical = axis1 in CLASSICAL_AXES
+                is2_classical = axis2 in CLASSICAL_AXES
+
+                classical_kwargs = {}
+                scenario_overrides = {}
+                if is1_classical:
+                    classical_kwargs.update(_netem_kwargs_for(axis1, v1))
+                else:
+                    scenario_overrides[axis1] = v1
+                if is2_classical:
+                    classical_kwargs.update(_netem_kwargs_for(axis2, v2))
+                else:
+                    scenario_overrides[axis2] = v2
+
+                _apply_classical(classical_kwargs)
+
+                if scenario_overrides:
+                    cfg_dict = _build_scenario(scenario_overrides)
+                    name = f"{axis1}-{v1}_{axis2}-{v2}"
+                    safe = name.replace(".", "p").replace(",", "")
+                    tmp_path = tmp_dir / f"{safe}.yml"
+                    tmp_path.write_text(yaml.safe_dump(cfg_dict))
+                    rel = str(tmp_path.relative_to(PROJECT_DIR))
+                    config = ScenarioConfig.from_dict(cfg_dict)
+                    configure_switch(slice_obj, config.loss_threshold_u32)
+                    run_path = rel
+                else:
+                    run_path = scenario_path
+
+                for run_idx in range(1, n_runs + 1):
+                    print(f"\n##### {axis1}={v1}, {axis2}={v2} (run {run_idx}/{n_runs}) #####")
+                    row = _run_one(run_path, {axis1: v1, axis2: v2}, run_idx)
+                    rows.append(row)
+                    if save_json:
+                        fname = f"joint_{axis1}_x_{axis2}.json"
+                        (results_dir / fname).write_text(_json.dumps(rows, indent=2))
+
+                clear_classical_netem(slice_obj)
+    finally:
+        clear_classical_netem(slice_obj)
+
+    if save_json:
+        print(f"\nSaved -> {results_dir / f'joint_{axis1}_x_{axis2}.json'} ({len(rows)} rows)")
+    return rows
+
+def run_joint_axis_sweep(
+    slice_obj, axis1, axis2, values1, values2,
+    scenario_path="validation/scenarios/fabric_1km.yml",
+    n_runs=3, port=5100, save_json=True, resume=True,
+):
+    """Sweep two fault axes jointly (full grid of values1 x values2), all
+    else at baseline. Supports mixing classical (netem) and quantum/detector
+    (scenario yaml) axes in the same call.
+
+    RESUME: if resume=True (default) and results/joint_{axis1}_x_{axis2}.json
+    already exists, loads it and skips any (v1, v2, run) combo already present
+    (matched on axis1/axis2 values + run number, ignoring error rows so a
+    previously-failed run gets retried). New rows are appended to the loaded
+    list, not overwritten, and the file is rewritten after every run.
+    """
+    import json as _json
+    import time as _time
+    import yaml
+
+    CLASSICAL_AXES = {"latency_ms", "jitter_ms", "loss_pct"}
+    SCENARIO_FIELD = {
+        "attenuation_db_per_km": ("channel", "attenuation_db_per_km"),
+        "distance_km":           ("channel", "distance_km"),
+        "polarization_fidelity": ("channel", "polarization_fidelity"),
+        "dark_count_rate_hz":    ("detector", "dark_count_rate"),
+        "efficiency":            ("detector", "efficiency"),
+    }
+
+    results_dir = PROJECT_DIR / "results"
+    tmp_dir = results_dir / "_tmp_joint"
+    tmp_dir.mkdir(parents=True, exist_ok=True)
+    bob_path = results_dir / "fabric_bob_results.json"
+    out_path = results_dir / f"joint_{axis1}_x_{axis2}.json"
+
+    alice = slice_obj.get_node("alice")
+    bob = slice_obj.get_node("bob")
+    switch = slice_obj.get_node("switch")
+    alice_mac = alice.get_interface(network_name="net_alice_switch").get_mac()
+    bob_mac = bob.get_interface(network_name="net_switch_bob").get_mac()
+    sw_alice_mac = switch.get_interface(network_name="net_alice_switch").get_mac()
+
+    base_scenario_dict = yaml.safe_load((PROJECT_DIR / scenario_path).read_text())
+
+    # ---- resume: load existing rows, build a set of completed (v1, v2, run) ----
+    rows = []
+    completed = set()
+    if resume and out_path.exists():
+        try:
+            rows = _json.loads(out_path.read_text())
+            for r in rows:
+                if not r.get("error"):  # only skip runs that actually succeeded
+                    completed.add((r.get(axis1), r.get(axis2), r.get("run")))
+            print(f"Resuming: {len(rows)} rows loaded, {len(completed)} successful runs will be skipped")
+        except Exception as e:
+            print(f"  (could not load existing results for resume: {e}; starting fresh)")
+            rows = []
+
+    def _cleanup_stale_processes():
+        for node in (alice, bob):
+            try:
+                node.execute("pkill -9 -f qne.cli || true")
+            except Exception as e:
+                print(f"    (cleanup warning on {node.get_name()}: {e})")
+
+    def _wait_for_port_free(node, timeout_s=15, poll_s=0.5):
+        deadline = _time.time() + timeout_s
+        while _time.time() < deadline:
+            try:
+                stdout, stderr = node.execute(f"ss -ltn | grep ':{port} ' || true")
+            except Exception:
+                stdout = ""
+            if not stdout.strip():
+                return True
+            _time.sleep(poll_s)
+        print(f"    !! port {port} still held on {node.get_name()} after {timeout_s}s")
+        return False
+
+    def _apply_classical(kwargs):
+        clear_classical_netem(slice_obj)
+        if kwargs:
+            apply_classical_netem(slice_obj, **kwargs)
+
+    def _build_scenario(overrides):
+        cfg = _json.loads(_json.dumps(base_scenario_dict))
+        cfg.setdefault("channel", {})
+        cfg.setdefault("detector", {})
+        for axis, val in overrides.items():
+            section, field = SCENARIO_FIELD[axis]
+            cfg[section][field] = val
+        return cfg
+
+    def _netem_kwargs_for(axis, val):
+        if axis == "latency_ms":
+            return {"delay_ms": val}
+        if axis == "jitter_ms":
+            return {"delay_ms": 50, "jitter_ms": val}
+        if axis == "loss_pct":
+            return {"loss_pct": val}
+        raise ValueError(f"unknown classical axis {axis}")
+
+    def _run_one(scenario_path_for_run, row_meta, run_idx, timeout_s=90):
+        _cleanup_stale_processes()
+        _wait_for_port_free(bob)
+        bob_path.unlink(missing_ok=True)
+        run_start = _time.time()
+        try:
+            run_bb84(slice_obj, scenario_path_for_run, alice_mac, bob_mac,
+                     sw_alice_mac=sw_alice_mac, bob_data_ip="10.10.1.2")
+        except Exception as e:
+            print(f"  !! run failed under {row_meta}: {e}")
+
+        row = {**row_meta, "run": run_idx}
+        txt = bob_path.read_text().strip() if bob_path.exists() else ""
+        if txt and bob_path.stat().st_mtime >= run_start:
+            try:
+                d = _json.loads(txt)
+                elapsed = d.get("elapsed_seconds", 0.0) or 0.0
+                fk = d.get("final_key_bits", 0)
+                row.update({
+                    "qber": d.get("qber", 0.0),
+                    "sifted_bits": d.get("sifted_bits", 0),
+                    "final_key_bits": fk,
+                    "secure_key_rate": d.get("secure_key_rate", 0.0),
+                    "elapsed_seconds": elapsed,
+                    "key_bits_per_sec": (fk / elapsed) if elapsed > 0 else 0.0,
+                })
+            except _json.JSONDecodeError:
+                row["error"] = "invalid results json"
+        elif txt:
+            row["error"] = "stale result (older than this run) — discarded"
+        else:
+            row["error"] = "no result (run failed/timed out under this condition)"
+        return row
+
+    try:
+        for v1 in values1:
+            for v2 in values2:
+                is1_classical = axis1 in CLASSICAL_AXES
+                is2_classical = axis2 in CLASSICAL_AXES
+
+                classical_kwargs = {}
+                scenario_overrides = {}
+                if is1_classical:
+                    classical_kwargs.update(_netem_kwargs_for(axis1, v1))
+                else:
+                    scenario_overrides[axis1] = v1
+                if is2_classical:
+                    classical_kwargs.update(_netem_kwargs_for(axis2, v2))
+                else:
+                    scenario_overrides[axis2] = v2
+
+                # skip entirely if all n_runs for this combo already succeeded
+                combo_done = all((v1, v2, r) in completed for r in range(1, n_runs + 1))
+                if combo_done:
+                    print(f"skip (already done): {axis1}={v1}, {axis2}={v2}")
+                    continue
+
+                _apply_classical(classical_kwargs)
+
+                if scenario_overrides:
+                    cfg_dict = _build_scenario(scenario_overrides)
+                    name = f"{axis1}-{v1}_{axis2}-{v2}"
+                    safe = name.replace(".", "p").replace(",", "")
+                    tmp_path = tmp_dir / f"{safe}.yml"
+                    tmp_path.write_text(yaml.safe_dump(cfg_dict))
+                    rel = str(tmp_path.relative_to(PROJECT_DIR))
+                    config = ScenarioConfig.from_dict(cfg_dict)
+                    configure_switch(slice_obj, config.loss_threshold_u32)
+                    run_path = rel
+                else:
+                    run_path = scenario_path
+
+                for run_idx in range(1, n_runs + 1):
+                    if (v1, v2, run_idx) in completed:
+                        print(f"skip (already done): {axis1}={v1}, {axis2}={v2}, run {run_idx}")
+                        continue
+                    print(f"\n##### {axis1}={v1}, {axis2}={v2} (run {run_idx}/{n_runs}) #####")
+                    row = _run_one(run_path, {axis1: v1, axis2: v2}, run_idx)
+                    rows.append(row)
+                    if not row.get("error"):
+                        completed.add((v1, v2, run_idx))
+                    if save_json:
+                        out_path.write_text(_json.dumps(rows, indent=2))
+
+                clear_classical_netem(slice_obj)
+    finally:
+        clear_classical_netem(slice_obj)
+
+    if save_json:
+        print(f"\nSaved -> {out_path} ({len(rows)} rows total)")
     return rows
 
 

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qkd-dependability"
+version = "0.1.0"
+description = "QFabric: Dependability, validation, and benchmarking of BB84 Quantum Key Distribution over P4 programmable hardware"
+readme = "README.md"
+authors = [
+    { name = "Komal Thareja", email = "kthare10@renci.org" },
+    { name = "Audrey Feng" }
+]
+license = { text = "Apache-2.0" }
+dependencies = [
+    "numpy>=1.22.0",
+    "pyyaml>=6.0",
+    "matplotlib>=3.5.0",
+    "scipy>=1.8.0",
+    "pandas>=1.4.0",
+    "scikit-learn>=1.0.0",
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["qne*", "validation*"]
