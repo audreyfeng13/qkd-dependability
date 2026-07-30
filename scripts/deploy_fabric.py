@@ -657,12 +657,12 @@ def run_bb84(slice_obj, scenario_path: str, alice_mac: str, bob_mac: str,
     # would fail and a failed run could then reuse the previous point's stale result.
     print("  Cleaning up previous runs...")
     bob_node.execute(
-        "sudo pkill -f 'qne.cli' 2>/dev/null; "
+        "sudo pkill -9 -f 'qne.cli' 2>/dev/null; "
         "sudo rm -f ~/qfabric/results/*.json /tmp/bob.log; sleep 1",
         quiet=True,
     )
     alice_node.execute(
-        "sudo pkill -f 'qne.cli' 2>/dev/null; "
+        "sudo pkill -9 -f 'qne.cli' 2>/dev/null; "
         "sudo rm -f ~/qfabric/results/*.json /tmp/alice.log; sleep 1",
         quiet=True,
     )
@@ -711,9 +711,15 @@ def run_bb84(slice_obj, scenario_path: str, alice_mac: str, bob_mac: str,
         f"2>&1 | tee /tmp/alice.log",
     )
 
-    # Wait for Alice thread to complete (Bob should also finish)
+   # Wait for Alice thread to complete (Bob should also finish)
     print("  Waiting for BB84 to complete...")
-    alice_result = alice_thread.result()
+    try:
+        alice_result = alice_thread.result(timeout=400)
+    except TimeoutError:
+        print("  !! Alice thread timed out after 400s — killing and moving on")
+        alice_node.execute("sudo pkill -9 -f 'qne.cli' 2>/dev/null", quiet=True)
+        bob_node.execute("sudo pkill -9 -f 'qne.cli' 2>/dev/null", quiet=True)
+        alice_result = ("", "TIMEOUT")
     print("  Alice finished")
     print(f"  Alice output: {str(alice_result[0])[:2000]}")
     if alice_result[1]:
@@ -722,9 +728,14 @@ def run_bb84(slice_obj, scenario_path: str, alice_mac: str, bob_mac: str,
     # Give Bob a few more seconds, then join
     time.sleep(5)
     try:
-        bob_result = bob_thread.result()
+        bob_result = bob_thread.result(timeout=400)
         print("  Bob finished")
         print(f"  Bob output: {str(bob_result[0])[:500]}")
+    except TimeoutError:
+        print("  !! Bob thread timed out after 400s — killing")
+        alice_node.execute("sudo pkill -9 -f 'qne.cli' 2>/dev/null", quiet=True)
+        bob_node.execute("sudo pkill -9 -f 'qne.cli' 2>/dev/null", quiet=True)
+        bob_result = ("", "TIMEOUT")
     except Exception as e:
         print(f"  Bob thread: {e}")
 
