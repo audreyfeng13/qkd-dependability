@@ -1,0 +1,61 @@
+toeplitz_prob,hash_prob,reconciliation_prob,qber_after_reconciliation,secure_key_length,keys_match,n_mismatched_bits,elapsed_seconds,faults_fired,non_convergent,error,condition,run
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.3,0
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_0.3,1
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_0.3,2
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_0.3,3
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_0.3,4
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.3,5
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.3,6
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.3,7
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.3,8
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.3,9
+0.0,0.0,0.1,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_0.1,0
+0.0,0.0,0.1,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_0.1,1
+0.0,0.0,0.1,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_0.1,2
+0.0,0.0,0.1,0.0,462.0,True,0.0,9.604262590408325,{},False,,reconciliation_0.1,3
+0.0,0.0,0.1,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_0.1,4
+0.0,0.0,0.1,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.1,5
+0.0,0.0,0.1,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.1,6
+0.0,0.0,0.1,0.0,462.0,True,0.0,9.526226997375488,{},False,,reconciliation_0.1,7
+0.0,0.0,0.1,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.1,8
+0.0,0.0,0.1,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.1,9
+0.0,0.0,0.03,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_0.03,0
+0.0,0.0,0.03,0.0,462.0,True,0.0,9.429677486419678,{},False,,reconciliation_0.03,1
+0.0,0.0,0.03,0.0,462.0,True,0.0,9.40180492401123,{},False,,reconciliation_0.03,2
+0.0,0.0,0.03,0.0,462.0,True,0.0,9.321802616119385,{},False,,reconciliation_0.03,3
+0.0,0.0,0.03,0.0,462.0,True,0.0,9.539746284484863,{},False,,reconciliation_0.03,4
+0.0,0.0,0.03,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.03,5
+0.0,0.0,0.03,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.03,6
+0.0,0.0,0.03,0.0,462.0,True,0.0,9.660685539245605,{},False,,reconciliation_0.03,7
+0.0,0.0,0.03,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.03,8
+0.0,0.0,0.03,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.03,9
+0.0,0.0,0.01,0.0,462.0,True,0.0,9.228440284729004,{},False,,reconciliation_0.01,0
+0.0,0.0,0.01,0.0,462.0,True,0.0,9.369649410247803,{},False,,reconciliation_0.01,1
+0.0,0.0,0.01,0.0,462.0,True,0.0,9.619710922241211,{},False,,reconciliation_0.01,2
+0.0,0.0,0.01,0.0,462.0,True,0.0,9.341827392578125,{},False,,reconciliation_0.01,3
+0.0,0.0,0.01,0.0,462.0,True,0.0,9.378762245178223,{},False,,reconciliation_0.01,4
+0.0,0.0,0.01,0.0,462.0,True,0.0,9.64974045753479,{},False,,reconciliation_0.01,5
+0.0,0.0,0.01,0.0,462.0,True,0.0,9.521875143051147,{},False,,reconciliation_0.01,6
+0.0,0.0,0.01,0.0,462.0,True,0.0,9.360617637634277,{},False,,reconciliation_0.01,7
+0.0,0.0,0.01,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_0.01,8
+0.0,0.0,0.01,0.0,462.0,True,0.0,9.572632074356079,{},False,,reconciliation_0.01,9
+0.0,0.0,0.003,0.0,462,True,0,9.428539276123047,{},False,,reconciliation_0.003,0
+0.0,0.0,0.003,0.0,462,True,0,9.37690782546997,{},False,,reconciliation_0.003,1
+0.0,0.0,0.003,0.0,462,True,0,9.75888204574585,{},False,,reconciliation_0.003,2
+0.0,0.0,0.003,0.0,462,True,0,9.826268196105957,{},False,,reconciliation_0.003,3
+0.0,0.0,0.003,0.0,462,True,0,9.410966396331787,{},False,,reconciliation_0.003,4
+0.0,0.0,0.003,0.0,462,True,0,9.618943452835083,{},False,,reconciliation_0.003,5
+0.0,0.0,0.003,0.0,462,True,0,9.399158239364624,{},False,,reconciliation_0.003,6
+0.0,0.0,0.003,0.0,462,True,0,10.758398294448853,{},False,,reconciliation_0.003,7
+0.0,0.0,0.003,0.0,462,True,0,9.050830602645874,{},False,,reconciliation_0.003,8
+0.0,0.0,0.003,0.0,462,True,0,10.254746675491333,{},False,,reconciliation_0.003,9
+0.0,0.0,0.001,0.0,462,True,0,9.416809558868408,{},False,,reconciliation_0.001,0
+0.0,0.0,0.001,0.0,462,True,0,9.489686965942383,{},False,,reconciliation_0.001,1
+0.0,0.0,0.001,0.0,462,True,0,9.801944494247437,{},False,,reconciliation_0.001,2
+0.0,0.0,0.001,0.0,462,True,0,9.670782566070557,{},False,,reconciliation_0.001,3
+0.0,0.0,0.001,0.0,462,True,0,9.546412706375122,{},False,,reconciliation_0.001,4
+0.0,0.0,0.001,0.0,462,True,0,8.83598279953003,{},False,,reconciliation_0.001,5
+0.0,0.0,0.001,0.0,462,True,0,9.060595035552979,{},False,,reconciliation_0.001,6
+0.0,0.0,0.001,0.0,462,True,0,8.854104042053223,{},False,,reconciliation_0.001,7
+0.0,0.0,0.001,0.0,462,True,0,8.66796326637268,{},False,,reconciliation_0.001,8
+0.0,0.0,0.001,0.0,462,True,0,8.572762966156006,{},False,,reconciliation_0.001,9

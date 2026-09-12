@@ -1,0 +1,6 @@
+index,n_bits,qber,alice_path,bob_path
+0,3810,0.011023622047244094,/home/fabric/work/qkd-dependability/results/alice_sifted_bits_key0.json,/home/fabric/work/qkd-dependability/results/bob_sifted_bits_key0.json
+1,3794,0.009488666315234581,/home/fabric/work/qkd-dependability/results/alice_sifted_bits_key1.json,/home/fabric/work/qkd-dependability/results/bob_sifted_bits_key1.json
+2,3761,0.013826110077107153,/home/fabric/work/qkd-dependability/results/alice_sifted_bits_key2.json,/home/fabric/work/qkd-dependability/results/bob_sifted_bits_key2.json
+3,3815,0.009698558322411533,/home/fabric/work/qkd-dependability/results/alice_sifted_bits_key3.json,/home/fabric/work/qkd-dependability/results/bob_sifted_bits_key3.json
+4,3890,0.010539845758354757,/home/fabric/work/qkd-dependability/results/alice_sifted_bits_key4.json,/home/fabric/work/qkd-dependability/results/bob_sifted_bits_key4.json

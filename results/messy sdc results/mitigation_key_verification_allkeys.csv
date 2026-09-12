@@ -1,0 +1,481 @@
+actual_match,verified_ok,true_positive,false_negative,true_negative,false_positive,extraction_time,verification_time,faults_fired,key_label,toeplitz_prob,run
+True,True,False,False,True,False,0.0038416385650634766,4.744529724121094e-05,{},key0,0.05,0
+True,True,False,False,True,False,0.0018360614776611328,3.981590270996094e-05,{},key0,0.05,1
+True,True,False,False,True,False,0.0017282962799072266,3.838539123535156e-05,{},key0,0.05,2
+True,True,False,False,True,False,0.0017423629760742188,3.24249267578125e-05,{},key0,0.05,3
+True,True,False,False,True,False,0.001699686050415039,3.409385681152344e-05,{},key0,0.05,4
+True,True,False,False,True,False,0.0015625953674316406,3.4809112548828125e-05,{},key0,0.05,5
+True,True,False,False,True,False,0.0017108917236328125,3.409385681152344e-05,{},key0,0.05,6
+True,True,False,False,True,False,0.00491023063659668,5.1975250244140625e-05,{},key0,0.05,7
+True,True,False,False,True,False,0.0026535987854003906,5.5789947509765625e-05,{},key0,0.05,8
+True,True,False,False,True,False,0.0022194385528564453,3.5762786865234375e-05,{'toeplitz_matrix': 1},key0,0.05,9
+True,True,False,False,True,False,0.0017688274383544922,3.4332275390625e-05,{},key0,0.05,10
+True,True,False,False,True,False,0.0021216869354248047,3.552436828613281e-05,{},key0,0.05,11
+True,True,False,False,True,False,0.0018804073333740234,3.4332275390625e-05,{},key0,0.05,12
+True,True,False,False,True,False,0.0018420219421386719,6.747245788574219e-05,{},key0,0.05,13
+True,True,False,False,True,False,0.0017344951629638672,3.337860107421875e-05,{},key0,0.05,14
+True,True,False,False,True,False,0.0015511512756347656,3.170967102050781e-05,{},key0,0.05,15
+True,True,False,False,True,False,0.0017707347869873047,3.170967102050781e-05,{},key0,0.05,16
+True,True,False,False,True,False,0.001657724380493164,3.266334533691406e-05,{},key0,0.05,17
+True,True,False,False,True,False,0.0016367435455322266,2.8371810913085938e-05,{},key0,0.05,18
+True,True,False,False,True,False,0.001722574234008789,3.266334533691406e-05,{},key0,0.05,19
+True,True,False,False,True,False,0.0015697479248046875,2.9325485229492188e-05,{},key0,0.1,0
+True,True,False,False,True,False,0.0019009113311767578,8.153915405273438e-05,{},key0,0.1,1
+True,True,False,False,True,False,0.0016603469848632812,3.0040740966796875e-05,{},key0,0.1,2
+True,True,False,False,True,False,0.0017311573028564453,4.38690185546875e-05,{},key0,0.1,3
+True,True,False,False,True,False,0.0016596317291259766,2.86102294921875e-05,{},key0,0.1,4
+True,True,False,False,True,False,0.0015308856964111328,2.86102294921875e-05,{},key0,0.1,5
+True,True,False,False,True,False,0.002071380615234375,3.266334533691406e-05,{},key0,0.1,6
+True,True,False,False,True,False,0.0017015933990478516,3.24249267578125e-05,{},key0,0.1,7
+True,True,False,False,True,False,0.0015864372253417969,3.170967102050781e-05,{},key0,0.1,8
+True,True,False,False,True,False,0.0017235279083251953,2.956390380859375e-05,{'toeplitz_matrix': 1},key0,0.1,9
+True,True,False,False,True,False,0.0015201568603515625,2.8371810913085938e-05,{'toeplitz_matrix': 1},key0,0.1,10
+True,True,False,False,True,False,0.0017163753509521484,3.2901763916015625e-05,{},key0,0.1,11
+True,True,False,False,True,False,0.001705169677734375,3.647804260253906e-05,{},key0,0.1,12
+True,True,False,False,True,False,0.0015773773193359375,3.314018249511719e-05,{},key0,0.1,13
+True,True,False,False,True,False,0.0016887187957763672,3.266334533691406e-05,{},key0,0.1,14
+True,True,False,False,True,False,0.001592874526977539,3.0279159545898438e-05,{},key0,0.1,15
+False,False,True,False,False,False,0.0016231536865234375,3.314018249511719e-05,{'toeplitz_matrix': 1},key0,0.1,16
+True,True,False,False,True,False,0.0014986991882324219,3.8623809814453125e-05,{},key0,0.1,17
+True,True,False,False,True,False,0.0016815662384033203,4.124641418457031e-05,{},key0,0.1,18
+True,True,False,False,True,False,0.001558065414428711,2.8133392333984375e-05,{},key0,0.1,19
+True,True,False,False,True,False,0.0017707347869873047,2.9325485229492188e-05,{'toeplitz_matrix': 1},key0,0.3,0
+True,True,False,False,True,False,0.0015594959259033203,2.8848648071289062e-05,{},key0,0.3,1
+True,True,False,False,True,False,0.0016024112701416016,4.5299530029296875e-05,{'toeplitz_matrix': 1},key0,0.3,2
+True,True,False,False,True,False,0.0024559497833251953,9.846687316894531e-05,{},key0,0.3,3
+True,True,False,False,True,False,0.0018718242645263672,3.361701965332031e-05,{},key0,0.3,4
+True,True,False,False,True,False,0.001699686050415039,3.361701965332031e-05,{},key0,0.3,5
+True,True,False,False,True,False,0.0017573833465576172,3.4332275390625e-05,{},key0,0.3,6
+True,True,False,False,True,False,0.0017931461334228516,3.123283386230469e-05,{'toeplitz_matrix': 1},key0,0.3,7
+True,True,False,False,True,False,0.0036835670471191406,0.00014209747314453125,{},key0,0.3,8
+True,True,False,False,True,False,0.0028879642486572266,8.392333984375e-05,{'toeplitz_matrix': 1},key0,0.3,9
+False,False,True,False,False,False,0.0021600723266601562,4.220008850097656e-05,{'toeplitz_matrix': 1},key0,0.3,10
+True,True,False,False,True,False,0.0018017292022705078,6.985664367675781e-05,{'toeplitz_matrix': 1},key0,0.3,11
+True,True,False,False,True,False,0.003349781036376953,5.364418029785156e-05,{},key0,0.3,12
+True,True,False,False,True,False,0.003197908401489258,5.793571472167969e-05,{},key0,0.3,13
+True,True,False,False,True,False,0.0024013519287109375,3.9577484130859375e-05,{'toeplitz_matrix': 1},key0,0.3,14
+False,False,True,False,False,False,0.001888275146484375,3.8623809814453125e-05,{'toeplitz_matrix': 1},key0,0.3,15
+False,False,True,False,False,False,0.002295255661010742,3.886222839355469e-05,{'toeplitz_matrix': 1},key0,0.3,16
+True,True,False,False,True,False,0.0019350051879882812,3.886222839355469e-05,{},key0,0.3,17
+True,True,False,False,True,False,0.0019478797912597656,3.719329833984375e-05,{},key0,0.3,18
+False,False,True,False,False,False,0.0016012191772460938,3.409385681152344e-05,{'toeplitz_matrix': 1},key0,0.3,19
+True,True,False,False,True,False,0.0017549991607666016,3.743171691894531e-05,{'toeplitz_matrix': 1},key0,0.5,0
+True,True,False,False,True,False,0.0016918182373046875,3.719329833984375e-05,{},key0,0.5,1
+True,True,False,False,True,False,0.0016143321990966797,3.24249267578125e-05,{'toeplitz_matrix': 1},key0,0.5,2
+False,False,True,False,False,False,0.0016586780548095703,3.528594970703125e-05,{'toeplitz_matrix': 1},key0,0.5,3
+False,False,True,False,False,False,0.0015304088592529297,3.457069396972656e-05,{'toeplitz_matrix': 1},key0,0.5,4
+True,True,False,False,True,False,0.0016794204711914062,3.3855438232421875e-05,{'toeplitz_matrix': 1},key0,0.5,5
+True,True,False,False,True,False,0.002110004425048828,4.744529724121094e-05,{},key0,0.5,6
+True,True,False,False,True,False,0.0017294883728027344,3.123283386230469e-05,{'toeplitz_matrix': 1},key0,0.5,7
+True,True,False,False,True,False,0.001695871353149414,3.337860107421875e-05,{},key0,0.5,8
+True,True,False,False,True,False,0.0016977787017822266,3.0279159545898438e-05,{'toeplitz_matrix': 1},key0,0.5,9
+False,False,True,False,False,False,0.001580953598022461,3.2901763916015625e-05,{'toeplitz_matrix': 1},key0,0.5,10
+True,True,False,False,True,False,0.0018358230590820312,4.172325134277344e-05,{'toeplitz_matrix': 1},key0,0.5,11
+True,True,False,False,True,False,0.0016243457794189453,3.4332275390625e-05,{},key0,0.5,12
+True,True,False,False,True,False,0.0016067028045654297,3.075599670410156e-05,{},key0,0.5,13
+False,False,True,False,False,False,0.0015742778778076172,8.249282836914062e-05,{'toeplitz_matrix': 2},key0,0.5,14
+False,False,True,False,False,False,0.001739501953125,3.409385681152344e-05,{'toeplitz_matrix': 1},key0,0.5,15
+True,True,False,False,True,False,0.0018420219421386719,3.123283386230469e-05,{'toeplitz_matrix': 1},key0,0.5,16
+True,True,False,False,True,False,0.0018868446350097656,4.267692565917969e-05,{'toeplitz_matrix': 1},key0,0.5,17
+True,True,False,False,True,False,0.0017368793487548828,3.7670135498046875e-05,{},key0,0.5,18
+False,False,True,False,False,False,0.0016129016876220703,3.4809112548828125e-05,{'toeplitz_matrix': 1},key0,0.5,19
+True,True,False,False,True,False,0.0026111602783203125,4.57763671875e-05,{},key1,0.05,0
+True,True,False,False,True,False,0.001711130142211914,4.00543212890625e-05,{},key1,0.05,1
+True,True,False,False,True,False,0.0018477439880371094,4.100799560546875e-05,{},key1,0.05,2
+True,True,False,False,True,False,0.0036497116088867188,0.00010037422180175781,{},key1,0.05,3
+True,True,False,False,True,False,0.002939939498901367,7.915496826171875e-05,{},key1,0.05,4
+True,True,False,False,True,False,0.0023577213287353516,4.029273986816406e-05,{},key1,0.05,5
+True,True,False,False,True,False,0.006300926208496094,6.437301635742188e-05,{},key1,0.05,6
+True,True,False,False,True,False,0.0025911331176757812,4.1484832763671875e-05,{},key1,0.05,7
+True,True,False,False,True,False,0.0016596317291259766,3.790855407714844e-05,{},key1,0.05,8
+False,False,True,False,False,False,0.002627849578857422,3.981590270996094e-05,{'toeplitz_matrix': 1},key1,0.05,9
+True,True,False,False,True,False,0.0028274059295654297,5.602836608886719e-05,{},key1,0.05,10
+True,True,False,False,True,False,0.0029754638671875,5.698204040527344e-05,{},key1,0.05,11
+True,True,False,False,True,False,0.003744363784790039,5.936622619628906e-05,{},key1,0.05,12
+True,True,False,False,True,False,0.002864360809326172,5.2928924560546875e-05,{},key1,0.05,13
+True,True,False,False,True,False,0.00286102294921875,5.5789947509765625e-05,{},key1,0.05,14
+True,True,False,False,True,False,0.002758026123046875,8.249282836914062e-05,{},key1,0.05,15
+True,True,False,False,True,False,0.0031919479370117188,6.866455078125e-05,{},key1,0.05,16
+True,True,False,False,True,False,0.002825498580932617,6.771087646484375e-05,{},key1,0.05,17
+True,True,False,False,True,False,0.00273895263671875,7.62939453125e-05,{},key1,0.05,18
+True,True,False,False,True,False,0.0026311874389648438,7.390975952148438e-05,{},key1,0.05,19
+True,True,False,False,True,False,0.0025568008422851562,5.817413330078125e-05,{},key1,0.1,0
+True,True,False,False,True,False,0.002986907958984375,5.3882598876953125e-05,{},key1,0.1,1
+True,True,False,False,True,False,0.0027048587799072266,6.151199340820312e-05,{},key1,0.1,2
+True,True,False,False,True,False,0.002499103546142578,3.62396240234375e-05,{},key1,0.1,3
+True,True,False,False,True,False,0.0015401840209960938,5.221366882324219e-05,{},key1,0.1,4
+True,True,False,False,True,False,0.0017206668853759766,5.7220458984375e-05,{},key1,0.1,5
+True,True,False,False,True,False,0.001598358154296875,3.457069396972656e-05,{},key1,0.1,6
+True,True,False,False,True,False,0.001749277114868164,3.337860107421875e-05,{},key1,0.1,7
+True,True,False,False,True,False,0.002149820327758789,3.314018249511719e-05,{},key1,0.1,8
+False,False,True,False,False,False,0.0018219947814941406,3.5762786865234375e-05,{'toeplitz_matrix': 1},key1,0.1,9
+True,True,False,False,True,False,0.0019521713256835938,3.4809112548828125e-05,{'toeplitz_matrix': 1},key1,0.1,10
+True,True,False,False,True,False,0.0015895366668701172,3.123283386230469e-05,{},key1,0.1,11
+True,True,False,False,True,False,0.0015363693237304688,5.435943603515625e-05,{},key1,0.1,12
+True,True,False,False,True,False,0.0015869140625,3.337860107421875e-05,{},key1,0.1,13
+True,True,False,False,True,False,0.0018014907836914062,5.078315734863281e-05,{},key1,0.1,14
+True,True,False,False,True,False,0.001552581787109375,3.0279159545898438e-05,{},key1,0.1,15
+False,False,True,False,False,False,0.0018286705017089844,3.457069396972656e-05,{'toeplitz_matrix': 1},key1,0.1,16
+True,True,False,False,True,False,0.0025370121002197266,5.030632019042969e-05,{},key1,0.1,17
+True,True,False,False,True,False,0.0038137435913085938,0.00010275840759277344,{},key1,0.1,18
+True,True,False,False,True,False,0.002383708953857422,3.933906555175781e-05,{},key1,0.1,19
+False,False,True,False,False,False,0.0019807815551757812,3.7670135498046875e-05,{'toeplitz_matrix': 1},key1,0.3,0
+True,True,False,False,True,False,0.0020933151245117188,5.1021575927734375e-05,{},key1,0.3,1
+True,True,False,False,True,False,0.0017249584197998047,7.271766662597656e-05,{'toeplitz_matrix': 1},key1,0.3,2
+True,True,False,False,True,False,0.0020284652709960938,3.3855438232421875e-05,{},key1,0.3,3
+True,True,False,False,True,False,0.0017142295837402344,3.3855438232421875e-05,{},key1,0.3,4
+True,True,False,False,True,False,0.0016834735870361328,3.24249267578125e-05,{},key1,0.3,5
+True,True,False,False,True,False,0.0015568733215332031,2.956390380859375e-05,{},key1,0.3,6
+False,False,True,False,False,False,0.0015947818756103516,3.218650817871094e-05,{'toeplitz_matrix': 1},key1,0.3,7
+True,True,False,False,True,False,0.0015728473663330078,2.8848648071289062e-05,{},key1,0.3,8
+False,False,True,False,False,False,0.0017287731170654297,3.2901763916015625e-05,{'toeplitz_matrix': 1},key1,0.3,9
+True,True,False,False,True,False,0.0016422271728515625,3.314018249511719e-05,{'toeplitz_matrix': 1},key1,0.3,10
+False,False,True,False,False,False,0.0015573501586914062,3.0517578125e-05,{'toeplitz_matrix': 1},key1,0.3,11
+True,True,False,False,True,False,0.0016322135925292969,3.361701965332031e-05,{},key1,0.3,12
+True,True,False,False,True,False,0.0016090869903564453,3.0517578125e-05,{},key1,0.3,13
+True,True,False,False,True,False,0.001619577407836914,3.2901763916015625e-05,{'toeplitz_matrix': 1},key1,0.3,14
+False,False,True,False,False,False,0.0016994476318359375,3.218650817871094e-05,{'toeplitz_matrix': 1},key1,0.3,15
+False,False,True,False,False,False,0.0017447471618652344,3.2901763916015625e-05,{'toeplitz_matrix': 1},key1,0.3,16
+True,True,False,False,True,False,0.0015769004821777344,2.956390380859375e-05,{},key1,0.3,17
+True,True,False,False,True,False,0.0016338825225830078,3.457069396972656e-05,{},key1,0.3,18
+False,False,True,False,False,False,0.0018837451934814453,3.4332275390625e-05,{'toeplitz_matrix': 1},key1,0.3,19
+False,False,True,False,False,False,0.0015931129455566406,3.0279159545898438e-05,{'toeplitz_matrix': 1},key1,0.5,0
+True,True,False,False,True,False,0.0016567707061767578,3.0040740966796875e-05,{},key1,0.5,1
+True,True,False,False,True,False,0.0015583038330078125,5.7220458984375e-05,{'toeplitz_matrix': 1},key1,0.5,2
+True,True,False,False,True,False,0.001554727554321289,2.9325485229492188e-05,{'toeplitz_matrix': 1},key1,0.5,3
+True,True,False,False,True,False,0.0015954971313476562,3.24249267578125e-05,{'toeplitz_matrix': 1},key1,0.5,4
+True,True,False,False,True,False,0.0016546249389648438,3.314018249511719e-05,{'toeplitz_matrix': 1},key1,0.5,5
+True,True,False,False,True,False,0.0018453598022460938,3.3855438232421875e-05,{},key1,0.5,6
+False,False,True,False,False,False,0.00183868408203125,3.3855438232421875e-05,{'toeplitz_matrix': 1},key1,0.5,7
+True,True,False,False,True,False,0.0016710758209228516,3.409385681152344e-05,{},key1,0.5,8
+False,False,True,False,False,False,0.0015933513641357422,3.266334533691406e-05,{'toeplitz_matrix': 1},key1,0.5,9
+True,True,False,False,True,False,0.0022287368774414062,3.5762786865234375e-05,{'toeplitz_matrix': 1},key1,0.5,10
+False,False,True,False,False,False,0.0017077922821044922,3.504753112792969e-05,{'toeplitz_matrix': 1},key1,0.5,11
+True,True,False,False,True,False,0.0017733573913574219,3.2901763916015625e-05,{},key1,0.5,12
+True,True,False,False,True,False,0.0016689300537109375,3.361701965332031e-05,{},key1,0.5,13
+False,False,True,False,False,False,0.001741647720336914,3.552436828613281e-05,{'toeplitz_matrix': 2},key1,0.5,14
+False,False,True,False,False,False,0.002428770065307617,6.556510925292969e-05,{'toeplitz_matrix': 1},key1,0.5,15
+True,True,False,False,True,False,0.001964569091796875,3.600120544433594e-05,{'toeplitz_matrix': 1},key1,0.5,16
+False,False,True,False,False,False,0.0018444061279296875,3.5762786865234375e-05,{'toeplitz_matrix': 1},key1,0.5,17
+True,True,False,False,True,False,0.0015139579772949219,3.4332275390625e-05,{},key1,0.5,18
+False,False,True,False,False,False,0.001898050308227539,3.552436828613281e-05,{'toeplitz_matrix': 1},key1,0.5,19
+True,True,False,False,True,False,0.002310514450073242,4.673004150390625e-05,{},key2,0.05,0
+True,True,False,False,True,False,0.0015163421630859375,3.7670135498046875e-05,{},key2,0.05,1
+True,True,False,False,True,False,0.0014545917510986328,3.600120544433594e-05,{},key2,0.05,2
+True,True,False,False,True,False,0.0012383460998535156,3.1948089599609375e-05,{},key2,0.05,3
+True,True,False,False,True,False,0.0018677711486816406,3.528594970703125e-05,{},key2,0.05,4
+True,True,False,False,True,False,0.002112150192260742,3.7670135498046875e-05,{},key2,0.05,5
+True,True,False,False,True,False,0.0015299320220947266,3.24249267578125e-05,{},key2,0.05,6
+True,True,False,False,True,False,0.00128173828125,3.123283386230469e-05,{},key2,0.05,7
+True,True,False,False,True,False,0.0012137889862060547,3.4332275390625e-05,{},key2,0.05,8
+True,True,False,False,True,False,0.001531362533569336,3.457069396972656e-05,{'toeplitz_matrix': 1},key2,0.05,9
+True,True,False,False,True,False,0.001314401626586914,2.9802322387695312e-05,{},key2,0.05,10
+True,True,False,False,True,False,0.0012121200561523438,3.24249267578125e-05,{},key2,0.05,11
+True,True,False,False,True,False,0.0013093948364257812,6.651878356933594e-05,{},key2,0.05,12
+True,True,False,False,True,False,0.0012884140014648438,2.9802322387695312e-05,{},key2,0.05,13
+True,True,False,False,True,False,0.0012531280517578125,3.266334533691406e-05,{},key2,0.05,14
+True,True,False,False,True,False,0.0012302398681640625,3.218650817871094e-05,{},key2,0.05,15
+True,True,False,False,True,False,0.00121307373046875,3.314018249511719e-05,{},key2,0.05,16
+True,True,False,False,True,False,0.0013728141784667969,3.4332275390625e-05,{},key2,0.05,17
+True,True,False,False,True,False,0.0014650821685791016,3.075599670410156e-05,{},key2,0.05,18
+True,True,False,False,True,False,0.001529693603515625,3.314018249511719e-05,{},key2,0.05,19
+True,True,False,False,True,False,0.0012669563293457031,4.100799560546875e-05,{},key2,0.1,0
+True,True,False,False,True,False,0.001191854476928711,4.291534423828125e-05,{},key2,0.1,1
+True,True,False,False,True,False,0.0012328624725341797,3.2901763916015625e-05,{},key2,0.1,2
+True,True,False,False,True,False,0.0012755393981933594,3.266334533691406e-05,{},key2,0.1,3
+True,True,False,False,True,False,0.0012276172637939453,3.2901763916015625e-05,{},key2,0.1,4
+True,True,False,False,True,False,0.001398324966430664,3.218650817871094e-05,{},key2,0.1,5
+True,True,False,False,True,False,0.0012297630310058594,3.2901763916015625e-05,{},key2,0.1,6
+True,True,False,False,True,False,0.0015213489532470703,3.218650817871094e-05,{},key2,0.1,7
+True,True,False,False,True,False,0.0012967586517333984,5.745887756347656e-05,{},key2,0.1,8
+True,True,False,False,True,False,0.0012843608856201172,3.266334533691406e-05,{'toeplitz_matrix': 1},key2,0.1,9
+False,False,True,False,False,False,0.0017161369323730469,3.790855407714844e-05,{'toeplitz_matrix': 1},key2,0.1,10
+True,True,False,False,True,False,0.0013124942779541016,3.266334533691406e-05,{},key2,0.1,11
+True,True,False,False,True,False,0.0012135505676269531,3.24249267578125e-05,{},key2,0.1,12
+True,True,False,False,True,False,0.0012388229370117188,3.218650817871094e-05,{},key2,0.1,13
+True,True,False,False,True,False,0.0011913776397705078,3.1948089599609375e-05,{},key2,0.1,14
+True,True,False,False,True,False,0.0011856555938720703,3.2901763916015625e-05,{},key2,0.1,15
+False,False,True,False,False,False,0.0012989044189453125,3.314018249511719e-05,{'toeplitz_matrix': 1},key2,0.1,16
+True,True,False,False,True,False,0.0013251304626464844,3.24249267578125e-05,{},key2,0.1,17
+True,True,False,False,True,False,0.0011868476867675781,3.147125244140625e-05,{},key2,0.1,18
+True,True,False,False,True,False,0.0014829635620117188,2.956390380859375e-05,{},key2,0.1,19
+True,True,False,False,True,False,0.001306772232055664,3.337860107421875e-05,{'toeplitz_matrix': 1},key2,0.3,0
+True,True,False,False,True,False,0.0012121200561523438,4.1961669921875e-05,{},key2,0.3,1
+True,True,False,False,True,False,0.0013108253479003906,3.314018249511719e-05,{'toeplitz_matrix': 1},key2,0.3,2
+True,True,False,False,True,False,0.0017364025115966797,4.839897155761719e-05,{},key2,0.3,3
+True,True,False,False,True,False,0.002027273178100586,4.887580871582031e-05,{},key2,0.3,4
+True,True,False,False,True,False,0.002483367919921875,7.82012939453125e-05,{},key2,0.3,5
+True,True,False,False,True,False,0.0022275447845458984,5.14984130859375e-05,{},key2,0.3,6
+True,True,False,False,True,False,0.00171661376953125,5.2928924560546875e-05,{'toeplitz_matrix': 1},key2,0.3,7
+True,True,False,False,True,False,0.0015671253204345703,7.224082946777344e-05,{},key2,0.3,8
+True,True,False,False,True,False,0.001313924789428711,4.1961669921875e-05,{'toeplitz_matrix': 1},key2,0.3,9
+False,False,True,False,False,False,0.0017137527465820312,3.314018249511719e-05,{'toeplitz_matrix': 1},key2,0.3,10
+True,True,False,False,True,False,0.0016324520111083984,5.435943603515625e-05,{'toeplitz_matrix': 1},key2,0.3,11
+True,True,False,False,True,False,0.0016331672668457031,3.361701965332031e-05,{},key2,0.3,12
+True,True,False,False,True,False,0.0014727115631103516,3.266334533691406e-05,{},key2,0.3,13
+True,True,False,False,True,False,0.0012497901916503906,3.0994415283203125e-05,{'toeplitz_matrix': 1},key2,0.3,14
+False,False,True,False,False,False,0.0015227794647216797,3.0994415283203125e-05,{'toeplitz_matrix': 1},key2,0.3,15
+False,False,True,False,False,False,0.0011458396911621094,3.457069396972656e-05,{'toeplitz_matrix': 1},key2,0.3,16
+True,True,False,False,True,False,0.0015301704406738281,3.0994415283203125e-05,{},key2,0.3,17
+True,True,False,False,True,False,0.0012891292572021484,2.7418136596679688e-05,{},key2,0.3,18
+True,True,False,False,True,False,0.001384735107421875,3.170967102050781e-05,{'toeplitz_matrix': 1},key2,0.3,19
+True,True,False,False,True,False,0.0012493133544921875,2.7418136596679688e-05,{'toeplitz_matrix': 1},key2,0.5,0
+True,True,False,False,True,False,0.0013184547424316406,2.6226043701171875e-05,{},key2,0.5,1
+True,True,False,False,True,False,0.0016436576843261719,3.170967102050781e-05,{'toeplitz_matrix': 1},key2,0.5,2
+False,False,True,False,False,False,0.001356363296508789,3.0517578125e-05,{'toeplitz_matrix': 1},key2,0.5,3
+False,False,True,False,False,False,0.0012998580932617188,2.7894973754882812e-05,{'toeplitz_matrix': 1},key2,0.5,4
+False,False,True,False,False,False,0.0012218952178955078,2.9802322387695312e-05,{'toeplitz_matrix': 1},key2,0.5,5
+True,True,False,False,True,False,0.0012781620025634766,3.0279159545898438e-05,{},key2,0.5,6
+True,True,False,False,True,False,0.0011684894561767578,7.867813110351562e-05,{'toeplitz_matrix': 1},key2,0.5,7
+True,True,False,False,True,False,0.0011777877807617188,2.9802322387695312e-05,{},key2,0.5,8
+True,True,False,False,True,False,0.0012941360473632812,3.123283386230469e-05,{'toeplitz_matrix': 1},key2,0.5,9
+False,False,True,False,False,False,0.0012166500091552734,3.933906555175781e-05,{'toeplitz_matrix': 1},key2,0.5,10
+True,True,False,False,True,False,0.001421213150024414,3.314018249511719e-05,{'toeplitz_matrix': 1},key2,0.5,11
+True,True,False,False,True,False,0.00128173828125,3.218650817871094e-05,{},key2,0.5,12
+True,True,False,False,True,False,0.0011348724365234375,3.147125244140625e-05,{},key2,0.5,13
+False,False,True,False,False,False,0.0012843608856201172,3.814697265625e-05,{'toeplitz_matrix': 2},key2,0.5,14
+False,False,True,False,False,False,0.001171112060546875,3.075599670410156e-05,{'toeplitz_matrix': 1},key2,0.5,15
+True,True,False,False,True,False,0.0012729167938232422,3.218650817871094e-05,{'toeplitz_matrix': 1},key2,0.5,16
+True,True,False,False,True,False,0.0011658668518066406,3.075599670410156e-05,{'toeplitz_matrix': 1},key2,0.5,17
+True,True,False,False,True,False,0.001100301742553711,3.0517578125e-05,{},key2,0.5,18
+True,True,False,False,True,False,0.0012638568878173828,2.9802322387695312e-05,{'toeplitz_matrix': 1},key2,0.5,19
+True,True,False,False,True,False,0.0020096302032470703,4.76837158203125e-05,{},key3,0.05,0
+True,True,False,False,True,False,0.0017423629760742188,3.790855407714844e-05,{},key3,0.05,1
+True,True,False,False,True,False,0.0019376277923583984,3.743171691894531e-05,{},key3,0.05,2
+True,True,False,False,True,False,0.0019025802612304688,3.695487976074219e-05,{},key3,0.05,3
+True,True,False,False,True,False,0.0019266605377197266,3.695487976074219e-05,{},key3,0.05,4
+True,True,False,False,True,False,0.002249479293823242,3.838539123535156e-05,{},key3,0.05,5
+True,True,False,False,True,False,0.0041539669036865234,5.936622619628906e-05,{},key3,0.05,6
+True,True,False,False,True,False,0.002606630325317383,7.343292236328125e-05,{},key3,0.05,7
+True,True,False,False,True,False,0.001997232437133789,3.8623809814453125e-05,{},key3,0.05,8
+False,False,True,False,False,False,0.005128622055053711,7.557868957519531e-05,{'toeplitz_matrix': 1},key3,0.05,9
+True,True,False,False,True,False,0.002364635467529297,3.910064697265625e-05,{},key3,0.05,10
+True,True,False,False,True,False,0.0020918846130371094,4.076957702636719e-05,{},key3,0.05,11
+True,True,False,False,True,False,0.0039904117584228516,5.5789947509765625e-05,{},key3,0.05,12
+True,True,False,False,True,False,0.0020062923431396484,3.719329833984375e-05,{},key3,0.05,13
+True,True,False,False,True,False,0.0018565654754638672,3.6716461181640625e-05,{},key3,0.05,14
+True,True,False,False,True,False,0.0021543502807617188,4.553794860839844e-05,{},key3,0.05,15
+True,True,False,False,True,False,0.0020051002502441406,3.62396240234375e-05,{},key3,0.05,16
+True,True,False,False,True,False,0.0019354820251464844,3.266334533691406e-05,{},key3,0.05,17
+True,True,False,False,True,False,0.0019102096557617188,3.457069396972656e-05,{},key3,0.05,18
+True,True,False,False,True,False,0.0018281936645507812,3.4809112548828125e-05,{},key3,0.05,19
+True,True,False,False,True,False,0.0017647743225097656,3.7670135498046875e-05,{},key3,0.1,0
+True,True,False,False,True,False,0.0021910667419433594,3.409385681152344e-05,{},key3,0.1,1
+True,True,False,False,True,False,0.002089977264404297,3.504753112792969e-05,{},key3,0.1,2
+True,True,False,False,True,False,0.0018541812896728516,3.743171691894531e-05,{},key3,0.1,3
+True,True,False,False,True,False,0.0018162727355957031,3.0994415283203125e-05,{},key3,0.1,4
+True,True,False,False,True,False,0.0019359588623046875,3.600120544433594e-05,{},key3,0.1,5
+True,True,False,False,True,False,0.0023474693298339844,3.8623809814453125e-05,{},key3,0.1,6
+True,True,False,False,True,False,0.0022003650665283203,3.457069396972656e-05,{},key3,0.1,7
+True,True,False,False,True,False,0.0021295547485351562,3.695487976074219e-05,{},key3,0.1,8
+False,False,True,False,False,False,0.0018401145935058594,3.8623809814453125e-05,{'toeplitz_matrix': 1},key3,0.1,9
+False,False,True,False,False,False,0.002033710479736328,3.1948089599609375e-05,{'toeplitz_matrix': 1},key3,0.1,10
+True,True,False,False,True,False,0.001767873764038086,3.528594970703125e-05,{},key3,0.1,11
+True,True,False,False,True,False,0.001889944076538086,3.314018249511719e-05,{},key3,0.1,12
+True,True,False,False,True,False,0.0021674633026123047,3.528594970703125e-05,{},key3,0.1,13
+True,True,False,False,True,False,0.0017428398132324219,3.361701965332031e-05,{},key3,0.1,14
+True,True,False,False,True,False,0.0019931793212890625,3.3855438232421875e-05,{},key3,0.1,15
+False,False,True,False,False,False,0.0020110607147216797,3.337860107421875e-05,{'toeplitz_matrix': 1},key3,0.1,16
+True,True,False,False,True,False,0.0021276473999023438,3.4809112548828125e-05,{},key3,0.1,17
+True,True,False,False,True,False,0.0017282962799072266,4.029273986816406e-05,{},key3,0.1,18
+True,True,False,False,True,False,0.0020341873168945312,3.790855407714844e-05,{},key3,0.1,19
+True,True,False,False,True,False,0.0019297599792480469,3.933906555175781e-05,{'toeplitz_matrix': 1},key3,0.3,0
+True,True,False,False,True,False,0.0017938613891601562,3.743171691894531e-05,{},key3,0.3,1
+True,True,False,False,True,False,0.0018153190612792969,3.695487976074219e-05,{'toeplitz_matrix': 1},key3,0.3,2
+True,True,False,False,True,False,0.0017502307891845703,3.647804260253906e-05,{},key3,0.3,3
+True,True,False,False,True,False,0.00235748291015625,3.4809112548828125e-05,{},key3,0.3,4
+True,True,False,False,True,False,0.004513740539550781,6.341934204101562e-05,{},key3,0.3,5
+True,True,False,False,True,False,0.0029447078704833984,4.100799560546875e-05,{},key3,0.3,6
+True,True,False,False,True,False,0.002539396286010742,4.076957702636719e-05,{'toeplitz_matrix': 1},key3,0.3,7
+True,True,False,False,True,False,0.0027115345001220703,0.00023651123046875,{},key3,0.3,8
+False,False,True,False,False,False,0.002965688705444336,0.0002396106719970703,{'toeplitz_matrix': 1},key3,0.3,9
+True,True,False,False,True,False,0.0025649070739746094,4.267692565917969e-05,{'toeplitz_matrix': 1},key3,0.3,10
+True,True,False,False,True,False,0.002013683319091797,4.315376281738281e-05,{'toeplitz_matrix': 1},key3,0.3,11
+True,True,False,False,True,False,0.0020792484283447266,5.984306335449219e-05,{},key3,0.3,12
+True,True,False,False,True,False,0.0018625259399414062,3.933906555175781e-05,{},key3,0.3,13
+True,True,False,False,True,False,0.0020122528076171875,4.172325134277344e-05,{'toeplitz_matrix': 1},key3,0.3,14
+False,False,True,False,False,False,0.0017848014831542969,6.246566772460938e-05,{'toeplitz_matrix': 1},key3,0.3,15
+False,False,True,False,False,False,0.0020263195037841797,3.981590270996094e-05,{'toeplitz_matrix': 1},key3,0.3,16
+True,True,False,False,True,False,0.0018279552459716797,4.2438507080078125e-05,{},key3,0.3,17
+True,True,False,False,True,False,0.001728057861328125,3.6716461181640625e-05,{},key3,0.3,18
+True,True,False,False,True,False,0.0019249916076660156,4.00543212890625e-05,{'toeplitz_matrix': 1},key3,0.3,19
+True,True,False,False,True,False,0.0017268657684326172,8.702278137207031e-05,{'toeplitz_matrix': 1},key3,0.5,0
+True,True,False,False,True,False,0.0017940998077392578,3.910064697265625e-05,{},key3,0.5,1
+True,True,False,False,True,False,0.002091646194458008,3.838539123535156e-05,{'toeplitz_matrix': 1},key3,0.5,2
+False,False,True,False,False,False,0.0021486282348632812,3.552436828613281e-05,{'toeplitz_matrix': 1},key3,0.5,3
+False,False,True,False,False,False,0.001772165298461914,3.8623809814453125e-05,{'toeplitz_matrix': 1},key3,0.5,4
+False,False,True,False,False,False,0.001928567886352539,3.743171691894531e-05,{'toeplitz_matrix': 1},key3,0.5,5
+True,True,False,False,True,False,0.0017285346984863281,3.266334533691406e-05,{},key3,0.5,6
+True,True,False,False,True,False,0.0017154216766357422,3.1948089599609375e-05,{'toeplitz_matrix': 1},key3,0.5,7
+True,True,False,False,True,False,0.0017361640930175781,3.4332275390625e-05,{},key3,0.5,8
+False,False,True,False,False,False,0.0023856163024902344,4.267692565917969e-05,{'toeplitz_matrix': 1},key3,0.5,9
+True,True,False,False,True,False,0.0019905567169189453,4.839897155761719e-05,{'toeplitz_matrix': 1},key3,0.5,10
+True,True,False,False,True,False,0.00220489501953125,4.410743713378906e-05,{'toeplitz_matrix': 1},key3,0.5,11
+True,True,False,False,True,False,0.0018839836120605469,4.029273986816406e-05,{},key3,0.5,12
+True,True,False,False,True,False,0.001903533935546875,4.7206878662109375e-05,{},key3,0.5,13
+False,False,True,False,False,False,0.0018050670623779297,3.910064697265625e-05,{'toeplitz_matrix': 2},key3,0.5,14
+False,False,True,False,False,False,0.0017845630645751953,3.9577484130859375e-05,{'toeplitz_matrix': 1},key3,0.5,15
+False,False,True,False,False,False,0.0018126964569091797,3.8623809814453125e-05,{'toeplitz_matrix': 1},key3,0.5,16
+True,True,False,False,True,False,0.0018029212951660156,4.029273986816406e-05,{'toeplitz_matrix': 1},key3,0.5,17
+True,True,False,False,True,False,0.0019664764404296875,3.886222839355469e-05,{},key3,0.5,18
+True,True,False,False,True,False,0.001752614974975586,3.5762786865234375e-05,{'toeplitz_matrix': 1},key3,0.5,19
+True,True,False,False,True,False,0.004435062408447266,5.078315734863281e-05,{},key4,0.05,0
+True,True,False,False,True,False,0.003471851348876953,4.220008850097656e-05,{},key4,0.05,1
+True,True,False,False,True,False,0.0036177635192871094,4.458427429199219e-05,{},key4,0.05,2
+True,True,False,False,True,False,0.0035805702209472656,4.1484832763671875e-05,{},key4,0.05,3
+True,True,False,False,True,False,0.003325223922729492,4.1484832763671875e-05,{},key4,0.05,4
+True,True,False,False,True,False,0.0036225318908691406,4.2438507080078125e-05,{},key4,0.05,5
+True,True,False,False,True,False,0.0033838748931884766,4.363059997558594e-05,{},key4,0.05,6
+True,True,False,False,True,False,0.003945589065551758,6.580352783203125e-05,{},key4,0.05,7
+True,True,False,False,True,False,0.003720521926879883,3.5762786865234375e-05,{},key4,0.05,8
+True,True,False,False,True,False,0.0034606456756591797,4.2438507080078125e-05,{'toeplitz_matrix': 1},key4,0.05,9
+True,True,False,False,True,False,0.0031325817108154297,4.076957702636719e-05,{},key4,0.05,10
+True,True,False,False,True,False,0.003187894821166992,4.0531158447265625e-05,{},key4,0.05,11
+True,True,False,False,True,False,0.0033817291259765625,3.886222839355469e-05,{},key4,0.05,12
+True,True,False,False,True,False,0.00410151481628418,8.440017700195312e-05,{},key4,0.05,13
+True,True,False,False,True,False,0.005679607391357422,5.030632019042969e-05,{},key4,0.05,14
+True,True,False,False,True,False,0.00580596923828125,7.367134094238281e-05,{},key4,0.05,15
+True,True,False,False,True,False,0.00618433952331543,7.367134094238281e-05,{},key4,0.05,16
+True,True,False,False,True,False,0.006156444549560547,6.246566772460938e-05,{},key4,0.05,17
+True,True,False,False,True,False,0.0075473785400390625,6.866455078125e-05,{},key4,0.05,18
+True,True,False,False,True,False,0.006371736526489258,7.390975952148438e-05,{},key4,0.05,19
+True,True,False,False,True,False,0.0051975250244140625,7.700920104980469e-05,{},key4,0.1,0
+True,True,False,False,True,False,0.005855083465576172,5.078315734863281e-05,{},key4,0.1,1
+True,True,False,False,True,False,0.0056056976318359375,8.821487426757812e-05,{},key4,0.1,2
+True,True,False,False,True,False,0.004397869110107422,8.511543273925781e-05,{},key4,0.1,3
+True,True,False,False,True,False,0.003386259078979492,4.267692565917969e-05,{},key4,0.1,4
+True,True,False,False,True,False,0.0037994384765625,4.553794860839844e-05,{},key4,0.1,5
+True,True,False,False,True,False,0.003654003143310547,4.267692565917969e-05,{},key4,0.1,6
+True,True,False,False,True,False,0.003284454345703125,6.222724914550781e-05,{},key4,0.1,7
+True,True,False,False,True,False,0.0034513473510742188,4.3392181396484375e-05,{},key4,0.1,8
+True,True,False,False,True,False,0.003359079360961914,4.100799560546875e-05,{'toeplitz_matrix': 1},key4,0.1,9
+False,False,True,False,False,False,0.0031976699829101562,4.0531158447265625e-05,{'toeplitz_matrix': 1},key4,0.1,10
+True,True,False,False,True,False,0.0031023025512695312,4.1961669921875e-05,{},key4,0.1,11
+True,True,False,False,True,False,0.0035512447357177734,4.935264587402344e-05,{},key4,0.1,12
+True,True,False,False,True,False,0.0032453536987304688,3.743171691894531e-05,{},key4,0.1,13
+True,True,False,False,True,False,0.003124237060546875,3.7670135498046875e-05,{},key4,0.1,14
+True,True,False,False,True,False,0.003400564193725586,3.62396240234375e-05,{},key4,0.1,15
+False,False,True,False,False,False,0.003398895263671875,3.8623809814453125e-05,{'toeplitz_matrix': 1},key4,0.1,16
+True,True,False,False,True,False,0.003404855728149414,4.0531158447265625e-05,{},key4,0.1,17
+True,True,False,False,True,False,0.003922462463378906,5.650520324707031e-05,{},key4,0.1,18
+True,True,False,False,True,False,0.004647731781005859,3.814697265625e-05,{},key4,0.1,19
+False,False,True,False,False,False,0.006845951080322266,6.413459777832031e-05,{'toeplitz_matrix': 1},key4,0.3,0
+True,True,False,False,True,False,0.003715991973876953,9.369850158691406e-05,{},key4,0.3,1
+False,False,True,False,False,False,0.0036869049072265625,8.368492126464844e-05,{'toeplitz_matrix': 1},key4,0.3,2
+True,True,False,False,True,False,0.004044055938720703,8.58306884765625e-05,{},key4,0.3,3
+True,True,False,False,True,False,0.0036771297454833984,4.267692565917969e-05,{},key4,0.3,4
+True,True,False,False,True,False,0.0031175613403320312,3.409385681152344e-05,{},key4,0.3,5
+True,True,False,False,True,False,0.0033795833587646484,3.9577484130859375e-05,{},key4,0.3,6
+True,True,False,False,True,False,0.0036039352416992188,4.00543212890625e-05,{'toeplitz_matrix': 1},key4,0.3,7
+True,True,False,False,True,False,0.003397703170776367,3.552436828613281e-05,{},key4,0.3,8
+True,True,False,False,True,False,0.0031676292419433594,3.719329833984375e-05,{'toeplitz_matrix': 1},key4,0.3,9
+True,True,False,False,True,False,0.003619670867919922,3.719329833984375e-05,{'toeplitz_matrix': 1},key4,0.3,10
+True,True,False,False,True,False,0.0033822059631347656,3.981590270996094e-05,{'toeplitz_matrix': 1},key4,0.3,11
+True,True,False,False,True,False,0.0035326480865478516,3.790855407714844e-05,{},key4,0.3,12
+True,True,False,False,True,False,0.003300905227661133,3.8623809814453125e-05,{},key4,0.3,13
+True,True,False,False,True,False,0.0031976699829101562,3.719329833984375e-05,{'toeplitz_matrix': 1},key4,0.3,14
+False,False,True,False,False,False,0.0032355785369873047,3.695487976074219e-05,{'toeplitz_matrix': 1},key4,0.3,15
+False,False,True,False,False,False,0.003214597702026367,3.743171691894531e-05,{'toeplitz_matrix': 1},key4,0.3,16
+True,True,False,False,True,False,0.003279447555541992,8.273124694824219e-05,{},key4,0.3,17
+True,True,False,False,True,False,0.0033538341522216797,3.314018249511719e-05,{},key4,0.3,18
+True,True,False,False,True,False,0.0038504600524902344,3.600120544433594e-05,{'toeplitz_matrix': 1},key4,0.3,19
+False,False,True,False,False,False,0.0036513805389404297,3.790855407714844e-05,{'toeplitz_matrix': 1},key4,0.5,0
+True,True,False,False,True,False,0.0037031173706054688,3.886222839355469e-05,{},key4,0.5,1
+False,False,True,False,False,False,0.003809213638305664,3.4809112548828125e-05,{'toeplitz_matrix': 1},key4,0.5,2
+False,False,True,False,False,False,0.0031671524047851562,3.838539123535156e-05,{'toeplitz_matrix': 1},key4,0.5,3
+True,True,False,False,True,False,0.0032279491424560547,3.6716461181640625e-05,{'toeplitz_matrix': 1},key4,0.5,4
+False,False,True,False,False,False,0.005740642547607422,0.00010919570922851562,{'toeplitz_matrix': 1},key4,0.5,5
+True,True,False,False,True,False,0.004313230514526367,4.267692565917969e-05,{},key4,0.5,6
+True,True,False,False,True,False,0.003571748733520508,5.7697296142578125e-05,{'toeplitz_matrix': 1},key4,0.5,7
+True,True,False,False,True,False,0.004357337951660156,5.817413330078125e-05,{},key4,0.5,8
+True,True,False,False,True,False,0.003171205520629883,3.7670135498046875e-05,{'toeplitz_matrix': 1},key4,0.5,9
+True,True,False,False,True,False,0.004964351654052734,5.626678466796875e-05,{'toeplitz_matrix': 1},key4,0.5,10
+True,True,False,False,True,False,0.0035963058471679688,4.00543212890625e-05,{'toeplitz_matrix': 1},key4,0.5,11
+True,True,False,False,True,False,0.003805398941040039,4.2438507080078125e-05,{},key4,0.5,12
+True,True,False,False,True,False,0.0041730403900146484,4.744529724121094e-05,{},key4,0.5,13
+True,True,False,False,True,False,0.003225088119506836,3.9577484130859375e-05,{'toeplitz_matrix': 2},key4,0.5,14
+False,False,True,False,False,False,0.003366708755493164,3.814697265625e-05,{'toeplitz_matrix': 1},key4,0.5,15
+True,True,False,False,True,False,0.0035839080810546875,3.7670135498046875e-05,{'toeplitz_matrix': 1},key4,0.5,16
+True,True,False,False,True,False,0.0030956268310546875,3.743171691894531e-05,{'toeplitz_matrix': 1},key4,0.5,17
+True,True,False,False,True,False,0.003046751022338867,3.6716461181640625e-05,{},key4,0.5,18
+True,True,False,False,True,False,0.0034389495849609375,3.910064697265625e-05,{'toeplitz_matrix': 1},key4,0.5,19
+True,True,False,False,True,False,0.002778768539428711,4.6253204345703125e-05,{},original,0.05,0
+True,True,False,False,True,False,0.0025098323822021484,4.220008850097656e-05,{},original,0.05,1
+True,True,False,False,True,False,0.002605438232421875,4.267692565917969e-05,{},original,0.05,2
+True,True,False,False,True,False,0.0024247169494628906,4.124641418457031e-05,{},original,0.05,3
+True,True,False,False,True,False,0.0025060176849365234,5.1975250244140625e-05,{},original,0.05,4
+True,True,False,False,True,False,0.005311727523803711,0.00011491775512695312,{},original,0.05,5
+True,True,False,False,True,False,0.0038383007049560547,5.91278076171875e-05,{},original,0.05,6
+True,True,False,False,True,False,0.0038671493530273438,6.794929504394531e-05,{},original,0.05,7
+True,True,False,False,True,False,0.005465984344482422,8.440017700195312e-05,{},original,0.05,8
+False,False,True,False,False,False,0.004625082015991211,5.1021575927734375e-05,{'toeplitz_matrix': 1},original,0.05,9
+True,True,False,False,True,False,0.003950357437133789,6.365776062011719e-05,{},original,0.05,10
+True,True,False,False,True,False,0.0037789344787597656,6.270408630371094e-05,{},original,0.05,11
+True,True,False,False,True,False,0.004141330718994141,6.437301635742188e-05,{},original,0.05,12
+True,True,False,False,True,False,0.004128217697143555,6.365776062011719e-05,{},original,0.05,13
+True,True,False,False,True,False,0.0036101341247558594,3.886222839355469e-05,{},original,0.05,14
+True,True,False,False,True,False,0.00357818603515625,5.888938903808594e-05,{},original,0.05,15
+True,True,False,False,True,False,0.002696990966796875,3.695487976074219e-05,{},original,0.05,16
+True,True,False,False,True,False,0.0027277469635009766,5.745887756347656e-05,{},original,0.05,17
+True,True,False,False,True,False,0.0022454261779785156,3.457069396972656e-05,{},original,0.05,18
+True,True,False,False,True,False,0.00228118896484375,3.409385681152344e-05,{},original,0.05,19
+True,True,False,False,True,False,0.002216815948486328,5.412101745605469e-05,{},original,0.1,0
+True,True,False,False,True,False,0.0021734237670898438,3.170967102050781e-05,{},original,0.1,1
+True,True,False,False,True,False,0.0025060176849365234,3.314018249511719e-05,{},original,0.1,2
+True,True,False,False,True,False,0.0021643638610839844,3.218650817871094e-05,{},original,0.1,3
+True,True,False,False,True,False,0.0023877620697021484,4.1484832763671875e-05,{},original,0.1,4
+True,True,False,False,True,False,0.0025713443756103516,3.7670135498046875e-05,{},original,0.1,5
+True,True,False,False,True,False,0.002859830856323242,4.9591064453125e-05,{},original,0.1,6
+True,True,False,False,True,False,0.0027582645416259766,3.743171691894531e-05,{},original,0.1,7
+True,True,False,False,True,False,0.0022368431091308594,3.719329833984375e-05,{},original,0.1,8
+False,False,True,False,False,False,0.0022194385528564453,5.125999450683594e-05,{'toeplitz_matrix': 1},original,0.1,9
+False,False,True,False,False,False,0.0022461414337158203,3.719329833984375e-05,{'toeplitz_matrix': 1},original,0.1,10
+True,True,False,False,True,False,0.002880573272705078,4.00543212890625e-05,{},original,0.1,11
+True,True,False,False,True,False,0.002345561981201172,3.838539123535156e-05,{},original,0.1,12
+True,True,False,False,True,False,0.003811359405517578,7.653236389160156e-05,{},original,0.1,13
+True,True,False,False,True,False,0.0044574737548828125,4.2438507080078125e-05,{},original,0.1,14
+True,True,False,False,True,False,0.002565145492553711,4.1484832763671875e-05,{},original,0.1,15
+True,True,False,False,True,False,0.002470731735229492,4.1484832763671875e-05,{'toeplitz_matrix': 1},original,0.1,16
+True,True,False,False,True,False,0.003022909164428711,6.914138793945312e-05,{},original,0.1,17
+True,True,False,False,True,False,0.002749919891357422,3.910064697265625e-05,{},original,0.1,18
+True,True,False,False,True,False,0.0023643970489501953,3.910064697265625e-05,{},original,0.1,19
+True,True,False,False,True,False,0.0025854110717773438,4.506111145019531e-05,{'toeplitz_matrix': 1},original,0.3,0
+True,True,False,False,True,False,0.002435445785522461,4.458427429199219e-05,{},original,0.3,1
+True,True,False,False,True,False,0.002328157424926758,3.910064697265625e-05,{'toeplitz_matrix': 1},original,0.3,2
+True,True,False,False,True,False,0.0025844573974609375,3.886222839355469e-05,{},original,0.3,3
+True,True,False,False,True,False,0.002349376678466797,3.933906555175781e-05,{},original,0.3,4
+True,True,False,False,True,False,0.0025763511657714844,3.647804260253906e-05,{},original,0.3,5
+True,True,False,False,True,False,0.002292633056640625,4.601478576660156e-05,{},original,0.3,6
+False,False,True,False,False,False,0.002527952194213867,3.743171691894531e-05,{'toeplitz_matrix': 1},original,0.3,7
+True,True,False,False,True,False,0.002367258071899414,3.6716461181640625e-05,{},original,0.3,8
+False,False,True,False,False,False,0.002342700958251953,6.151199340820312e-05,{'toeplitz_matrix': 1},original,0.3,9
+True,True,False,False,True,False,0.0026383399963378906,3.695487976074219e-05,{'toeplitz_matrix': 1},original,0.3,10
+True,True,False,False,True,False,0.002360105514526367,4.839897155761719e-05,{'toeplitz_matrix': 1},original,0.3,11
+True,True,False,False,True,False,0.002676248550415039,4.839897155761719e-05,{},original,0.3,12
+True,True,False,False,True,False,0.0022652149200439453,3.5762786865234375e-05,{},original,0.3,13
+False,False,True,False,False,False,0.0024423599243164062,3.6716461181640625e-05,{'toeplitz_matrix': 1},original,0.3,14
+True,True,False,False,True,False,0.002532482147216797,4.6253204345703125e-05,{'toeplitz_matrix': 1},original,0.3,15
+True,True,False,False,True,False,0.0024492740631103516,3.5762786865234375e-05,{'toeplitz_matrix': 1},original,0.3,16
+True,True,False,False,True,False,0.0023615360260009766,4.601478576660156e-05,{},original,0.3,17
+True,True,False,False,True,False,0.002356290817260742,3.5762786865234375e-05,{},original,0.3,18
+False,False,True,False,False,False,0.0026674270629882812,4.744529724121094e-05,{'toeplitz_matrix': 1},original,0.3,19
+True,True,False,False,True,False,0.0026361942291259766,3.7670135498046875e-05,{'toeplitz_matrix': 1},original,0.5,0
+True,True,False,False,True,False,0.002498626708984375,3.695487976074219e-05,{},original,0.5,1
+True,True,False,False,True,False,0.003526926040649414,3.814697265625e-05,{'toeplitz_matrix': 1},original,0.5,2
+True,True,False,False,True,False,0.0022759437561035156,3.62396240234375e-05,{'toeplitz_matrix': 1},original,0.5,3
+True,True,False,False,True,False,0.0022487640380859375,3.4809112548828125e-05,{'toeplitz_matrix': 1},original,0.5,4
+False,False,True,False,False,False,0.0023441314697265625,3.4332275390625e-05,{'toeplitz_matrix': 1},original,0.5,5
+True,True,False,False,True,False,0.0022058486938476562,9.179115295410156e-05,{},original,0.5,6
+False,False,True,False,False,False,0.0046539306640625,5.8650970458984375e-05,{'toeplitz_matrix': 1},original,0.5,7
+True,True,False,False,True,False,0.003238201141357422,3.814697265625e-05,{},original,0.5,8
+False,False,True,False,False,False,0.002390623092651367,3.6716461181640625e-05,{'toeplitz_matrix': 1},original,0.5,9
+True,True,False,False,True,False,0.0025365352630615234,3.743171691894531e-05,{'toeplitz_matrix': 1},original,0.5,10
+True,True,False,False,True,False,0.0032112598419189453,3.7670135498046875e-05,{'toeplitz_matrix': 1},original,0.5,11
+True,True,False,False,True,False,0.0023665428161621094,3.647804260253906e-05,{},original,0.5,12
+True,True,False,False,True,False,0.0023593902587890625,3.4809112548828125e-05,{},original,0.5,13
+False,False,True,False,False,False,0.003091096878051758,3.552436828613281e-05,{'toeplitz_matrix': 2},original,0.5,14
+True,True,False,False,True,False,0.0024971961975097656,3.790855407714844e-05,{'toeplitz_matrix': 1},original,0.5,15
+True,True,False,False,True,False,0.0024518966674804688,3.7670135498046875e-05,{'toeplitz_matrix': 1},original,0.5,16
+False,False,True,False,False,False,0.0037336349487304688,3.886222839355469e-05,{'toeplitz_matrix': 1},original,0.5,17
+True,True,False,False,True,False,0.0030167102813720703,3.981590270996094e-05,{},original,0.5,18
+False,False,True,False,False,False,0.0022728443145751953,4.029273986816406e-05,{'toeplitz_matrix': 1},original,0.5,19

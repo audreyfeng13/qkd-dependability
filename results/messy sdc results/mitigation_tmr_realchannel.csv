@@ -1,0 +1,6 @@
+run,statuses,result,n_valid,n_errors_after_tmr,corrected
+0,"['converged', 'converged', 'converged']",voted,3,10,False
+1,"['converged', 'converged', 'converged']",voted,3,9,False
+2,"['converged', 'converged', 'converged']",voted,3,13,False
+3,"['converged', 'converged', 'converged']",voted,3,10,False
+4,"['converged', 'converged', 'converged']",voted,3,10,False

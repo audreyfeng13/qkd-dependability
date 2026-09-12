@@ -1,0 +1,91 @@
+length_type,out_len,hash_prob,run,keys_match,faults_fired,mismatch
+asymptotic,3181,0.1,0,True,{},False
+asymptotic,3181,0.1,1,True,{},False
+asymptotic,3181,0.1,2,False,{'hash_output': 1},True
+asymptotic,3181,0.1,3,True,{},False
+asymptotic,3181,0.1,4,True,{},False
+asymptotic,3181,0.1,5,True,{},False
+asymptotic,3181,0.1,6,True,{},False
+asymptotic,3181,0.1,7,True,{},False
+asymptotic,3181,0.1,8,True,{},False
+asymptotic,3181,0.1,9,False,{'hash_output': 1},True
+asymptotic,3181,0.3,0,False,{'hash_output': 1},True
+asymptotic,3181,0.3,1,True,{},False
+asymptotic,3181,0.3,2,False,{'hash_output': 1},True
+asymptotic,3181,0.3,3,True,{},False
+asymptotic,3181,0.3,4,True,{},False
+asymptotic,3181,0.3,5,True,{},False
+asymptotic,3181,0.3,6,True,{},False
+asymptotic,3181,0.3,7,True,{},False
+asymptotic,3181,0.3,8,True,{},False
+asymptotic,3181,0.3,9,False,{'hash_output': 1},True
+asymptotic,3181,0.5,0,False,{'hash_output': 2},True
+asymptotic,3181,0.5,1,True,{},False
+asymptotic,3181,0.5,2,False,{'hash_output': 1},True
+asymptotic,3181,0.5,3,True,{},False
+asymptotic,3181,0.5,4,False,{'hash_output': 1},True
+asymptotic,3181,0.5,5,False,{'hash_output': 2},True
+asymptotic,3181,0.5,6,True,{},False
+asymptotic,3181,0.5,7,False,{'hash_output': 1},True
+asymptotic,3181,0.5,8,True,{},False
+asymptotic,3181,0.5,9,False,{'hash_output': 2},True
+placeholder,1900,0.1,0,True,{},False
+placeholder,1900,0.1,1,True,{},False
+placeholder,1900,0.1,2,False,{'hash_output': 1},True
+placeholder,1900,0.1,3,True,{},False
+placeholder,1900,0.1,4,True,{},False
+placeholder,1900,0.1,5,True,{},False
+placeholder,1900,0.1,6,True,{},False
+placeholder,1900,0.1,7,True,{},False
+placeholder,1900,0.1,8,True,{},False
+placeholder,1900,0.1,9,False,{'hash_output': 1},True
+placeholder,1900,0.3,0,False,{'hash_output': 1},True
+placeholder,1900,0.3,1,True,{},False
+placeholder,1900,0.3,2,False,{'hash_output': 1},True
+placeholder,1900,0.3,3,True,{},False
+placeholder,1900,0.3,4,True,{},False
+placeholder,1900,0.3,5,True,{},False
+placeholder,1900,0.3,6,True,{},False
+placeholder,1900,0.3,7,True,{},False
+placeholder,1900,0.3,8,True,{},False
+placeholder,1900,0.3,9,False,{'hash_output': 1},True
+placeholder,1900,0.5,0,False,{'hash_output': 2},True
+placeholder,1900,0.5,1,True,{},False
+placeholder,1900,0.5,2,False,{'hash_output': 1},True
+placeholder,1900,0.5,3,True,{},False
+placeholder,1900,0.5,4,False,{'hash_output': 1},True
+placeholder,1900,0.5,5,False,{'hash_output': 2},True
+placeholder,1900,0.5,6,True,{},False
+placeholder,1900,0.5,7,False,{'hash_output': 1},True
+placeholder,1900,0.5,8,True,{},False
+placeholder,1900,0.5,9,False,{'hash_output': 2},True
+finite_key,2282,0.1,0,True,{},False
+finite_key,2282,0.1,1,True,{},False
+finite_key,2282,0.1,2,False,{'hash_output': 1},True
+finite_key,2282,0.1,3,True,{},False
+finite_key,2282,0.1,4,True,{},False
+finite_key,2282,0.1,5,True,{},False
+finite_key,2282,0.1,6,True,{},False
+finite_key,2282,0.1,7,True,{},False
+finite_key,2282,0.1,8,True,{},False
+finite_key,2282,0.1,9,False,{'hash_output': 1},True
+finite_key,2282,0.3,0,False,{'hash_output': 1},True
+finite_key,2282,0.3,1,True,{},False
+finite_key,2282,0.3,2,False,{'hash_output': 1},True
+finite_key,2282,0.3,3,True,{},False
+finite_key,2282,0.3,4,True,{},False
+finite_key,2282,0.3,5,True,{},False
+finite_key,2282,0.3,6,True,{},False
+finite_key,2282,0.3,7,True,{},False
+finite_key,2282,0.3,8,True,{},False
+finite_key,2282,0.3,9,False,{'hash_output': 1},True
+finite_key,2282,0.5,0,False,{'hash_output': 2},True
+finite_key,2282,0.5,1,True,{},False
+finite_key,2282,0.5,2,False,{'hash_output': 1},True
+finite_key,2282,0.5,3,True,{},False
+finite_key,2282,0.5,4,False,{'hash_output': 1},True
+finite_key,2282,0.5,5,False,{'hash_output': 2},True
+finite_key,2282,0.5,6,True,{},False
+finite_key,2282,0.5,7,False,{'hash_output': 1},True
+finite_key,2282,0.5,8,True,{},False
+finite_key,2282,0.5,9,False,{'hash_output': 2},True

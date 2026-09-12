@@ -1,0 +1,181 @@
+run,seed,error,raw_stdout,raw_stderr,keys_match,verification_passed,non_convergent,condition
+0,42,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.0 --verify-digest-prob 0.0
+",,,True,toeplitz_only
+1,43,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.0 --verify-digest-prob 0.0
+",,,True,toeplitz_only
+2,44,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.0 --verify-digest-prob 0.0
+",,,True,toeplitz_only
+3,45,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.0 --verify-digest-prob 0.0
+",,,True,toeplitz_only
+4,46,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.0 --verify-digest-prob 0.0
+",,,True,toeplitz_only
+5,47,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.0 --verify-digest-prob 0.0
+",,,True,toeplitz_only
+6,48,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.0 --verify-digest-prob 0.0
+",,,True,toeplitz_only
+7,49,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.0 --verify-digest-prob 0.0
+",,,True,toeplitz_only
+8,50,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.0 --verify-digest-prob 0.0
+",,,True,toeplitz_only
+9,51,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.0 --verify-digest-prob 0.0
+",,,True,toeplitz_only
+0,42,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.5 --verify-digest-prob 0.0
+",,,True,final_key_only
+1,43,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.5 --verify-digest-prob 0.0
+",,,True,final_key_only
+2,44,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.5 --verify-digest-prob 0.0
+",,,True,final_key_only
+3,45,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.5 --verify-digest-prob 0.0
+",,,True,final_key_only
+4,46,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.5 --verify-digest-prob 0.0
+",,,True,final_key_only
+5,47,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.5 --verify-digest-prob 0.0
+",,,True,final_key_only
+6,48,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.5 --verify-digest-prob 0.0
+",,,True,final_key_only
+7,49,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.5 --verify-digest-prob 0.0
+",,,True,final_key_only
+8,50,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.5 --verify-digest-prob 0.0
+",,,True,final_key_only
+9,51,no bob output path found in stdout,,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--hash-prob HASH_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--output OUTPUT] [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --final-key-prob 0.5 --verify-digest-prob 0.0
+",,,True,final_key_only

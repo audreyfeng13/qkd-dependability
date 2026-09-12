@@ -1,0 +1,121 @@
+toeplitz_prob,hash_prob,reconciliation_prob,qber_after_reconciliation,secure_key_length,keys_match,n_mismatched_bits,elapsed_seconds,faults_fired,non_convergent,error,condition,run
+0.5,0.0,0.0,0.0,462,True,0,9.882596969604492,{'toeplitz_matrix': 1},False,,toeplitz_only,0
+0.5,0.0,0.0,0.0,462,True,0,10.17922043800354,{'toeplitz_matrix': 2},False,,toeplitz_only,1
+0.5,0.0,0.0,0.0,462,False,1,10.231540441513062,{'toeplitz_matrix': 2},False,,toeplitz_only,2
+0.5,0.0,0.0,0.0,462,True,0,10.30968451499939,{},False,,toeplitz_only,3
+0.5,0.0,0.0,0.0,462,True,0,9.951853036880493,{'toeplitz_matrix': 2},False,,toeplitz_only,4
+0.5,0.0,0.0,0.0,462,True,0,10.264671802520752,{'toeplitz_matrix': 1},False,,toeplitz_only,5
+0.5,0.0,0.0,0.0,462,False,1,10.421076536178589,{'toeplitz_matrix': 2},False,,toeplitz_only,6
+0.5,0.0,0.0,0.0,462,False,1,9.987338066101074,{'toeplitz_matrix': 1},False,,toeplitz_only,7
+0.5,0.0,0.0,0.0,462,False,1,10.100959777832031,{'toeplitz_matrix': 1},False,,toeplitz_only,8
+0.5,0.0,0.0,0.0,462,True,0,10.378101110458374,{'toeplitz_matrix': 1},False,,toeplitz_only,9
+0.5,0.0,0.0,0.0,462,False,1,10.297695398330688,{'toeplitz_matrix': 1},False,,toeplitz_only,10
+0.5,0.0,0.0,0.0,462,True,0,10.158740758895874,{'toeplitz_matrix': 2},False,,toeplitz_only,11
+0.5,0.0,0.0,0.0,462,False,1,10.20697021484375,{'toeplitz_matrix': 2},False,,toeplitz_only,12
+0.5,0.0,0.0,0.0,462,False,1,10.74662184715271,{'toeplitz_matrix': 1},False,,toeplitz_only,13
+0.5,0.0,0.0,0.0,462,True,0,10.176618337631226,{},False,,toeplitz_only,14
+0.5,0.0,0.0,0.0,462,True,0,10.452857971191406,{'toeplitz_matrix': 1},False,,toeplitz_only,15
+0.5,0.0,0.0,0.0,462,False,1,10.171795845031738,{'toeplitz_matrix': 1},False,,toeplitz_only,16
+0.5,0.0,0.0,0.0,462,True,0,10.041818380355835,{},False,,toeplitz_only,17
+0.5,0.0,0.0,0.0,462,True,0,10.284707069396973,{},False,,toeplitz_only,18
+0.5,0.0,0.0,0.0,462,False,1,10.013827800750732,{'toeplitz_matrix': 1},False,,toeplitz_only,19
+0.5,0.0,0.0,0.0,462,True,0,10.262632846832275,{},False,,toeplitz_only,20
+0.5,0.0,0.0,0.0,462,False,1,10.354874610900879,{'toeplitz_matrix': 1},False,,toeplitz_only,21
+0.5,0.0,0.0,0.0,462,True,0,10.119682312011719,{'toeplitz_matrix': 2},False,,toeplitz_only,22
+0.5,0.0,0.0,0.0,462,False,1,10.33741307258606,{'toeplitz_matrix': 1},False,,toeplitz_only,23
+0.5,0.0,0.0,0.0,462,True,0,10.112977027893066,{'toeplitz_matrix': 2},False,,toeplitz_only,24
+0.5,0.0,0.0,0.0,462,True,0,10.101911544799805,{'toeplitz_matrix': 1},False,,toeplitz_only,25
+0.5,0.0,0.0,0.0,462,False,1,10.068587303161621,{'toeplitz_matrix': 2},False,,toeplitz_only,26
+0.5,0.0,0.0,0.0,462,False,1,10.176109313964844,{'toeplitz_matrix': 2},False,,toeplitz_only,27
+0.5,0.0,0.0,0.0,462,True,0,10.046327829360962,{},False,,toeplitz_only,28
+0.5,0.0,0.0,0.0,462,False,1,10.035754203796387,{'toeplitz_matrix': 1},False,,toeplitz_only,29
+0.0,0.5,0.0,0.0,462,True,0,10.073995351791382,{},False,,hash_only,0
+0.0,0.5,0.0,0.0,462,False,1,11.642003774642944,{'hash_output': 1},False,,hash_only,1
+0.0,0.5,0.0,0.0,462,False,1,11.323688983917236,{'hash_output': 1},False,,hash_only,2
+0.0,0.5,0.0,0.0,462,False,1,9.39962100982666,{'hash_output': 1},False,,hash_only,3
+0.0,0.5,0.0,0.0,462,False,1,9.201738595962524,{'hash_output': 1},False,,hash_only,4
+0.0,0.5,0.0,0.0,462,False,1,10.499768733978271,{'hash_output': 1},False,,hash_only,5
+0.0,0.5,0.0,0.0,462,False,2,9.876824378967285,{'hash_output': 2},False,,hash_only,6
+0.0,0.5,0.0,0.0,462,False,1,9.896817684173584,{'hash_output': 1},False,,hash_only,7
+0.0,0.5,0.0,0.0,462,True,0,9.4683256149292,{},False,,hash_only,8
+0.0,0.5,0.0,0.0,462,False,1,9.791136264801025,{'hash_output': 1},False,,hash_only,9
+0.0,0.5,0.0,0.0,462,False,1,9.51168704032898,{'hash_output': 1},False,,hash_only,10
+0.0,0.5,0.0,0.0,462,False,1,9.25973105430603,{'hash_output': 1},False,,hash_only,11
+0.0,0.5,0.0,0.0,462,False,1,9.431844472885132,{'hash_output': 1},False,,hash_only,12
+0.0,0.5,0.0,0.0,462,True,0,9.765395641326904,{},False,,hash_only,13
+0.0,0.5,0.0,0.0,462,False,2,9.649157524108887,{'hash_output': 2},False,,hash_only,14
+0.0,0.5,0.0,0.0,462,False,1,11.998301267623901,{'hash_output': 1},False,,hash_only,15
+0.0,0.5,0.0,0.0,462,True,0,10.112018585205078,{},False,,hash_only,16
+0.0,0.5,0.0,0.0,462,True,0,9.280793905258179,{},False,,hash_only,17
+0.0,0.5,0.0,0.0,462,False,2,10.336739301681519,{'hash_output': 2},False,,hash_only,18
+0.0,0.5,0.0,0.0,462,True,0,9.569761037826538,{},False,,hash_only,19
+0.0,0.5,0.0,0.0,462,False,1,9.176825046539307,{'hash_output': 1},False,,hash_only,20
+0.0,0.5,0.0,0.0,462,True,0,9.687744617462158,{},False,,hash_only,21
+0.0,0.5,0.0,0.0,462,False,1,9.567764520645142,{'hash_output': 1},False,,hash_only,22
+0.0,0.5,0.0,0.0,462,False,2,9.672675848007202,{'hash_output': 2},False,,hash_only,23
+0.0,0.5,0.0,0.0,462,False,1,9.551063537597656,{'hash_output': 1},False,,hash_only,24
+0.0,0.5,0.0,0.0,462,True,0,9.47898817062378,{},False,,hash_only,25
+0.0,0.5,0.0,0.0,462,False,2,9.431499004364014,{'hash_output': 2},False,,hash_only,26
+0.0,0.5,0.0,0.0,462,False,1,10.102624654769897,{'hash_output': 1},False,,hash_only,27
+0.0,0.5,0.0,0.0,462,False,2,9.357456684112549,{'hash_output': 2},False,,hash_only,28
+0.0,0.5,0.0,0.0,462,False,1,9.327703475952148,{'hash_output': 1},False,,hash_only,29
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,0
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_only,1
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_only,2
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_only,3
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_only,4
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,5
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,6
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,7
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,8
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,9
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,10
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_only,11
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,12
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,13
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,14
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,15
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,16
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,17
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_only,18
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,19
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,20
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_only,21
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,22
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,23
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,24
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_only,25
+0.0,0.0,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,reconciliation_only,26
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,27
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,28
+0.0,0.0,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,reconciliation_only,29
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,0
+0.5,0.5,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,combined,1
+0.5,0.5,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,combined,2
+0.5,0.5,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,combined,3
+0.5,0.5,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,combined,4
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,5
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,6
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,7
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,8
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,9
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,10
+0.5,0.5,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,combined,11
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,12
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,13
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,14
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,15
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,16
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,17
+0.5,0.5,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,combined,18
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,19
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,20
+0.5,0.5,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,combined,21
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,22
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,23
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,24
+0.5,0.5,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,combined,25
+0.5,0.5,0.3,,,False,,,,True,try_correct_block recursion exceeded 50 levels -- likely fault-induced desync causing pathological bisection,combined,26
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,27
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,28
+0.5,0.5,0.3,,,False,,,,True,_service_pending_try_correct did not drain after 200 iterations -- likely fault-induced runaway cascade-effect scheduling,combined,29

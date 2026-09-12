@@ -1,0 +1,71 @@
+non_convergent,error,reconciliation_prob,run,seed
+True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 98, in <module>
+    result[""remaining_errors_after_reconciliation""] = int(alice_key.nr_bits_different(bob_reconciled))
+  File ""/home/ubuntu/qfabric/qne/cascade/key.py"", line 44, in nr_bits_different
+    assert self.get_nr_bits() == other_key.get_nr_bits()
+AssertionError
+",0.003,0,42
+True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 98, in <module>
+    result[""remaining_errors_after_reconciliation""] = int(alice_key.nr_bits_different(bob_reconciled))
+  File ""/home/ubuntu/qfabric/qne/cascade/key.py"", line 44, in nr_bits_different
+    assert self.get_nr_bits() == other_key.get_nr_bits()
+AssertionError
+",0.003,1,43
+True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 98, in <module>
+    result[""remaining_errors_after_reconciliation""] = int(alice_key.nr_bits_different(bob_reconciled))
+  File ""/home/ubuntu/qfabric/qne/cascade/key.py"", line 44, in nr_bits_different
+    assert self.get_nr_bits() == other_key.get_nr_bits()
+AssertionError
+",0.003,2,44
+True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 98, in <module>
+    result[""remaining_errors_after_reconciliation""] = int(alice_key.nr_bits_different(bob_reconciled))
+  File ""/home/ubuntu/qfabric/qne/cascade/key.py"", line 44, in nr_bits_different
+    assert self.get_nr_bits() == other_key.get_nr_bits()
+AssertionError
+",0.003,3,45
+True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 98, in <module>
+    result[""remaining_errors_after_reconciliation""] = int(alice_key.nr_bits_different(bob_reconciled))
+  File ""/home/ubuntu/qfabric/qne/cascade/key.py"", line 44, in nr_bits_different
+    assert self.get_nr_bits() == other_key.get_nr_bits()
+AssertionError
+",0.003,4,46
+True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 98, in <module>
+    result[""remaining_errors_after_reconciliation""] = int(alice_key.nr_bits_different(bob_reconciled))
+  File ""/home/ubuntu/qfabric/qne/cascade/key.py"", line 44, in nr_bits_different
+    assert self.get_nr_bits() == other_key.get_nr_bits()
+AssertionError
+",0.003,5,47
+True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 98, in <module>
+    result[""remaining_errors_after_reconciliation""] = int(alice_key.nr_bits_different(bob_reconciled))
+  File ""/home/ubuntu/qfabric/qne/cascade/key.py"", line 44, in nr_bits_different
+    assert self.get_nr_bits() == other_key.get_nr_bits()
+AssertionError
+",0.003,6,48
+True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 98, in <module>
+    result[""remaining_errors_after_reconciliation""] = int(alice_key.nr_bits_different(bob_reconciled))
+  File ""/home/ubuntu/qfabric/qne/cascade/key.py"", line 44, in nr_bits_different
+    assert self.get_nr_bits() == other_key.get_nr_bits()
+AssertionError
+",0.003,7,49
+True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 98, in <module>
+    result[""remaining_errors_after_reconciliation""] = int(alice_key.nr_bits_different(bob_reconciled))
+  File ""/home/ubuntu/qfabric/qne/cascade/key.py"", line 44, in nr_bits_different
+    assert self.get_nr_bits() == other_key.get_nr_bits()
+AssertionError
+",0.003,8,50
+True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 98, in <module>
+    result[""remaining_errors_after_reconciliation""] = int(alice_key.nr_bits_different(bob_reconciled))
+  File ""/home/ubuntu/qfabric/qne/cascade/key.py"", line 44, in nr_bits_different
+    assert self.get_nr_bits() == other_key.get_nr_bits()
+AssertionError
+",0.003,9,51

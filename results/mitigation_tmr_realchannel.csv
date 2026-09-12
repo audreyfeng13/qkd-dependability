@@ -1,0 +1,21 @@
+run,statuses,result,n_valid,n_errors_after_tmr,corrected
+0,"['converged', 'converged', 'converged']",voted,3,10,False
+1,"['converged', 'converged', 'converged']",voted,3,9,False
+2,"['converged', 'converged', 'converged']",voted,3,13,False
+3,"['converged', 'converged', 'converged']",voted,3,8,False
+4,"['converged', 'converged', 'converged']",voted,3,13,False
+5,,voted,3,16,False
+6,,voted,3,14,False
+7,,voted,3,16,False
+8,,voted,3,10,False
+9,,voted,3,10,False
+10,,voted,3,21,False
+11,,voted,3,7,False
+12,,voted,3,15,False
+13,,voted,3,14,False
+14,,voted,3,10,False
+15,,voted,3,11,False
+16,,voted,3,12,False
+17,,voted,3,17,False
+18,,voted,3,6,False
+19,,voted,3,8,False

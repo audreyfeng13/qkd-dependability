@@ -164,6 +164,14 @@ class Alice:
             # Index sent log for fast lookup (used to answer Bob's sample request).
             sent_by_seq = {rec.sequence_num: rec for rec in self.sent_log}
 
+            alice_bits_at_matching = [sent_by_seq[seq].bit_value for seq in matching_seqs]
+            import json
+            with open("results/alice_sifted_bits.json", "w") as f:
+                json.dump({
+                    "matching_indices": list(matching_seqs),
+                    "alice_bits": alice_bits_at_matching,
+                }, f)
+
             # Bob may request Alice's sample bits for QBER computation
             sample_req = channel.recv_message()
             if sample_req.get("type") == "request_sample":

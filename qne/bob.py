@@ -170,6 +170,13 @@ class Bob:
                     # QBER estimation. For now, just track indices.
                     bob_bits.append(bob_rec.bit_value)
 
+            import json
+            with open("results/bob_sifted_bits.json", "w") as f:
+                json.dump({
+                    "matching_indices": matching_indices,
+                    "bob_bits": bob_bits,
+                }, f)
+            
             # Send sifting result to Alice
             channel.send_message({
                 "type": "sifting_result",

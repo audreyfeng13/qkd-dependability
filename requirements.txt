@@ -1,10 +1,16 @@
 # Core dependencies for QKD dependability and QFabric emulation
-numpy>=1.22.0
+numpy>=1.22.0,<2.5.0
 pyyaml>=6.0
 matplotlib>=3.5.0
 scipy>=1.8.0
 pandas>=1.4.0
 scikit-learn>=1.0.0
+
+# Classical post-processing (Cascade reconciliation + Toeplitz privacy amplification)
+# NOTE: galois is incompatible with numpy>=2.5.0 as of testing (Aug 2026);
+# the numpy pin above is required for these two packages to import correctly.
+galois>=0.3.0,<0.5.0
+randextract>=0.2.0,<0.3.0
 
 # Optional test dependencies
 pytest>=7.0.0

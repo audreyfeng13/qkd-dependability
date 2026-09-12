@@ -1,0 +1,2641 @@
+run,seed,reconciliation_prob,non_convergent,error,alice_error,keys_match,fault_type,prob,length_mode,key_index,qber
+0,42,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+1,43,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+2,44,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+3,45,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+4,46,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+5,47,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+6,48,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+7,49,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+8,50,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+9,51,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+10,52,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+11,53,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+12,54,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+13,55,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+14,56,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+15,57,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+16,58,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+17,59,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+18,60,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+19,61,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.3,placeholder,0,0.0128205128205128
+0,42,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+1,43,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+2,44,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+3,45,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+4,46,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+5,47,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+6,48,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+7,49,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+8,50,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+9,51,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+10,52,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+11,53,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+12,54,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+13,55,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+14,56,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+15,57,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+16,58,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+17,59,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+18,60,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+19,61,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.1,placeholder,0,0.0128205128205128
+0,42,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+1,43,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+2,44,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+3,45,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+4,46,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+5,47,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+6,48,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+7,49,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+8,50,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+9,51,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+10,52,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+11,53,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+12,54,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+13,55,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+14,56,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+15,57,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+16,58,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+17,59,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+18,60,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+19,61,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.03,placeholder,0,0.0128205128205128
+0,42,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+1,43,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+2,44,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+3,45,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+4,46,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+5,47,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+6,48,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+7,49,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+8,50,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+9,51,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+10,52,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+11,53,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+12,54,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+13,55,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+14,56,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+15,57,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+16,58,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+17,59,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+18,60,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+19,61,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.01,placeholder,0,0.0128205128205128
+0,42,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+1,43,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+2,44,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+3,45,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+4,46,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+5,47,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+6,48,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+7,49,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+8,50,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+9,51,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+10,52,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+11,53,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+12,54,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+13,55,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+14,56,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+15,57,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+16,58,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+17,59,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+18,60,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+19,61,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.003,placeholder,0,0.0128205128205128
+0,42,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+1,43,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+2,44,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+3,45,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+4,46,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+5,47,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+6,48,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+7,49,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+8,50,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+9,51,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+10,52,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+11,53,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+12,54,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+13,55,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+14,56,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+15,57,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+16,58,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+17,59,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+18,60,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+19,61,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode placeholder
+",,,reconciliation,0.001,placeholder,0,0.0128205128205128
+0,42,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+1,43,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+2,44,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+3,45,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+4,46,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+5,47,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+6,48,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+7,49,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+8,50,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+9,51,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+10,52,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+11,53,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+12,54,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+13,55,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+14,56,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+15,57,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+16,58,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+17,59,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+18,60,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+19,61,0.3,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.3,asymptotic,0,0.0128205128205128
+0,42,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+1,43,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+2,44,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+3,45,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+4,46,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+5,47,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+6,48,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+7,49,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+8,50,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+9,51,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+10,52,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+11,53,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+12,54,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+13,55,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+14,56,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+15,57,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+16,58,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+17,59,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+18,60,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+19,61,0.1,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.1,asymptotic,0,0.0128205128205128
+0,42,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+1,43,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+2,44,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+3,45,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+4,46,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+5,47,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+6,48,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+7,49,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+8,50,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+9,51,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+10,52,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+11,53,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+12,54,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+13,55,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+14,56,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+15,57,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+16,58,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+17,59,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+18,60,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+19,61,0.03,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.03,asymptotic,0,0.0128205128205128
+0,42,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+1,43,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+2,44,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+3,45,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+4,46,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+5,47,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+6,48,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+7,49,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+8,50,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+9,51,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+10,52,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+11,53,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+12,54,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+13,55,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+14,56,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+15,57,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+16,58,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+17,59,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+18,60,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+19,61,0.01,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.01,asymptotic,0,0.0128205128205128
+0,42,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+1,43,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+2,44,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+3,45,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+4,46,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+5,47,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+6,48,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+7,49,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+8,50,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+9,51,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+10,52,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+11,53,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+12,54,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+13,55,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+14,56,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+15,57,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+16,58,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+17,59,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+18,60,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+19,61,0.003,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.003,asymptotic,0,0.0128205128205128
+0,42,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+1,43,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+2,44,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+3,45,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+4,46,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+5,47,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+6,48,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+7,49,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+8,50,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+9,51,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+10,52,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+11,53,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+12,54,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+13,55,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+14,56,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+15,57,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+16,58,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+17,59,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+18,60,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
+19,61,0.001,True,"usage: bob_cascade_driver.py [-h] --key-json KEY_JSON
+                             [--alice-key-json ALICE_KEY_JSON] [--host HOST]
+                             [--port PORT] --qber QBER --k K [--seed SEED]
+                             [--toeplitz-prob TOEPLITZ_PROB]
+                             [--final-key-prob FINAL_KEY_PROB]
+                             [--reconciliation-prob RECONCILIATION_PROB]
+                             [--verify-digest-prob VERIFY_DIGEST_PROB]
+                             [--output OUTPUT] [--use-finite-key-length]
+                             [--no-unique-suffix]
+bob_cascade_driver.py: error: unrecognized arguments: --length-mode asymptotic
+",,,reconciliation,0.001,asymptotic,0,0.0128205128205128
