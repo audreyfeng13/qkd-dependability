@@ -16,7 +16,8 @@ from qne.cascade.fault_injection import SDCFaultInjector
 
 def run_sdc_experiment(alice_key, bob_key, qber, seed=42,
                         toeplitz_prob=0.0, final_key_prob=0.0, reconciliation_prob=0.0,
-                        verify_digest_prob=0.0, ell=None, t_verify=None, digest_length=None):
+                        verify_digest_prob=0.0, arbitrary_bit_prob=0.0,
+                        ell=None, t_verify=None, digest_length=None):
     """Run one SDC fault-injection trial on a given Alice/Bob key pair,
     including a genuine post-PA verification step (universal2-hash
     digest of a sacrificed subset, matching the real-channel drivers).
@@ -40,6 +41,7 @@ def run_sdc_experiment(alice_key, bob_key, qber, seed=42,
         final_key_prob=final_key_prob,
         reconciliation_state_prob=reconciliation_prob,
         verification_digest_prob=verify_digest_prob,
+        arbitrary_bit_prob=arbitrary_bit_prob,
         seed=seed + 2,
     )
     # --- Stage 1: Cascade reconciliation (already one-sided: only bob_key

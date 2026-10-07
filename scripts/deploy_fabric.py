@@ -916,6 +916,7 @@ def run_single_axis_sweeps(
     n_runs=5,
     port=5100,
     save_json=True,
+    resume=True,
 ):
     """Single-parameter sweeps (one axis at a time, all else at baseline) across
     classical, quantum, and detector fault axes. No asymmetric, no joint faults.
@@ -929,15 +930,21 @@ def run_single_axis_sweeps(
     Every run: pkill -9 stale-process cleanup, port-free wait, mtime freshness
     check on the result file (contamination fix from run_joint_fault_atten_experiment).
     Rewrites results/single_axis_sweeps.json after every run.
+
+    RESUME: if resume=True (default) and results/single_axis_sweeps.json already
+    exists, loads it and skips any (axis, value, run) combo already present
+    (matched on axis/value/run number, ignoring error rows so a previously-failed
+    run gets retried), same pattern as run_joint_axis_sweep. New rows are appended
+    to the loaded list, not overwritten.
     """
     import json as _json
     import time as _time
     import yaml
 
     AXES = {
-        "latency_ms":            [1, 50, 100, 150, 200],
-        "jitter_ms":              [5, 10, 20, 30, 50],   # delay_ms held at 50
-        "loss_pct":               [1, 5, 10, 13, 15],
+        "latency_ms":            [2, 5, 10, 20, 40],
+        "jitter_ms":              [2, 4, 6, 8, 10],   # delay_ms held at 50
+        "loss_pct":               [0.005, 0.05, 0.1, 0.3, 1],   # log-spaced
         "attenuation_db_per_km":  [0.1, 0.2, 0.3, 0.35, 0.4],
         "distance_km":            [1, 10, 50, 75, 100],
         "polarization_fidelity":  [0.8, 0.85, 0.9, 0.95, 1.0],
@@ -959,6 +966,22 @@ def run_single_axis_sweeps(
     sw_alice_mac = switch.get_interface(network_name="net_alice_switch").get_mac()
 
     base_scenario_dict = yaml.safe_load((PROJECT_DIR / scenario_path).read_text())
+
+    out_path = results_dir / "single_axis_sweeps.json"
+
+    # ---- resume: load existing rows, build a set of completed (axis, value, run) ----
+    rows = []
+    completed = set()
+    if resume and out_path.exists():
+        try:
+            rows = _json.loads(out_path.read_text())
+            for r in rows:
+                if not r.get("error"):  # only skip runs that actually succeeded
+                    completed.add((r.get("axis"), r.get("value"), r.get("run")))
+            print(f"Resuming: {len(rows)} rows loaded, {len(completed)} successful runs will be skipped")
+        except Exception as e:
+            print(f"  (could not load existing results for resume: {e}; starting fresh)")
+            rows = []
 
     def _cleanup_stale_processes():
         for node in (alice, bob):
@@ -1014,10 +1037,14 @@ def run_single_axis_sweeps(
             row["error"] = "no result (run failed/timed out under this condition)"
         return row
 
-    rows = []
     try:
         for axis, values in AXES.items():
             for val in values:
+                combo_done = all((axis, val, r) in completed for r in range(1, n_runs + 1))
+                if combo_done:
+                    print(f"skip (already done): axis={axis} value={val}")
+                    continue
+
                 if axis in CLASSICAL_AXES:
                     if axis == "latency_ms":
                         netem_kw, name = {"delay_ms": val}, f"latency_{val}ms"
@@ -1027,13 +1054,18 @@ def run_single_axis_sweeps(
                         netem_kw, name = {"loss_pct": val}, f"loss_{val}pct".replace(".", "p")
 
                     for run_idx in range(1, n_runs + 1):
+                        if (axis, val, run_idx) in completed:
+                            print(f"skip (already done): axis={axis} value={val} run={run_idx}")
+                            continue
                         print(f"\n##### axis={axis} value={val} (run {run_idx}/{n_runs}) #####")
                         clear_classical_netem(slice_obj)
                         apply_classical_netem(slice_obj, **netem_kw)
                         row = _run_one(scenario_path, {"axis": axis, "value": val, "condition": name}, run_idx)
                         rows.append(row)
+                        if not row.get("error"):
+                            completed.add((axis, val, run_idx))
                         if save_json:
-                            (results_dir / "single_axis_sweeps.json").write_text(_json.dumps(rows, indent=2))
+                            out_path.write_text(_json.dumps(rows, indent=2))
                         clear_classical_netem(slice_obj)
 
                 else:
@@ -1059,17 +1091,22 @@ def run_single_axis_sweeps(
                     config = ScenarioConfig.from_dict(cfg_dict)
 
                     for run_idx in range(1, n_runs + 1):
+                        if (axis, val, run_idx) in completed:
+                            print(f"skip (already done): axis={axis} value={val} run={run_idx}")
+                            continue
                         print(f"\n##### axis={axis} value={val} (run {run_idx}/{n_runs}) #####")
                         configure_switch(slice_obj, config.loss_threshold_u32)
                         row = _run_one(rel, {"axis": axis, "value": val, "condition": name}, run_idx)
                         rows.append(row)
+                        if not row.get("error"):
+                            completed.add((axis, val, run_idx))
                         if save_json:
-                            (results_dir / "single_axis_sweeps.json").write_text(_json.dumps(rows, indent=2))
+                            out_path.write_text(_json.dumps(rows, indent=2))
     finally:
         clear_classical_netem(slice_obj)
 
     if save_json:
-        print(f"\nSaved -> {results_dir / 'single_axis_sweeps.json'} ({len(rows)} rows)")
+        print(f"\nSaved -> {out_path} ({len(rows)} rows)")
     return rows
 
 def run_joint_axis_sweep(
@@ -1263,6 +1300,200 @@ def run_joint_axis_sweep(
     if save_json:
         print(f"\nSaved -> {out_path} ({len(rows)} rows total)")
     return rows
+
+
+FIELDNAMES_PF = ['condition', 'loss_pct', 'qber', 'sifted_bits', 'final_key_bits',
+                 'secure_key_rate', 'elapsed_seconds', 'key_bits_per_sec',
+                 'polarization_fidelity', 'run', 'note', 'error']
+
+
+def run_pf_topup(slice_obj, pf, conditions, n_runs, start_run,
+                  out_csv=None, port=_CLASSICAL_PORT):
+    """Add more replicates at a given polarization_fidelity across `conditions`
+    (classical loss_pct conditions), continuing run numbering from start_run,
+    appending to `out_csv`.
+
+    General-purpose replacement for run_pf08_topup (notebooks/06_network_effects.ipynb
+    cell 18), parameterized on pf instead of hardcoding 0.8, so any (pf, loss)
+    cell can be topped up. Also ports over run_joint_axis_sweep's per-run
+    stale-process cleanup + port-wait check -- run_pf08_topup delegated
+    straight to run_network_conditions_experiment with none of that, and its
+    failures clustered by session, consistent with a leftover Bob
+    listener/port hang bleeding into the next run.
+
+    Freshness check is done against the REMOTE result file's mtime (via SSH
+    stat on Bob, compared to a remote-clock timestamp taken right before the
+    run), not the local copy's mtime: run_bb84's own "Collecting results"
+    step unconditionally rewrites the local file with whatever `cat` of the
+    remote file returns, so the local mtime is always fresh even when the
+    remote file is stale leftover content from a run whose cleanup silently
+    didn't take effect (observed in practice: a timed-out run's row came back
+    byte-identical to the previous run's row). Comparing remote-to-remote
+    avoids any local/remote clock-skew issue.
+
+    Every row -- including failed ones -- is written with a real 'error'
+    message; FIELDNAMES_PF includes 'error' and the writer does not use
+    extrasaction='ignore', so failures no longer get silently dropped to a
+    blank row.
+    """
+    import csv as _csv
+    import time as _time
+
+    if out_csv is None:
+        out_csv = PROJECT_DIR / "results" / "old messy results" / "joint_fault_pf_results.csv"
+    out_csv = Path(out_csv)
+
+    scenario_content = f"""name: pf_{pf}
+channel:
+  distance_km: 10.0
+  attenuation_db_per_km: 0.2
+  polarization_fidelity: {pf}
+detector:
+  efficiency: 0.8
+  dark_count_rate: 10.0
+  dead_time: 0.0
+  timing_jitter: 0.0
+protocol:
+  num_photons: 10000
+  send_rate_hz: 10000.0
+  sample_fraction: 0.1
+  wavelength: 0
+seed: 42
+"""
+    scenario_rel = f"validation/scenarios/temp_pf_{pf}.yml"
+    (PROJECT_DIR / scenario_rel).write_text(scenario_content)
+
+    results_dir = PROJECT_DIR / "results"
+    bob_path = results_dir / "fabric_bob_results.json"
+    alice = slice_obj.get_node("alice")
+    bob = slice_obj.get_node("bob")
+    switch = slice_obj.get_node("switch")
+    alice_mac = alice.get_interface(network_name="net_alice_switch").get_mac()
+    bob_mac = bob.get_interface(network_name="net_switch_bob").get_mac()
+    sw_alice_mac = switch.get_interface(network_name="net_alice_switch").get_mac()
+
+    def _cleanup_stale_processes():
+        for node in (alice, bob):
+            try:
+                node.execute("pkill -9 -f qne.cli || true")
+            except Exception as e:
+                print(f"    (cleanup warning on {node.get_name()}: {e})")
+
+    def _wait_for_port_free(node, timeout_s=15, poll_s=0.5):
+        deadline = _time.time() + timeout_s
+        while _time.time() < deadline:
+            try:
+                stdout, stderr = node.execute(f"ss -ltn | grep ':{port} ' || true")
+            except Exception:
+                stdout = ""
+            if not stdout.strip():
+                return True
+            _time.sleep(poll_s)
+        print(f"    !! port {port} still held on {node.get_name()} after {timeout_s}s")
+        return False
+
+    def _remote_time(node):
+        try:
+            out, _ = node.execute("date +%s", quiet=True)
+            return int(out.strip())
+        except Exception as e:
+            print(f"    (could not read remote clock on {node.get_name()}: {e})")
+            return None
+
+    def _remote_mtime(node, path):
+        try:
+            out, _ = node.execute(f"stat -c %Y {path} 2>/dev/null || echo MISSING", quiet=True)
+            out = out.strip()
+            if not out or out == "MISSING":
+                return None
+            return int(out)
+        except Exception as e:
+            print(f"    (could not stat {path} on {node.get_name()}: {e})")
+            return None
+
+    write_header = not out_csv.exists()
+    all_rows = []
+    total = len(conditions) * n_runs
+    done = 0
+
+    for cond in conditions:
+        name = cond.get("name")
+        loss_pct = cond.get("loss_pct", "")
+        netem_kw = {k: v for k, v in cond.items() if k != "name"}
+
+        for run_idx in range(n_runs):
+            run_num = start_run + run_idx
+            print(f"\n##### pf={pf}, condition={name} (run {run_num}) #####")
+
+            clear_classical_netem(slice_obj)
+            if netem_kw:
+                apply_classical_netem(slice_obj, **netem_kw)
+
+            _cleanup_stale_processes()
+            _wait_for_port_free(bob)
+            bob_path.unlink(missing_ok=True)
+            remote_run_start = _remote_time(bob)
+
+            row = {
+                "condition": name,
+                "loss_pct": loss_pct,
+                "polarization_fidelity": pf,
+                "run": run_num,
+                "note": "",
+            }
+            try:
+                run_bb84(slice_obj, scenario_rel, alice_mac, bob_mac,
+                         sw_alice_mac=sw_alice_mac, bob_data_ip="10.10.1.2")
+            except Exception as e:
+                row["error"] = f"run_bb84 raised: {e}"
+
+            remote_mtime = _remote_mtime(bob, "~/qfabric/results/bob_results.json")
+            local_mtime = bob_path.stat().st_mtime if bob_path.exists() else None
+            print(f"    [freshness] remote_run_start={remote_run_start} "
+                  f"remote_mtime={remote_mtime} local_mtime={local_mtime}")
+            txt = bob_path.read_text().strip() if bob_path.exists() else ""
+            fresh = (
+                remote_mtime is not None and remote_run_start is not None
+                and remote_mtime >= remote_run_start
+            )
+            if txt and fresh:
+                try:
+                    d = json.loads(txt)
+                    elapsed = d.get("elapsed_seconds", 0.0) or 0.0
+                    fk = d.get("final_key_bits", 0)
+                    row.update({
+                        "qber": d.get("qber", 0.0),
+                        "sifted_bits": d.get("sifted_bits", 0),
+                        "final_key_bits": fk,
+                        "secure_key_rate": d.get("secure_key_rate", 0.0),
+                        "elapsed_seconds": elapsed,
+                        "key_bits_per_sec": (fk / elapsed) if elapsed > 0 else 0.0,
+                    })
+                except json.JSONDecodeError:
+                    row["error"] = row.get("error") or "invalid results json"
+            elif txt:
+                row["error"] = row.get("error") or (
+                    f"stale result (remote mtime={remote_mtime}, "
+                    f"remote_run_start={remote_run_start}) -- discarded"
+                )
+            else:
+                row["error"] = row.get("error") or "no result (run failed/timed out under this condition)"
+
+            clear_classical_netem(slice_obj)
+
+            all_rows.append(row)
+            with open(out_csv, "a", newline="") as f:
+                writer = _csv.DictWriter(f, fieldnames=FIELDNAMES_PF)
+                if write_header:
+                    writer.writeheader()
+                    write_header = False
+                writer.writerow(row)
+
+            done += 1
+            status = "OK" if not row.get("error") else f"ERROR: {row['error']}"
+            print(f"Progress: {done}/{total} -- {name} run {run_num}: {status}")
+
+    return all_rows
 
 
 def cleanup(fablib, slice_name: str):

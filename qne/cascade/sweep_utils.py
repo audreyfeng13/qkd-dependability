@@ -91,12 +91,14 @@ def get_code_version():
         return f"exception: {str(e)[:50]}"
 
 
-def run_real_channel_trial(bob, alice, bob_ip, real_qber, run, seed, k=0,
-                             toeplitz_prob=0.0, final_key_prob=0.0,
-                             verify_digest_prob=0.0, timeout=180, length_mode="placeholder"):
+def run_real_channel_trial(bob, alice, bob_ip, real_qber, run, seed, k=0, timeout=180,
+                              length_mode="placeholder", toeplitz_prob=0.0, final_key_prob=0.0,
+                              verify_digest_prob=0.0,
+                              bob_key_json="results/bob_sifted_bits.json",
+                              alice_key_json="results/alice_sifted_bits.json"):
     bob_thread = bob.execute_thread(
         f"cd ~/qfabric && ~/qfabric/.venv/bin/python3 scripts/bob_cascade_driver.py "
-        f"--key-json results/bob_sifted_bits.json --alice-key-json results/alice_sifted_bits.json "
+        f"--key-json {bob_key_json} --alice-key-json {alice_key_json} "
         f"--host {bob_ip} --port 5200 --qber {real_qber} --k {k} --seed {seed} "
         f"--toeplitz-prob {toeplitz_prob} --final-key-prob {final_key_prob} "
         f"--verify-digest-prob {verify_digest_prob} --length-mode {length_mode} "
@@ -104,7 +106,7 @@ def run_real_channel_trial(bob, alice, bob_ip, real_qber, run, seed, k=0,
     )
     alice_thread = alice.execute_thread(
         f"cd ~/qfabric && ~/qfabric/.venv/bin/python3 scripts/alice_cascade_responder.py "
-        f"--key-json results/alice_sifted_bits.json --bob-host {bob_ip} --port 5200 "
+        f"--key-json {alice_key_json} --bob-host {bob_ip} --port 5200 "
         f"--seed {seed} --output results/alice_realchannel_run.json"
     )
     bob_out = bob_thread.result(timeout=timeout)
@@ -146,7 +148,7 @@ def run_real_channel_trial(bob, alice, bob_ip, real_qber, run, seed, k=0,
     if bob_final_key is not None and alice_final_key is not None:
         keys_match = (bob_final_key == alice_final_key)
     else:
-        keys_match = None  # measurement failure, NOT a confirmed mismatch
+        keys_match = None
 
     bob_result["keys_match"] = keys_match
     bob_result["verification_passed"] = bob_result.get("verification_passed")
@@ -157,29 +159,28 @@ def run_real_channel_trial(bob, alice, bob_ip, real_qber, run, seed, k=0,
     bob_result["seed"] = seed
     bob_result["bob_output_path"] = bob_output_path
     bob_result["alice_output_path"] = alice_output_path
-
-    # --- Provenance: which code version + when, so a future data-quality
-    # question ("was this before or after the keys_match fix?") is a column
-    # lookup instead of a debugging session. ---
     bob_result["code_version"] = get_code_version()
     bob_result["collection_timestamp"] = datetime.datetime.now().isoformat()
-
     return bob_result
 
 
 def run_real_channel_reconciliation_trial(bob, alice, bob_ip, real_qber, run, seed,
-                                             reconciliation_prob, k=0, timeout=180,
-                                             length_mode="placeholder"):
+                                             reconciliation_prob=0.0, arbitrary_bit_prob=0.0,
+                                             k=0, timeout=180,
+                                             length_mode="placeholder",
+                                             bob_key_json="results/bob_sifted_bits.json",
+                                             alice_key_json="results/alice_sifted_bits.json"):
     bob_thread = bob.execute_thread(
         f"cd ~/qfabric && ~/qfabric/.venv/bin/python3 scripts/bob_cascade_driver.py "
-        f"--key-json results/bob_sifted_bits.json --alice-key-json results/alice_sifted_bits.json "
+        f"--key-json {bob_key_json} --alice-key-json {alice_key_json} "
         f"--host {bob_ip} --port 5200 --qber {real_qber} --k {k} --seed {seed} "
-        f"--reconciliation-prob {reconciliation_prob} --length-mode {length_mode} "
+        f"--reconciliation-prob {reconciliation_prob} --arbitrary-bit-prob {arbitrary_bit_prob} "
+        f"--length-mode {length_mode} "
         f"--output results/bob_recon_run.json"
     )
     alice_thread = alice.execute_thread(
         f"cd ~/qfabric && ~/qfabric/.venv/bin/python3 scripts/alice_cascade_responder.py "
-        f"--key-json results/alice_sifted_bits.json --bob-host {bob_ip} --port 5200 "
+        f"--key-json {alice_key_json} --bob-host {bob_ip} --port 5200 "
         f"--seed {seed} --output results/alice_recon_run.json"
     )
     bob_out = bob_thread.result(timeout=timeout)
@@ -194,6 +195,7 @@ def run_real_channel_reconciliation_trial(bob, alice, bob_ip, real_qber, run, se
     if bob_output_path is None:
         return {
             "run": run, "seed": seed, "reconciliation_prob": reconciliation_prob,
+            "arbitrary_bit_prob": arbitrary_bit_prob,
             "non_convergent": True, "error": bob_out[1],
             "alice_error": alice_error, "keys_match": None,
             "code_version": get_code_version(),
@@ -229,8 +231,6 @@ def run_real_channel_reconciliation_trial(bob, alice, bob_ip, real_qber, run, se
     result["run"] = run
     result["seed"] = seed
     result["bob_output_path"] = bob_output_path
-
-    # --- Provenance, matching run_real_channel_trial ---
     result["code_version"] = get_code_version()
     result["collection_timestamp"] = datetime.datetime.now().isoformat()
 
@@ -243,7 +243,8 @@ def run_real_channel_cascade_netem_trial(bob, alice, bob_ip, real_qber, run, see
                                             cascade_loss_pct=0.0, k=0, timeout=180,
                                             length_mode="placeholder",
                                             bob_key_json="results/bob_sifted_bits.json",
-                                            alice_key_json="results/alice_sifted_bits.json"):
+                                            alice_key_json="results/alice_sifted_bits.json",
+                                            port=5200):
     """Real-channel trial isolating classical-network conditions (delay/
     jitter/loss) to exactly the Cascade reconciliation phase, via
     bob_cascade_driver.py's --cascade-iface/--cascade-delay-ms/... flags.

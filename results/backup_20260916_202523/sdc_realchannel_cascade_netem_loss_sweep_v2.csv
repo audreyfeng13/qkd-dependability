@@ -1,0 +1,16 @@
+run,seed,cascade_delay_ms,cascade_jitter_ms,cascade_loss_pct,non_convergent,error,alice_error,keys_match,code_version,collection_timestamp
+0,42,0.0,0.0,0.0,True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 123, in <module>
+    server.start()
+  File ""/home/ubuntu/qfabric/qne/channel.py"", line 99, in start
+    self._server_sock.bind((self.host, self.port))
+OSError: [Errno 98] Address already in use
+",,,exception: name 'PROJECT_DIR' is not defined,2026-09-16T20:23:19.589416
+0.0,0.0,0.0,0.0,43,results/bob_cascadenetem_run_tp0.0_fk0.0_rp0.0_vd0.0_seed43_20260916_202320_678079.json,390,33,2810,34,34,True,0,False,,2.357325553894043,{},asymptotic,{},0.2441236972808838,,,,0.0,0.0,0.0,1,results/bob_cascadenetem_run_tp0.0_fk0.0_rp0.0_vd0.0_seed43_20260916_202320_678079.json,exception: name 'PROJECT_DIR' is not defined,2026-09-16T20:23:23.519418
+2,44,0.0,0.0,0.0,True,"Traceback (most recent call last):
+  File ""/home/ubuntu/qfabric/scripts/bob_cascade_driver.py"", line 123, in <module>
+    server.start()
+  File ""/home/ubuntu/qfabric/qne/channel.py"", line 99, in start
+    self._server_sock.bind((self.host, self.port))
+OSError: [Errno 98] Address already in use
+",,,exception: name 'PROJECT_DIR' is not defined,2026-09-16T20:23:27.131278

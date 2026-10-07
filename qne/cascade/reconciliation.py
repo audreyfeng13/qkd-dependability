@@ -24,6 +24,9 @@ class Reconciliation:
         for i in range(self.algorithm.nr_cascade_iterations):
             iteration_nr = i + 1
             iter_seed = None if self.seed is None else self.seed + iteration_nr
+            if self.fault_injector is not None:
+                self.fault_injector.maybe_flip_arbitrary_bit(
+                    self, context=f"pre-iter{iteration_nr}")
             iteration = Iteration(self, iteration_nr, seed=iter_seed)
             self.iterations.append(iteration)
             iteration.schedule_initial_work()
