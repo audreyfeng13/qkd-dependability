@@ -83,6 +83,7 @@ qkd-dependability/
 │
 ├── notebooks/
 │   ├── core/                 # Paper-cited notebooks only (see PAPER_TRACEBACK.md)
+│   │   ├── master_reproduction.ipynb                    # ONE notebook reproducing every cited figure/table/number
 │   │   ├── paper_figures_and_reconciliation_fit.ipynb   # Figs 4-9, b-values, leave-one-key-out
 │   │   ├── sdc_sweeps_all5keys.ipynb                    # Most of the paper's statistics
 │   │   ├── 20_data_cleaning_and_integrity.ipynb         # Writes the *_clean.csv files

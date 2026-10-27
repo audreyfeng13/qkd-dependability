@@ -53,7 +53,7 @@ RECOVERED_FINDINGS.md used 0-indexed cells for most entries but 1-indexed for a 
 | ξ₁≈15.69 | `sdc_sweeps_all5keys` | c146 | stdout | **CONFIRMED** (15.6916) and a **different calculation** from c15; do not conflate. |
 | RPA 100% detection | `mitigation_v2_redundant_pa_tmr` | c12 | `mitigation_redundant_pa_v3.csv` | Cell reads correctly (compares actual output arrays). Its stored output is empty (never executed in this copy), so the 100% figure is **UNVERIFIED against a saved run**. Compare the superseded `sdc_sweeps_all5keys` c189-190 below. |
 | TMR 0/100 corrected | `mitigation_v2` c16-21 (runs 0-19), `30_scale_up_experiments` c5 (runs 20-99) | | `mitigation_tmr_realchannel.csv` | **CONFIRMED from the raw CSV**: 100 rows, all `voted`, 0 corrected, Wilson 95% CI [0, 3.70%]. Mean residual is **11.39 error bits** (SE 0.36). The recovered doc writes "11.39% ± 0.36%": the CSV stores a count, not a percentage, so any "%" in the paper needs a stated denominator. |
-| RPA/TMR overhead (1.08x/2.69x) | `28_mitigation_overhead` | c3, c5 | stdout | **CONFIRMED** (1.32→1.42 ms = 1.08x; 22.5→60.5 ms = 2.69x) |
+| RPA/TMR overhead (1.08x/2.69x) | `28_mitigation_overhead` | c3, c5 | stdout | **Stored outputs match** (1.32→1.42 ms = 1.08x; 22.5→60.5 ms = 2.69x), but **the 1.08x does not reproduce and looks like a measurement artifact** (Phase 5 finding, below). TMR 2.69x re-measures at ~3.0x, consistent with its 3x structure. |
 | Jaccard 0.15-0.25 | `mitigation_v2` c25-26 | | | **NOT SUPPORTED**: c26 markdown says ~0.08-0.17; c25 never produced saved output. |
 | Zero-fault baseline | `sdc_sweeps_all5keys` | c196-198 | `check1_zerofault_validation.csv` | Output shows **2/37** zero-fault trials with `keys_match=False` (key 2 and key 4, seed 49, `verification_passed=False`, 2 residual errors, `faults_fired={}`). Worth knowing before claiming a clean baseline. |
 
@@ -108,3 +108,13 @@ Procedure: fresh kernel, run chosen cell subsets, compare `fig_reconciliation_fi
 | QBER "<0.2%" across keys | Keys 0-4 QBER range **0.26%-1.58%**, mean **0.78%** (`key_pairs_metadata.csv`). With keys 5-9 the range is 0.26%-2.35%. | **CONFIRMED mismatch with the data.** |
 
 Additional observation: in the Toeplitz/final-key sweeps the any-mismatch rate is already **0.06 at p=0.001** while the silent rate is 0.00, so a baseline mismatch exists independent of fault firing (the `20_data_cleaning` baseline-contamination logic addresses part of this). Worth a sentence in the paper if "silent" and "any" are both reported.
+
+## Phase 5 finding: the 1.08x redundant-PA overhead
+
+`notebooks/core/master_reproduction.ipynb` re-measures both overheads. Re-running the `28_mitigation_overhead` c3 method gives **1.8-1.9x**, and dropping the first 5 trials (steady state) gives **2.00x**, which is what two extractions must cost. The stored 1.32 ms "single extraction" mean is dominated by one-time first-call warm-up averaged into 30 trials (here the first call is ~0.28 ms against ~0.09 ms steady state; a few ms of one-off cost on the original machine is enough to produce 1.32 ms), which makes the redundant run look almost free. **The paper's 1.08x should be re-examined** before it is relied on. The TMR ratio (2.69x stored, ~3.0x re-measured) is structurally ~3x and less affected. I have not changed any paper text or the original notebook.
+
+## Master notebook (Phase 5)
+
+`notebooks/core/master_reproduction.ipynb` reproduces all cited numbers and figures in 7 s. Result of the last run: **71 of 71 exact and figure checks pass** (Table 4, both χ² fits, CMH, reconciliation χ²=93.05, 1.87x, b-values/χ²=7.91, both leave-one-key-out results, Pearson/Spearman, ξ₁/ξ₂, ξ₁≈15.69, zero-fault baseline, RPA 100% detection, TMR 0/100 with Wilson CI, **Table 5 from the 5-key snapshot (93.76%)**, and Figs 4, 5, 6a, 6b, 7, 8, 9 pixel-identical to `results/figures/`). The only mismatch is the 1.08x timing above. Every figure uses an explicit `rc_context`, which removes the Fig 6b run-order dependence described in "Known bugs 2". It writes figures to a temp directory and nothing into `results/`.
+
+Not reproducible from data alone: `30_scale_up_experiments` c5 and `mitigation_v2` c16-21 (the TMR collection itself) need the FABRIC slice; the master reproduces their *results* from `mitigation_tmr_realchannel.csv`. Also, `29_poster_figures (2)` c7 (poster Fig 3) iterates the live 10-key metadata, so it shows the 96.0% mean, not the paper's 93.8%; it was not changed.
