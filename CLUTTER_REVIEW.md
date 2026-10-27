@@ -210,3 +210,96 @@ See PAPER_TRACEBACK.md. In short: c186 is arithmetically correct for p=0.5 (not 
   * c13 (exec=12): FABRIC site-2 network debugging; no paper artifact — `import time`
   * c14 (exec=13): FABRIC site-2 network debugging; no paper artifact — `# Did the listener actually start and bind?`
   * c15 (exec=14): FABRIC site-2 network debugging; no paper artifact — `import time`
+
+---
+
+# Phase 4: proposed removals (AWAITING APPROVAL, nothing has been deleted)
+
+Scope: the 9 notebooks in `notebooks/core/` (cell indices are the **current** 0-indexed positions). This broadens the Phase 1 scan beyond commented-out code to: empty cells, exact duplicates, cells printing identical output to an earlier cell, draft figure cells overwritten by a later cell writing the same file, orphaned debug/test snippets, failed drafts, and cells that define variables nothing uses.
+
+**Rules that will be followed when applying anything you approve:** whole-cell deletions only, never an edit to a line; a cell that would need rewriting is skipped and flagged instead. Every proposal below passed a **removal-safety check**: no cell that stays reads a name this cell provides (cells that failed this check were demoted to KEEP, listed at the end). After removal, cell indices shift, so I would regenerate the index tables in PAPER_TRACEBACK.md afterwards.
+
+Caveat on evidence: "no execution count" is weak evidence. `scripts/package_artifact.sh` strips outputs and execution counts, so a cell can be live code whose outputs were cleared (e.g. the cited RPA cell `mitigation_v2` c12 has no execution count). That is why never-run cells are only ever Tier B, never Tier A.
+
+## Tier A: recommend removing (25 cells)
+Empty cells, exact duplicates, overwritten figure drafts, debug/test snippets I read by hand, and crashed drafts that produced nothing. Low risk.
+
+| ID | Notebook | Cell | Why | First line |
+|---|---|---|---|---|
+| A1 | `paper_figures_and_reconciliation_fit` | c7 | writes a figure file that c10 overwrites | `fig, axes = plt.subplots(3, 2, figsize=(11, 12))` |
+| A2 | `paper_figures_and_reconciliation_fit` | c23 | empty cell | `` |
+| A3 | `sdc_sweeps_all5keys` | c25 | exact duplicate of c22 | `stdout, _ = bob.execute("ps aux / grep -E 'cascade/python3 s` |
+| A4 | `sdc_sweeps_all5keys` | c34 | empty cell | `` |
+| A5 | `sdc_sweeps_all5keys` | c44 | ended in an error, wrote nothing | `recon_fk_df = pd.read_csv(recon_fk_path)` |
+| A6 | `sdc_sweeps_all5keys` | c51 | debug/test snippet (read by hand) | `for fault_type, (df, prob_col) in [("toeplitz", (toeplitz_fk` |
+| A7 | `sdc_sweeps_all5keys` | c57 | ended in an error, wrote nothing; function(s) wilson_ci redefined in a later cell | `import numpy as np` |
+| A8 | `sdc_sweeps_all5keys` | c65 | debug/test snippet (read by hand) | `import re` |
+| A9 | `sdc_sweeps_all5keys` | c66 | debug/test snippet (read by hand) | `import inspect` |
+| A10 | `sdc_sweeps_all5keys` | c88 | debug/test snippet (read by hand) | `for bad_seed in [53, 59, 60, 63, 64, 65, 66, 71]:` |
+| A11 | `sdc_sweeps_all5keys` | c108 | debug/test snippet (read by hand) | `# --- Step 5: the actual test -- does it parse without error` |
+| A12 | `sdc_sweeps_all5keys` | c127 | debug/test snippet (read by hand) | `def predicted_mismatch_reconciliation(p, pool_size):` |
+| A13 | `sdc_sweeps_all5keys` | c139 | debug/test snippet (read by hand) | `import inspect` |
+| A14 | `sdc_sweeps_all5keys` | c188 | function(s) silent_mismatch_rate redefined in a later cell; writes a figure file that c192 overwrites | `import pandas as pd` |
+| A15 | `sdc_sweeps_all5keys` | c191 | debug/test snippet (read by hand) | `from qne.cascade.fault_injection import SDCFaultInjector` |
+| A16 | `sdc_sweeps_all5keys` | c199 | empty cell | `` |
+| A17 | `mitigation_v2_redundant_pa_tmr` | c9 | debug/test snippet (read by hand) | `session = MockClassicalSession(correct_key=alice_key)` |
+| A18 | `mitigation_v2_redundant_pa_tmr` | c30 | empty cell | `` |
+| A19 | `23_finitekey_vs_asymptotic` | c12 | empty cell; ended in an error, wrote nothing | `` |
+| A20 | `23_finitekey_vs_asymptotic` | c13 | empty cell | `` |
+| A21 | `29_poster_figures (2)` | c10 | ended in an error, wrote nothing | `import pandas as pd` |
+| A22 | `29_poster_figures (2)` | c11 | empty cell | `` |
+| A23 | `30_scale_up_experiments` | c36 | empty cell | `` |
+| A24 | `10_sdc_real` | c13 | empty cell | `` |
+| A25 | `28_mitigation_overhead` | c8 | empty cell | `` |
+
+## Tier B: stale/superseded, your call (18 cells)
+These ran (or were intended to run) and are not reached from any cited cell, but they are real analysis or collection code. Removing them loses provenance, so I am **not** recommending them; I list them so you can decide. The *provenance* column says if a result file that the cell produced is still on disk.
+
+| ID | Notebook | Cell | Why | Provenance note | First line |
+|---|---|---|---|---|---|
+| B1 | `sdc_sweeps_all5keys` | c13 | no execution count (outputs stripped or never run) | produced sdc_mock_doseresponse_withverification.csv (still on disk) | `n_bits = alice_key.get_nr_bits()` |
+| B2 | `sdc_sweeps_all5keys` | c16 | no execution count (outputs stripped or never run); function(s) ell_finite_key_actual redefined in a later cell | produced sdc_mock_allkeys_finitekey.csv (still on disk) | `from qne.cascade.finite_key import h, v, finite_key_output_l` |
+| B3 | `sdc_sweeps_all5keys` | c23 | ended in an error, wrote nothing | - | `REALCHANNEL_N_RUNS = 100  # adjust if you want a faster firs` |
+| B4 | `sdc_sweeps_all5keys` | c33 | no execution count (outputs stripped or never run) | - | `files_to_check = [` |
+| B5 | `sdc_sweeps_all5keys` | c36 | no execution count (outputs stripped or never run); function(s) wilson_ci redefined in a later cell | produced fig_allkeys_pooled.png (still on disk) | `import matplotlib.pyplot as plt` |
+| B6 | `sdc_sweeps_all5keys` | c92 | function(s) predicted_mismatch_toeplitz,predicted_mismatch_finalkey,chi_square_fit redefined in a later cell | - | `# --- 3. Chi-square model fit, corrected comparison, on the ` |
+| B7 | `sdc_sweeps_all5keys` | c93 | function(s) cmh_manual,build_tables redefined in a later cell | - | `# --- 4. Mock-vs-real pooled CMH test, corrected comparison,` |
+| B8 | `sdc_sweeps_all5keys` | c99 | function(s) predicted_mismatch_toeplitz redefined in a later cell | - | `# --- Final chi-square model fit, correct formula, clean dat` |
+| B9 | `sdc_sweeps_all5keys` | c143 | function(s) parse_fired redefined in a later cell | - | `import ast` |
+| B10 | `sdc_sweeps_all5keys` | c173 | ended in an error, wrote nothing | produced synthetic_local_recon_sweep.csv (still on disk) | `import os` |
+| B11 | `mitigation_v2_redundant_pa_tmr` | c13 | no execution count (outputs stripped or never run) | - | `fig, ax = plt.subplots(1, 2, figsize=(11, 4))` |
+| B12 | `mitigation_v2_redundant_pa_tmr` | c24 | no execution count (outputs stripped or never run) | - | `def analyze_tmr_error_overlap(replicas_bits, alice_key):` |
+| B13 | `30_scale_up_experiments` | c24 | ended in an error, wrote nothing | produced finitekey_vs_asymptotic_table2_10keys.csv (still on disk) | `# --- Recompute Table 2 (finite-key vs. asymptotic length) f` |
+| B14 | `10_sdc_real` | c4 | no execution count (outputs stripped or never run) | - | `recon_probs = [0.3, 0.1, 0.03, 0.01, 0.003, 0.001]` |
+| B15 | `10_sdc_real` | c5 | no execution count (outputs stripped or never run) | - | `conditions = [("toeplitz_only", {"toeplitz_prob": 0.5}), ("f` |
+| B16 | `10_sdc_real` | c6 | no execution count (outputs stripped or never run) | - | `existing_df = pd.read_csv(str(PROJECT_DIR / "results" / "dat` |
+| B17 | `10_sdc_real` | c9 | no execution count (outputs stripped or never run) | - | `# Fixed: use k AND qber from the SAME source (key_pairs_df's` |
+| B18 | `10_sdc_real` | c12 | no execution count (outputs stripped or never run) | - | `"""` |
+
+## Needs your decision, not proposed for removal
+
+* `mitigation_v2_redundant_pa_tmr`: c25: AUTHOR-DECISION (supports uncited paper claim).
+* `30_scale_up_experiments`: c10, c15, c18, c26, c27, c28, c29, c30, c31, c32, c33, c34, c35: AUTHOR-DECISION (second-site section).
+* `30_scale_up_experiments` c6: **kept** even though it has no execution count: it is the only code computing the n=100 Wilson CI ([0, 3.70%], confirmed from the CSV) that replaces the n=20 CI in the submitted draft.
+
+## Demoted to KEEP by the safety check (a kept cell depends on them)
+
+`sdc_sweeps_all5keys` c82 (c83:toeplitz_full2, c84:recovered_all_meta2, c84:count_fires), `sdc_sweeps_all5keys` c130 (c132:all_mismatches), `sdc_sweeps_all5keys` c155 (c156:cmh_manual, c156:build_tables_silent_both), `sdc_sweeps_all5keys` c167 (c168:_json, c169:_json), `sdc_sweeps_all5keys` c172 (c174:_json, c174:make_synthetic_key_files, c175:b), `sdc_sweeps_all5keys` c177 (c178:test_df)
+
+## Flagged, not removable by deletion alone
+
+Uncited-but-real cells with no markdown/comment explaining them (my criterion: no non-empty markdown cell directly before them and the cell does not start with a `#` comment). These are **not** proposed for removal; adding explanation is an edit, which is out of scope for deletion-only cleanup:
+
+| Notebook | code cells | uncited, kept, unexplained |
+|---|---|---|
+| `paper_figures_and_reconciliation_fit` | 24 | 2 |
+| `sdc_sweeps_all5keys` | 194 | 94 |
+| `mitigation_v2_redundant_pa_tmr` | 19 | 2 |
+| `23_finitekey_vs_asymptotic` | 10 | 4 |
+| `29_poster_figures (2)` | 8 | 2 |
+| `30_scale_up_experiments` | 33 | 0 |
+| `20_data_cleaning_and_integrity` | 8 | 0 |
+| `10_sdc_real` | 14 | 1 |
+| `28_mitigation_overhead` | 5 | 0 |
+
+**How to approve:** reply with e.g. "approve all of Tier A", "approve A1-A5, B3", or strike entries you want kept. Tier B and the author-decision items are untouched unless you name them.
