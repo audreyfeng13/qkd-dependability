@@ -49,3 +49,23 @@ scenarios/temp_*.yml
 validation/scenarios/temp_*.yml
 results/_tmp_*/
 results/data/_tmp_*/
+
+# Notebook / editor / tool caches
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+*.swp
+
+# Logs, archives and temporary outputs (previously tracked ones stay tracked until removed deliberately)
+*.log
+*.tar.gz
+master_repro_*/
+
+# Secrets / FABRIC credentials (never commit)
+.env
+*.pem
+fabric_config/
+fabric_rc
+*_token.json
