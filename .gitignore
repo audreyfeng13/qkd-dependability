@@ -48,3 +48,4 @@ venv.bak/
 scenarios/temp_*.yml
 validation/scenarios/temp_*.yml
 results/_tmp_*/
+results/data/_tmp_*/

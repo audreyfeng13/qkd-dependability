@@ -366,11 +366,11 @@ def collect_key_pairs(deploy, slice_obj, alice, bob, bob_ip, project_dir, n_keys
                           sw_alice_mac=sw_alice_mac, bob_data_ip=bob_ip)
 
         stdout, _ = alice.execute("cat ~/qfabric/results/alice_sifted_bits.json", quiet=True)
-        alice_raw_path = project_dir / "results" / f"alice_sifted_bits_key{i}_raw.json"
+        alice_raw_path = project_dir / "results" / "data" / f"alice_sifted_bits_key{i}_raw.json"
         alice_raw_path.write_text(stdout)
 
         stdout, _ = bob.execute("cat ~/qfabric/results/bob_sifted_bits.json", quiet=True)
-        bob_raw_path = project_dir / "results" / f"bob_sifted_bits_key{i}_raw.json"
+        bob_raw_path = project_dir / "results" / "data" / f"bob_sifted_bits_key{i}_raw.json"
         bob_raw_path.write_text(stdout)
 
         alice_key_full, alice_idx_full = key_from_sifted_json(str(alice_raw_path), "alice_bits")
@@ -396,8 +396,8 @@ def collect_key_pairs(deploy, slice_obj, alice, bob, bob_ip, project_dir, n_keys
         print(f"  key pair {i}: m={m} sifted, k={k} PE sample, n={n} generation bits, "
               f"QBER (from PE sample only) = {qber_i:.4f}")
 
-        alice_path = project_dir / "results" / f"alice_sifted_bits_key{i}.json"
-        bob_path = project_dir / "results" / f"bob_sifted_bits_key{i}.json"
+        alice_path = project_dir / "results" / "data" / f"alice_sifted_bits_key{i}.json"
+        bob_path = project_dir / "results" / "data" / f"bob_sifted_bits_key{i}.json"
 
         gen_indices = split["gen_indices"]
         alice_matching_indices_gen = [alice_idx_full[idx] for idx in gen_indices]
@@ -421,7 +421,7 @@ def collect_key_pairs(deploy, slice_obj, alice, bob, bob_ip, project_dir, n_keys
         bob.upload_file(str(bob_path), f"qfabric/results/bob_sifted_bits_key{i}.json")
 
     df = pd.DataFrame(key_pairs)
-    metadata_path = project_dir / "results" / "key_pairs_metadata.csv"
+    metadata_path = project_dir / "results" / "data" / "key_pairs_metadata.csv"
     df.to_csv(str(metadata_path), index=False)
     print(f"\nSaved key-pair metadata (k_pe, n_bits, qber) -> {metadata_path}")
     return df

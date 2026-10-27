@@ -3,6 +3,20 @@
 Paper artifact → notebook/cell traceback, **re-verified against the current repo** (commit `b6b8c8c`) by re-executing notebooks in a scratch copy of the repo (fresh venv, repo files untouched) and comparing outputs.
 `RECOVERED_FINDINGS.md` was used as a head start only.
 
+## Notebook names and locations (after the Phase 3 reorganization)
+
+This document was written against the pre-move layout. Cell indices are unchanged by the move; only names and locations differ.
+
+| Name used in this document | Current path |
+|---|---|
+| `Untitled2` | `notebooks/core/paper_figures_and_reconciliation_fit.ipynb` |
+| `Untitled` | `notebooks/exploratory/validation_finite_key_and_reconciliation_model.ipynb` |
+| `Untitled1` | `notebooks/exploratory/fabric_site2_network_debugging.ipynb` |
+| `sdc_sweeps_all5keys`, `mitigation_v2_redundant_pa_tmr`, `23_finitekey_vs_asymptotic`, `29_poster_figures (2)`, `30_scale_up_experiments`, `20_data_cleaning_and_integrity`, `10_sdc_real`, `28_mitigation_overhead` | `notebooks/core/<same name>.ipynb` |
+| every other notebook | `notebooks/exploratory/` |
+| `results/<name>.csv` / `.json` | `results/data/<name>` |
+| `results/<name>.png` | `results/figures/<name>` |
+
 ## Ground rules and limits of this verification
 
 * **The paper text is not in the repo** (only `Feng_Audrey_QCE_References.pdf`). I can verify that notebook outputs match the numbers RECOVERED_FINDINGS.md quotes from the paper, but I **cannot** independently check what the paper says, or which table/figure number a given cell is. Paper-side labels below are inherited from the recovered document and marked accordingly.

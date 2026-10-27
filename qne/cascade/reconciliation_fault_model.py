@@ -28,7 +28,7 @@ def P_odd_point(K, N, m):
             s += comb(K, i) * comb(N - K, m - i)
     return s / denom
 
-metadata_path = Path(__file__).resolve().parent.parent / "results" / "key_pairs_metadata.csv"
+metadata_path = Path(__file__).resolve().parents[2] / "results" / "data" / "key_pairs_metadata.csv"
 key_pairs_df = pd.read_csv(str(metadata_path))
 key_pairs = key_pairs_df[["index", "n_bits", "qber"]].to_dict("records")
 

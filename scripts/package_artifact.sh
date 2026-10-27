@@ -62,7 +62,7 @@ tar "${EXCLUDES[@]}" -cf - -C "$(dirname "${PROJECT_DIR}")" "$(basename "${PROJE
 python3 - "${STAGE}" <<'PY'
 import sys, json, glob, os
 count = 0
-for f in glob.glob(os.path.join(sys.argv[1], "*", "notebooks", "*.ipynb")):
+for f in glob.glob(os.path.join(sys.argv[1], "*", "notebooks", "**", "*.ipynb"), recursive=True):
     nb = json.load(open(f))
     for c in nb.get("cells", []):
         if c.get("cell_type") == "code":

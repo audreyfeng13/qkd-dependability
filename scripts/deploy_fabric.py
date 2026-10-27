@@ -225,7 +225,7 @@ def run_cross_validation_on_fabric(
     from pathlib import Path as _Path
     from validation.compare import run_backend_on_node, load_fabric_result
 
-    results_dir = _Path(results_dir) if results_dir else (PROJECT_DIR / "results")
+    results_dir = _Path(results_dir) if results_dir else (PROJECT_DIR / "results" / "data")
     alice = slice_obj.get_node("alice")
     bob = slice_obj.get_node("bob")
     switch = slice_obj.get_node("switch")
@@ -277,7 +277,7 @@ def run_all_scenarios_on_fabric(slice_obj, scenarios_dir="validation/scenarios",
     from validation.scenario import ValidationScenario
     from validation.compare import load_fabric_result
 
-    results_dir = PROJECT_DIR / "results"
+    results_dir = PROJECT_DIR / "results" / "data"
     tmp_dir = results_dir / "_tmp_scenarios"
     tmp_dir.mkdir(parents=True, exist_ok=True)
     sdir = PROJECT_DIR / scenarios_dir
@@ -741,7 +741,7 @@ def run_bb84(slice_obj, scenario_path: str, alice_mac: str, bob_mac: str,
 
     # Collect results
     print("\n=== Collecting results ===")
-    results_dir = PROJECT_DIR / "results"
+    results_dir = PROJECT_DIR / "results" / "data"
     results_dir.mkdir(exist_ok=True)
 
     for node, role in [(bob_node, "bob"), (alice_node, "alice")]:
@@ -854,7 +854,7 @@ def run_network_conditions_experiment(
             {"name": "asymmetric_100_10ms", "alice_delay_ms": 100, "bob_delay_ms": 10},
         ]
 
-    results_dir = PROJECT_DIR / "results"
+    results_dir = PROJECT_DIR / "results" / "data"
     alice = slice_obj.get_node("alice")
     bob = slice_obj.get_node("bob")
     switch = slice_obj.get_node("switch")
@@ -953,7 +953,7 @@ def run_single_axis_sweeps(
     }
     CLASSICAL_AXES = {"latency_ms", "jitter_ms", "loss_pct"}
 
-    results_dir = PROJECT_DIR / "results"
+    results_dir = PROJECT_DIR / "results" / "data"
     tmp_dir = results_dir / "_tmp_single_axis"
     tmp_dir.mkdir(parents=True, exist_ok=True)
     bob_path = results_dir / "fabric_bob_results.json"
@@ -1137,7 +1137,7 @@ def run_joint_axis_sweep(
         "efficiency":            ("detector", "efficiency"),
     }
 
-    results_dir = PROJECT_DIR / "results"
+    results_dir = PROJECT_DIR / "results" / "data"
     tmp_dir = results_dir / "_tmp_joint"
     tmp_dir.mkdir(parents=True, exist_ok=True)
     bob_path = results_dir / "fabric_bob_results.json"
@@ -1340,7 +1340,7 @@ def run_pf_topup(slice_obj, pf, conditions, n_runs, start_run,
     import time as _time
 
     if out_csv is None:
-        out_csv = PROJECT_DIR / "results" / "old messy results" / "joint_fault_pf_results.csv"
+        out_csv = PROJECT_DIR / "results" / "_review_before_delete" / "old messy results" / "joint_fault_pf_results.csv"
     out_csv = Path(out_csv)
 
     scenario_content = f"""name: pf_{pf}
@@ -1363,7 +1363,7 @@ seed: 42
     scenario_rel = f"validation/scenarios/temp_pf_{pf}.yml"
     (PROJECT_DIR / scenario_rel).write_text(scenario_content)
 
-    results_dir = PROJECT_DIR / "results"
+    results_dir = PROJECT_DIR / "results" / "data"
     bob_path = results_dir / "fabric_bob_results.json"
     alice = slice_obj.get_node("alice")
     bob = slice_obj.get_node("bob")

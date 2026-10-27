@@ -5,6 +5,20 @@ Phase 4 will broaden this (unused variables, duplicates, orphaned snippets) and 
 
 Cell indices are **0-indexed** (the position in the `.ipynb` JSON `cells` array). Note that RECOVERED_FINDINGS.md mixed 0- and 1-indexing (see PAPER_TRACEBACK.md, "Indexing caveat").
 
+## Notebook names and locations (after the Phase 3 reorganization)
+
+This document was written against the pre-move layout. Cell indices are unchanged by the move; only names and locations differ.
+
+| Name used in this document | Current path |
+|---|---|
+| `Untitled2` | `notebooks/core/paper_figures_and_reconciliation_fit.ipynb` |
+| `Untitled` | `notebooks/exploratory/validation_finite_key_and_reconciliation_model.ipynb` |
+| `Untitled1` | `notebooks/exploratory/fabric_site2_network_debugging.ipynb` |
+| `sdc_sweeps_all5keys`, `mitigation_v2_redundant_pa_tmr`, `23_finitekey_vs_asymptotic`, `29_poster_figures (2)`, `30_scale_up_experiments`, `20_data_cleaning_and_integrity`, `10_sdc_real`, `28_mitigation_overhead` | `notebooks/core/<same name>.ipynb` |
+| every other notebook | `notebooks/exploratory/` |
+| `results/<name>.csv` / `.json` | `results/data/<name>` |
+| `results/<name>.png` | `results/figures/<name>` |
+
 ## Method (and its limits)
 
 Static def-use analysis (`ast`), seeded from the cited cells in PAPER_TRACEBACK.md:

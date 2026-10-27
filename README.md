@@ -74,28 +74,31 @@ qkd-dependability/
 │   ├── sweep_efficiency.yml  # Detector efficiency sweep
 │   └── sweep_polarization.yml# Polarization fidelity sweep
 │
-├── scripts/                  # FABRIC deployment & environment setup scripts
+├── scripts/                  # FABRIC deployment, Cascade drivers & environment setup scripts
 │   ├── deploy_fabric.py      # Automated slice orchestrator and sweep runner
 │   ├── install_bmv2.sh       # BMv2 switch dependency installation script
 │   ├── setup_switch_docker.sh# Docker environment builder for P4 switch
 │   ├── setup_sequence_env.sh # SeQUeNCe virtualenv provisioner
 │   └── setup_netsquid_env.sh # NetSquid virtualenv provisioner
 │
-├── notebooks/                # Numbered analysis & experiment notebooks
-│   ├── 00_overview.ipynb               # Overview and execution order
-│   ├── 01_setup_slice.ipynb             # FABRIC 3-node slice provisioning
-│   ├── 02_run_experiment.ipynb         # Single BB84 run on FABRIC
-│   ├── 03_cross_validation.ipynb       # Comparing QFabric vs SeQUeNCe / NetSquid
-│   ├── 04_analysis.ipynb               # Result plotting & photon pipeline analysis
-│   ├── 05_run_all_scenarios.ipynb      # Batch scenario sweep execution
-│   ├── 06_network_effects.ipynb        # Classical network impairment evaluation
-│   ├── 07_baseline_runs.ipynb          # Baseline statistical runs
-│   ├── 08_uncertainty_sampling.ipynb   # Machine learning / sampling analysis
-│   └── archive/                        # Archived scratch notebooks
+├── notebooks/
+│   ├── core/                 # Paper-cited notebooks only (see PAPER_TRACEBACK.md)
+│   │   ├── paper_figures_and_reconciliation_fit.ipynb   # Figs 4-9, b-values, leave-one-key-out
+│   │   ├── sdc_sweeps_all5keys.ipynb                    # Most of the paper's statistics
+│   │   ├── 20_data_cleaning_and_integrity.ipynb         # Writes the *_clean.csv files
+│   │   ├── 23_finitekey_vs_asymptotic.ipynb             # Table 5 (use the 5-key snapshot)
+│   │   ├── mitigation_v2_redundant_pa_tmr.ipynb         # Redundant PA / TMR
+│   │   ├── 28_mitigation_overhead.ipynb                 # Mitigation overhead
+│   │   ├── 29_poster_figures (2).ipynb                  # Poster/paper figures
+│   │   ├── 30_scale_up_experiments.ipynb                # TMR n=100, 10 keys, second site
+│   │   └── 10_sdc_real.ipynb                            # Real-channel setup and key collection
+│   └── exploratory/          # Real but uncited analysis, setup walkthroughs, FABRIC debugging
+│       └── archive/          # Older scratch copies
 │
-├── results/                  # Experimental results and figures
-│   ├── heatmaps/             # Generated parameter sweep heatmaps
-│   └── old messy results/    # Archived raw data runs
+├── results/
+│   ├── figures/              # All generated figures (heatmaps/, poster_figures/ inside)
+│   ├── data/                 # All CSV / JSON data (incl. key_pairs_metadata.csv and the Table 5 snapshot)
+│   └── _review_before_delete/# Backups and superseded raw runs, kept only until reviewed
 │
 └── tests/                    # Unit tests for QNE and validation modules
     ├── test_qne.py           # QNE package unit tests
@@ -135,7 +138,7 @@ python -m validation.compare scenarios/baseline_1km.yml
 To run a parameter sweep cross-validation and output a plot:
 
 ```bash
-python -m validation.compare scenarios/sweep_distance.yml --plot results/distance_comparison.png
+python -m validation.compare scenarios/sweep_distance.yml --plot results/figures/distance_comparison.png
 ```
 
 ### 4. Run Unit Tests
