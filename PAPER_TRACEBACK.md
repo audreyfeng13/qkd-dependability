@@ -135,3 +135,14 @@ Tier A (25 empty/duplicate/overwritten-draft/debug cells, approved) was removed 
 | `28_mitigation_overhead` | c8 |
 
 None of the removed cells is cited. Verification: all 282 surviving code cells in the 8 notebooks have identical execution status before and after the removal (same harness, same machine).
+
+## Second index shift: approved Tier B removals (B1, B2, B3, B4, B5, B9, B14-B18)
+
+Applied after Tier A. Indices below are the indices **after Tier A and before this round**; apply the same rule (`new = old - removed indices below old`) as a second step after the Tier A conversion.
+
+| Notebook | Removed |
+|---|---|
+| `sdc_sweeps_all5keys` | c13, c16, c23, c32, c34, c132 |
+| `10_sdc_real` | c4, c5, c6, c9, c12 |
+
+B1, B2 and B5 wrote result files that are still on disk (`sdc_mock_doseresponse_withverification.csv`, `sdc_mock_allkeys_finitekey.csv`, `fig_allkeys_pooled.png`); the code that produced them is now gone from the notebook (still in git history). B9 held the arbitrary-bit result "49/49 self-corrected" (also in git history). Verified: all 182 surviving code cells in the two notebooks keep identical execution status.
