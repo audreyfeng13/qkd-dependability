@@ -1340,7 +1340,7 @@ def run_pf_topup(slice_obj, pf, conditions, n_runs, start_run,
     import time as _time
 
     if out_csv is None:
-        out_csv = PROJECT_DIR / "results" / "_review_before_delete" / "old messy results" / "joint_fault_pf_results.csv"
+        out_csv = PROJECT_DIR / "results" / "data" / "joint_fault_pf_results.csv"
     out_csv = Path(out_csv)
 
     scenario_content = f"""name: pf_{pf}
