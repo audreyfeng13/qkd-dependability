@@ -213,7 +213,9 @@ See PAPER_TRACEBACK.md. In short: c186 is arithmetically correct for p=0.5 (not 
 
 ---
 
-# Phase 4: proposed removals (AWAITING APPROVAL, nothing has been deleted)
+# Phase 4: proposed removals (Tier A APPLIED; Tier B and author-decision items still pending)
+
+**Status update:** Tier A (A1-A25) was approved and applied as whole-cell deletions. The cell indices in the tables below are the **pre-removal** indices. Tier B is still undecided.
 
 Scope: the 9 notebooks in `notebooks/core/` (cell indices are the **current** 0-indexed positions). This broadens the Phase 1 scan beyond commented-out code to: empty cells, exact duplicates, cells printing identical output to an earlier cell, draft figure cells overwritten by a later cell writing the same file, orphaned debug/test snippets, failed drafts, and cells that define variables nothing uses.
 

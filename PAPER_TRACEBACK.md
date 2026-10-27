@@ -118,3 +118,20 @@ Additional observation: in the Toeplitz/final-key sweeps the any-mismatch rate i
 `notebooks/core/master_reproduction.ipynb` reproduces all cited numbers and figures in 7 s. Result of the last run: **71 of 71 exact and figure checks pass** (Table 4, both χ² fits, CMH, reconciliation χ²=93.05, 1.87x, b-values/χ²=7.91, both leave-one-key-out results, Pearson/Spearman, ξ₁/ξ₂, ξ₁≈15.69, zero-fault baseline, RPA 100% detection, TMR 0/100 with Wilson CI, **Table 5 from the 5-key snapshot (93.76%)**, and Figs 4, 5, 6a, 6b, 7, 8, 9 pixel-identical to `results/figures/`). The only mismatch is the 1.08x timing above. Every figure uses an explicit `rc_context`, which removes the Fig 6b run-order dependence described in "Known bugs 2". It writes figures to a temp directory and nothing into `results/`.
 
 Not reproducible from data alone: `30_scale_up_experiments` c5 and `mitigation_v2` c16-21 (the TMR collection itself) need the FABRIC slice; the master reproduces their *results* from `mitigation_tmr_realchannel.csv`. Also, `29_poster_figures (2)` c7 (poster Fig 3) iterates the live 10-key metadata, so it shows the 96.0% mean, not the paper's 93.8%; it was not changed.
+
+## Cell-index shift after Tier A removal
+
+Tier A (25 empty/duplicate/overwritten-draft/debug cells, approved) was removed from 8 core notebooks. **All cell indices quoted elsewhere in this document and in CLUTTER_REVIEW.md's Phase 1 tables are the pre-removal indices.** To convert: `new = old - (number of removed indices below old)`.
+
+| Notebook | Removed (old indices) |
+|---|---|
+| `paper_figures_and_reconciliation_fit` | c7, c23 |
+| `sdc_sweeps_all5keys` | c25, c34, c44, c51, c57, c65, c66, c88, c108, c127, c139, c188, c191, c199 |
+| `mitigation_v2_redundant_pa_tmr` | c9, c30 |
+| `23_finitekey_vs_asymptotic` | c12, c13 |
+| `29_poster_figures (2)` | c10, c11 |
+| `30_scale_up_experiments` | c36 |
+| `10_sdc_real` | c13 |
+| `28_mitigation_overhead` | c8 |
+
+None of the removed cells is cited. Verification: all 282 surviving code cells in the 8 notebooks have identical execution status before and after the removal (same harness, same machine).
