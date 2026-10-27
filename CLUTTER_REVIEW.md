@@ -14,7 +14,7 @@ This document was written against the pre-move layout. Cell indices are unchange
 | `Untitled2` | `notebooks/core/paper_figures_and_reconciliation_fit.ipynb` |
 | `Untitled` | `notebooks/exploratory/validation_finite_key_and_reconciliation_model.ipynb` |
 | `Untitled1` | `notebooks/exploratory/fabric_site2_network_debugging.ipynb` |
-| `sdc_sweeps_all5keys`, `mitigation_v2_redundant_pa_tmr`, `23_finitekey_vs_asymptotic`, `29_poster_figures (2)`, `30_scale_up_experiments`, `20_data_cleaning_and_integrity`, `10_sdc_real`, `28_mitigation_overhead` | `notebooks/core/<same name>.ipynb` |
+| `sdc_sweeps_all5keys`, `mitigation_v2_redundant_pa_tmr`, `23_finitekey_vs_asymptotic`, `29_poster_figures`, `30_scale_up_experiments`, `20_data_cleaning_and_integrity`, `10_sdc_real`, `28_mitigation_overhead` | `notebooks/core/<same name>.ipynb` |
 | every other notebook | `notebooks/exploratory/` |
 | `results/<name>.csv` / `.json` | `results/data/<name>` |
 | `results/<name>.png` | `results/figures/<name>` |
@@ -61,7 +61,7 @@ See PAPER_TRACEBACK.md. In short: c186 is arithmetically correct for p=0.5 (not 
 | `sdc_sweeps_all5keys` | 194 | 9 | 55 | 11 | 13 | 106 |
 | `mitigation_v2_redundant_pa_tmr` | 19 | 7 | 4 | 4 | 0 | 4 |
 | `23_finitekey_vs_asymptotic` | 10 | 3 | 0 | 2 | 0 | 5 |
-| `29_poster_figures (2)` | 8 | 2 | 0 | 2 | 0 | 4 |
+| `29_poster_figures` | 8 | 2 | 0 | 2 | 0 | 4 |
 | `30_scale_up_experiments` | 33 | 1 | 16 | 8 | 2 | 6 |
 | `20_data_cleaning_and_integrity` | 8 | 4 | 1 | 0 | 0 | 3 |
 | `10_sdc_real` | 14 | 4 | 2 | 6 | 0 | 2 |
@@ -129,7 +129,7 @@ See PAPER_TRACEBACK.md. In short: c186 is arithmetically correct for p=0.5 (not 
   * c13 (exec=None): empty cell — ``
 * **T3 (keep):** 7-11
 
-### `29_poster_figures (2)`
+### `29_poster_figures`
 * **KEEP-cited:** 1, 7
 * **T1:**
   * c10 (exec=1): ended in error output — `import pandas as pd`
@@ -248,8 +248,8 @@ Empty cells, exact duplicates, overwritten figure drafts, debug/test snippets I 
 | A18 | `mitigation_v2_redundant_pa_tmr` | c30 | empty cell | `` |
 | A19 | `23_finitekey_vs_asymptotic` | c12 | empty cell; ended in an error, wrote nothing | `` |
 | A20 | `23_finitekey_vs_asymptotic` | c13 | empty cell | `` |
-| A21 | `29_poster_figures (2)` | c10 | ended in an error, wrote nothing | `import pandas as pd` |
-| A22 | `29_poster_figures (2)` | c11 | empty cell | `` |
+| A21 | `29_poster_figures` | c10 | ended in an error, wrote nothing | `import pandas as pd` |
+| A22 | `29_poster_figures` | c11 | empty cell | `` |
 | A23 | `30_scale_up_experiments` | c36 | empty cell | `` |
 | A24 | `10_sdc_real` | c13 | empty cell | `` |
 | A25 | `28_mitigation_overhead` | c8 | empty cell | `` |
@@ -298,7 +298,7 @@ Uncited-but-real cells with no markdown/comment explaining them (my criterion: n
 | `sdc_sweeps_all5keys` | 194 | 94 |
 | `mitigation_v2_redundant_pa_tmr` | 19 | 2 |
 | `23_finitekey_vs_asymptotic` | 10 | 4 |
-| `29_poster_figures (2)` | 8 | 2 |
+| `29_poster_figures` | 8 | 2 |
 | `30_scale_up_experiments` | 33 | 0 |
 | `20_data_cleaning_and_integrity` | 8 | 0 |
 | `10_sdc_real` | 14 | 1 |

@@ -12,7 +12,7 @@ This document was written against the pre-move layout. Cell indices are unchange
 | `Untitled2` | `notebooks/core/paper_figures_and_reconciliation_fit.ipynb` |
 | `Untitled` | `notebooks/exploratory/validation_finite_key_and_reconciliation_model.ipynb` |
 | `Untitled1` | `notebooks/exploratory/fabric_site2_network_debugging.ipynb` |
-| `sdc_sweeps_all5keys`, `mitigation_v2_redundant_pa_tmr`, `23_finitekey_vs_asymptotic`, `29_poster_figures (2)`, `30_scale_up_experiments`, `20_data_cleaning_and_integrity`, `10_sdc_real`, `28_mitigation_overhead` | `notebooks/core/<same name>.ipynb` |
+| `sdc_sweeps_all5keys`, `mitigation_v2_redundant_pa_tmr`, `23_finitekey_vs_asymptotic`, `29_poster_figures`, `30_scale_up_experiments`, `20_data_cleaning_and_integrity`, `10_sdc_real`, `28_mitigation_overhead` | `notebooks/core/<same name>.ipynb` |
 | every other notebook | `notebooks/exploratory/` |
 | `results/<name>.csv` / `.json` | `results/data/<name>` |
 | `results/<name>.png` | `results/figures/<name>` |
@@ -42,7 +42,7 @@ RECOVERED_FINDINGS.md used 0-indexed cells for most entries but 1-indexed for a 
 | Fig 6b | `Untitled2` | c19 | `fig_reconciliation_fit_pooled.png` | **CHANGED**: reproduces exactly only under a specific execution order (see next section). The recovered "cosmetic legend-font" description is incomplete. |
 | Figs 1-3 | n/a | n/a | n/a | Schematics; not in repo. UNVERIFIED (not checkable). |
 | Table 4 | `sdc_sweeps_all5keys` | c193 (silent rate by prob, 3 fault types) and c119 | n/a | Cells exist and print per-prob silent rates (e.g. p=0.5: Toeplitz 0.213, final-key 0.460, reconciliation 0.000). **Which table those feed is UNVERIFIED** without the paper. |
-| Table 5 | `23_finitekey_vs_asymptotic` c3, c5; `29_poster_figures (2)` c7 | | stdout | **BROKEN against the live data**, see below. |
+| Table 5 | `23_finitekey_vs_asymptotic` c3, c5; `29_poster_figures` c7 | | stdout | **BROKEN against the live data**, see below. |
 | b-values, χ²=7.91 | `Untitled2` | c14 (fit), c17 (print b), c20 (χ²) | stdout | **CONFIRMED**: re-run gives χ²=7.91, dof=40, p=1.0000 |
 | Leave-one-key-out | `Untitled2` | c21 (no baseline), c22 (with baseline) | stdout | **CONFIRMED**: c21 MAE 0.0359 (χ²=209.15, REJECTED); c22 MAE 0.0107, χ²=7.65, dof=40. (The recovered doc's "MAE 0.036/0.011, χ²=7.65" attributes χ²=7.65 to c22 only; c21's χ² is 209.15.) |
 | Toeplitz/final-key χ², CMH | `sdc_sweeps_all5keys` | c119 (Toeplitz χ²=5.63 dof 8 p=0.69; final-key χ²=10.21 dof 8 p=0.25), c123 (CMH Toeplitz 1.946 p=0.163; final-key 0.978 p=0.323) | stdout | **CONFIRMED** (stored outputs) |
@@ -117,7 +117,7 @@ Additional observation: in the Toeplitz/final-key sweeps the any-mismatch rate i
 
 `notebooks/core/master_reproduction.ipynb` reproduces all cited numbers and figures in 7 s. Result of the last run: **71 of 71 exact and figure checks pass** (Table 4, both χ² fits, CMH, reconciliation χ²=93.05, 1.87x, b-values/χ²=7.91, both leave-one-key-out results, Pearson/Spearman, ξ₁/ξ₂, ξ₁≈15.69, zero-fault baseline, RPA 100% detection, TMR 0/100 with Wilson CI, **Table 5 from the 5-key snapshot (93.76%)**, and Figs 4, 5, 6a, 6b, 7, 8, 9 pixel-identical to `results/figures/`). The only mismatch is the 1.08x timing above. Every figure uses an explicit `rc_context`, which removes the Fig 6b run-order dependence described in "Known bugs 2". It writes figures to a temp directory and nothing into `results/`.
 
-Not reproducible from data alone: `30_scale_up_experiments` c5 and `mitigation_v2` c16-21 (the TMR collection itself) need the FABRIC slice; the master reproduces their *results* from `mitigation_tmr_realchannel.csv`. Also, `29_poster_figures (2)` c7 (poster Fig 3) iterates the live 10-key metadata, so it shows the 96.0% mean, not the paper's 93.8%; it was not changed.
+Not reproducible from data alone: `30_scale_up_experiments` c5 and `mitigation_v2` c16-21 (the TMR collection itself) need the FABRIC slice; the master reproduces their *results* from `mitigation_tmr_realchannel.csv`. Also, `29_poster_figures` c7 (poster Fig 3) iterates the live 10-key metadata, so it shows the 96.0% mean, not the paper's 93.8%; it was not changed.
 
 ## Cell-index shift after Tier A removal
 
@@ -129,7 +129,7 @@ Tier A (25 empty/duplicate/overwritten-draft/debug cells, approved) was removed 
 | `sdc_sweeps_all5keys` | c25, c34, c44, c51, c57, c65, c66, c88, c108, c127, c139, c188, c191, c199 |
 | `mitigation_v2_redundant_pa_tmr` | c9, c30 |
 | `23_finitekey_vs_asymptotic` | c12, c13 |
-| `29_poster_figures (2)` | c10, c11 |
+| `29_poster_figures` | c10, c11 |
 | `30_scale_up_experiments` | c36 |
 | `10_sdc_real` | c13 |
 | `28_mitigation_overhead` | c8 |

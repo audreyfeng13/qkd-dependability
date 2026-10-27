@@ -90,7 +90,7 @@ qkd-dependability/
 │   │   ├── 23_finitekey_vs_asymptotic.ipynb             # Table 5 (use the 5-key snapshot)
 │   │   ├── mitigation_v2_redundant_pa_tmr.ipynb         # Redundant PA / TMR
 │   │   ├── 28_mitigation_overhead.ipynb                 # Mitigation overhead
-│   │   ├── 29_poster_figures (2).ipynb                  # Poster/paper figures
+│   │   ├── 29_poster_figures.ipynb                  # Poster/paper figures
 │   │   ├── 30_scale_up_experiments.ipynb                # TMR n=100, 10 keys, second site
 │   │   └── 10_sdc_real.ipynb                            # Real-channel setup and key collection
 │   └── exploratory/          # Real but uncited analysis, setup walkthroughs, FABRIC debugging
@@ -176,7 +176,7 @@ seed: 42
 ## 🔁 Reproducibility Notes
 
 **Table 5 (finite-key vs. asymptotic length): use the 5-key snapshot.**
-`results/key_pairs_metadata.csv` is a live file: `notebooks/30_scale_up_experiments.ipynb` appended keys 5-9, so it now has 10 rows. The Table 5 cells (`23_finitekey_vs_asymptotic` and `29_poster_figures (2)`) loop over every row of that file, so running them against the live file gives 10 rows and a 96.05% mean reduction instead of the paper's 5 rows and 93.76%.
+`results/key_pairs_metadata.csv` is a live file: `notebooks/30_scale_up_experiments.ipynb` appended keys 5-9, so it now has 10 rows. The Table 5 cells (`23_finitekey_vs_asymptotic` and `29_poster_figures`) loop over every row of that file, so running them against the live file gives 10 rows and a 96.05% mean reduction instead of the paper's 5 rows and 93.76%.
 `results/data/key_pairs_metadata_table5_5keys.csv` is the original 5-key file (verbatim from commit `663d9cd`, from before keys 5-9 were added). **That snapshot is the authoritative input for reproducing Table 5 specifically**: computed from it, the per-key reductions are 99.18, 99.96, 89.40, 88.83 and 91.41%, mean 93.76%. The live file is still correct for analyses that intentionally use all 10 keys.
 
 ## Future Work: Beyond BB84

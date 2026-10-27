@@ -27,7 +27,7 @@ One notebook that reproduces every cited figure, table and number from the commi
 | `mitigation_v2_redundant_pa_tmr.ipynb` | redundant PA and TMR | RPA detection; TMR runs 0-19 |
 | `30_scale_up_experiments.ipynb` | TMR n=100, keys 5-9, second site | TMR 0/100 and CI; 10-key metadata |
 | `28_mitigation_overhead.ipynb` | overhead timing | overhead ratios (see the 1.08x caveat in `PAPER_TRACEBACK.md`) |
-| `29_poster_figures (2).ipynb` | poster / headline figures | poster Figs 1-3 |
+| `29_poster_figures.ipynb` | poster / headline figures | poster Figs 1-3 |
 | `10_sdc_real.ipynb` | real-channel setup and key collection | inputs |
 
 Which core notebooks need FABRIC: cells that call `deploy.get_fablib()`, `bob.execute(...)`, `upload_file`, etc. only run with a live slice. The analysis cells run locally.
