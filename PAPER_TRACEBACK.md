@@ -119,6 +119,18 @@ Additional observation: in the Toeplitz/final-key sweeps the any-mismatch rate i
 
 Not reproducible from data alone: `30_scale_up_experiments` c5 and `mitigation_v2` c16-21 (the TMR collection itself) need the FABRIC slice; the master reproduces their *results* from `mitigation_tmr_realchannel.csv`. Also, `29_poster_figures` c7 (poster Fig 3) iterates the live 10-key metadata, so it shows the 96.0% mean, not the paper's 93.8%; it was not changed.
 
+## Provenance note: `reconciliation_clean.csv` (Figs 4, 6b)
+
+`results/data/reconciliation_clean.csv` (4000 rows, keys 0-4, n=100 per key and probability) is kept as the authoritative input for Figs 4 and 6b. Comparison run on this data versus alternatives (same analysis path):
+
+| Dataset | Rows | Keys | chi-square (dof) |
+|---|---|---|---|
+| committed `reconciliation_clean.csv` | 4000 | 0-4 | **7.91 (35)**, the cited value |
+| raw `..._asymptotic_fixed.csv` | 1600 | 0-1 only | 3.40 (14); leave-one-key-out not possible with 2 keys |
+| original clean file (commit `663d9cd`, n=10) | 400 | 0-4 | 10.71 (35) |
+
+Raw n=100 data for keys 0-1 is in the repo and identical to the clean file's keys 0-1 rows. Raw data for keys 2-4 is not in the repo; the clean file's values for them are consistent with keys 0-1 (mean `total_corrections` 32-35). Known provenance gap, not a data-quality issue. Repo decision (author): keep the 4000-row file.
+
 ## Cell-index shift after Tier A removal
 
 Tier A (25 empty/duplicate/overwritten-draft/debug cells, approved) was removed from 8 core notebooks. **All cell indices quoted elsewhere in this document and in CLUTTER_REVIEW.md's Phase 1 tables are the pre-removal indices.** To convert: `new = old - (number of removed indices below old)`.
