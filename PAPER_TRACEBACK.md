@@ -169,3 +169,11 @@ Applied after the second shift. Whole cells deleted; indices below are those *af
 | `mitigation_v2_redundant_pa_tmr` | 12, 23 | B11, B12 |
 
 Notes: B10 was the failed `synthetic_local` sweep (`synthetic_local_recon_sweep.csv` is still on disk; the remaining `synthetic_local` cells are kept). B11 made `results/figures/heatmaps/redundant_pa_sweep.png` (PNG still on disk, referenced nowhere). Safety check: 170 + 15 surviving code cells in the two notebooks have identical execution status before and after.
+
+## Fourth index shift: second-site cells moved out of `30_scale_up_experiments`
+
+The second-site (NCSA <-> TOKY) section was **moved, not deleted**, to `notebooks/exploratory/second_site_ncsa_toky_experiments.ipynb` (cells verbatim, plus an explanatory markdown header and a copy of the shared setup cell 8). Reason: no evidence yet that the paper reports a second site. Moving *does* shift cell indices in the source notebook exactly as deletion would; it is reversible because the original indices are recorded here and in git history (`git revert` of the move commit restores the notebook).
+
+Moved (indices before this shift): markdown 7; code 9, 10, 14, 15, 16, 18, 20, 26-35 (the 13 author-decision cells c10, c15, c18, c26-c35, plus c9, c14, c16, c20 and the section header, which they depend on or which only describe them). Stayed in core: c8 (shared setup), c11-13, c17, c19 (keys 5-9 recovery and the 10-key `key_pairs_metadata.csv`; these are not second-site work), and all other cells. Rule: `new = old - (number of moved indices below old)`.
+
+Safety check: the 15 surviving code cells of `30_scale_up_experiments` have identical execution status before and after; the 17 moved code cells have the same statuses in the new notebook as they had in place. To move back: append those cells to `30_scale_up_experiments` and add the `PAPER_TRACEBACK.md` rows then.

@@ -7,7 +7,7 @@ Analysis and experiment notebooks. This is distinct from the repo-root `README.m
 | Folder | What belongs here | Rule |
 |---|---|---|
 | `core/` | Notebooks that **produce a number, table or figure cited in the paper**, plus `master_reproduction.ipynb`. | Traced in `PAPER_TRACEBACK.md` (paper artifact → notebook → cell). |
-| `exploratory/` | Real analysis that the paper does **not** cite: setup walkthroughs (`00`-`05`), network-effect and baseline sweeps (`06`-`08`), netem tests (`16`-`18`), alternative models, site-2 and FABRIC debugging, plus `archive/` (older copies of notebooks). | Kept for provenance; may be stale. |
+| `exploratory/` | Real analysis that the paper does **not** cite: setup walkthroughs (`00`-`05`), network-effect and baseline sweeps (`06`-`08`), netem tests (`16`-`18`), alternative models, site-2 (`second_site_ncsa_toky_experiments`) and FABRIC debugging, plus `archive/` (older copies of notebooks). | Kept for provenance; may be stale. |
 
 If a notebook gains a paper citation, move it to `core/` and add it to `PAPER_TRACEBACK.md`.
 
@@ -25,7 +25,7 @@ One notebook that reproduces every cited figure, table and number from the commi
 | `20_data_cleaning_and_integrity.ipynb` | **writes** the `*_clean.csv` files used by the figures | inputs to Figs 4, 5, 6b |
 | `23_finitekey_vs_asymptotic.ipynb` | finite-key vs asymptotic length | Table 5 (use the 5-key snapshot, see below) |
 | `mitigation_v2_redundant_pa_tmr.ipynb` | redundant PA and TMR | RPA detection; TMR runs 0-19 |
-| `30_scale_up_experiments.ipynb` | TMR n=100, keys 5-9, second site | TMR 0/100 and CI; 10-key metadata |
+| `30_scale_up_experiments.ipynb` | TMR n=100, keys 5-9 (second-site cells moved to `exploratory/second_site_ncsa_toky_experiments.ipynb`) | TMR 0/100 and CI; 10-key metadata |
 | `28_mitigation_overhead.ipynb` | overhead timing | overhead ratios (see the 1.08x caveat in `PAPER_TRACEBACK.md`) |
 | `29_poster_figures.ipynb` | poster / headline figures | poster Figs 1-3 |
 | `10_sdc_real.ipynb` | real-channel setup and key collection | inputs |
