@@ -177,3 +177,7 @@ The second-site (NCSA <-> TOKY) section was **moved, not deleted**, to `notebook
 Moved (indices before this shift): markdown 7; code 9, 10, 14, 15, 16, 18, 20, 26-35 (the 13 author-decision cells c10, c15, c18, c26-c35, plus c9, c14, c16, c20 and the section header, which they depend on or which only describe them). Stayed in core: c8 (shared setup), c11-13, c17, c19 (keys 5-9 recovery and the 10-key `key_pairs_metadata.csv`; these are not second-site work), and all other cells. Rule: `new = old - (number of moved indices below old)`.
 
 Safety check: the 15 surviving code cells of `30_scale_up_experiments` have identical execution status before and after; the 17 moved code cells have the same statuses in the new notebook as they had in place. To move back: append those cells to `30_scale_up_experiments` and add the `PAPER_TRACEBACK.md` rows then.
+
+## Fifth index shift: B13 moved out of `30_scale_up_experiments`
+
+B13 (the 10-key finite-key vs. asymptotic recompute, "Table 2", output `finitekey_vs_asymptotic_table2_10keys.csv`) was **moved, not deleted**, to `notebooks/exploratory/finitekey_10key_table_recompute.ipynb`, because the paper's Table 5 reports 5 keys. It was cell 16 in the notebook as laid out after the fourth shift (the cell directly above the `import pandas` cell that follows it); only cells after it shift, by -1. Same status before and after (NameError in both; the 14 surviving code cells unchanged). Move-back is the same append-and-document procedure as the second-site cells.

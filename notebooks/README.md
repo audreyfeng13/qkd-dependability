@@ -7,7 +7,7 @@ Analysis and experiment notebooks. This is distinct from the repo-root `README.m
 | Folder | What belongs here | Rule |
 |---|---|---|
 | `core/` | Notebooks that **produce a number, table or figure cited in the paper**, plus `master_reproduction.ipynb`. | Traced in `PAPER_TRACEBACK.md` (paper artifact → notebook → cell). |
-| `exploratory/` | Real analysis that the paper does **not** cite: setup walkthroughs (`00`-`05`), network-effect and baseline sweeps (`06`-`08`), netem tests (`16`-`18`), alternative models, site-2 (`second_site_ncsa_toky_experiments`) and FABRIC debugging, plus `archive/` (older copies of notebooks). | Kept for provenance; may be stale. |
+| `exploratory/` | Real analysis that the paper does **not** cite: setup walkthroughs (`00`-`05`), network-effect and baseline sweeps (`06`-`08`), netem tests (`16`-`18`), alternative models, site-2 (`second_site_ncsa_toky_experiments`), the 10-key finite-key recompute (`finitekey_10key_table_recompute`) and FABRIC debugging, plus `archive/` (older copies of notebooks). | Kept for provenance; may be stale. |
 
 If a notebook gains a paper citation, move it to `core/` and add it to `PAPER_TRACEBACK.md`.
 
