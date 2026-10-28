@@ -85,16 +85,16 @@ qkd-dependability/
 │
 ├── notebooks/
 │   ├── core/                 # Paper-cited notebooks only (see PAPER_TRACEBACK.md)
-│   │   ├── master_reproduction.ipynb                    # ONE notebook reproducing every cited figure/table/number
-│   │   ├── paper_figures_and_reconciliation_fit.ipynb   # Figs 4-9, b-values, leave-one-key-out
-│   │   ├── sdc_sweeps_all5keys.ipynb                    # Most of the paper's statistics
-│   │   ├── 20_data_cleaning_and_integrity.ipynb         # Writes the *_clean.csv files
-│   │   ├── 23_finitekey_vs_asymptotic.ipynb             # Table 5 (use the 5-key snapshot)
-│   │   ├── mitigation_v2_redundant_pa_tmr.ipynb         # Redundant PA / TMR
-│   │   ├── 28_mitigation_overhead.ipynb                 # Mitigation overhead
-│   │   ├── 29_poster_figures.ipynb                  # Poster/paper figures
-│   │   ├── 30_scale_up_experiments.ipynb                # TMR n=100, 10 keys, second site
-│   │   └── 10_sdc_real.ipynb                            # Real-channel setup and key collection
+│   │   ├── 00_master_reproduction.ipynb                    # ONE notebook reproducing every cited figure/table/number
+│   │   ├── 08_paper_figures_and_reconciliation_fit.ipynb   # Figs 4-9, b-values, leave-one-key-out
+│   │   ├── 03_sdc_fault_models_and_statistics.ipynb                    # Most of the paper's statistics
+│   │   ├── 02_data_cleaning_and_integrity.ipynb         # Writes the *_clean.csv files
+│   │   ├── 07_finitekey_vs_asymptotic.ipynb             # Table 5 (use the 5-key snapshot)
+│   │   ├── 04_mitigation_redundant_pa_tmr.ipynb         # Redundant PA / TMR
+│   │   ├── 06_mitigation_overhead.ipynb                 # Mitigation overhead
+│   │   ├── 09_poster_figures.ipynb                  # Poster/paper figures
+│   │   ├── 05_scale_up_tmr_n100_and_keys_5_9.ipynb                # TMR n=100, 10 keys, second site
+│   │   └── 01_real_channel_setup_and_collection.ipynb                            # Real-channel setup and key collection
 │   └── exploratory/          # Real but uncited analysis, setup walkthroughs, FABRIC debugging
 │       └── archive/          # Older scratch copies
 │
@@ -177,11 +177,11 @@ seed: 42
 ## 🔁 Reproducibility Notes
 
 **Table 5 (finite-key vs. asymptotic length): use the 5-key snapshot.**
-`results/key_pairs_metadata.csv` is a live file: `notebooks/30_scale_up_experiments.ipynb` appended keys 5-9, so it now has 10 rows. The Table 5 cells (`23_finitekey_vs_asymptotic` and `29_poster_figures`) loop over every row of that file, so running them against the live file gives 10 rows and a 96.05% mean reduction instead of the paper's 5 rows and 93.76%.
+`results/key_pairs_metadata.csv` is a live file: `notebooks/05_scale_up_tmr_n100_and_keys_5_9.ipynb` appended keys 5-9, so it now has 10 rows. The Table 5 cells (`07_finitekey_vs_asymptotic` and `09_poster_figures`) loop over every row of that file, so running them against the live file gives 10 rows and a 96.05% mean reduction instead of the paper's 5 rows and 93.76%.
 `results/data/key_pairs_metadata_table5_5keys.csv` is the original 5-key file (verbatim from commit `663d9cd`, from before keys 5-9 were added). **That snapshot is the authoritative input for reproducing Table 5 specifically**: computed from it, the per-key reductions are 99.18, 99.96, 89.40, 88.83 and 91.41%, mean 93.76%. The live file is still correct for analyses that intentionally use all 10 keys.
 
 **Figs 4 and 6b (reconciliation): provenance of `reconciliation_clean.csv`.**
-`results/data/reconciliation_clean.csv` (4000 rows: keys 0-4, 8 firing probabilities, 100 runs each, seeds 42-141) is the authoritative input for Figs 4 and 6b and the reconciliation fits. It reproduces the cited chi-square (7.91, 35 dof) and the per-key baseline values b exactly. Raw n=100 collection data for **keys 0-1** is in the repo (`sdc_realchannel_reconciliation_allkeys_asymptotic_fixed.csv`, 1600 rows) and is verified identical, row for row, to the corresponding rows of the clean file. Raw n=100 data for **keys 2-4** is **not in the repo**, so `20_data_cleaning_and_integrity` regenerates only the 1600-row, two-key version. The clean file's values for keys 2-4 are internally consistent with keys 0-1 (mean `total_corrections` 32-35 across all five keys). This is a known provenance gap, not a flagged data-quality issue.
+`results/data/reconciliation_clean.csv` (4000 rows: keys 0-4, 8 firing probabilities, 100 runs each, seeds 42-141) is the authoritative input for Figs 4 and 6b and the reconciliation fits. It reproduces the cited chi-square (7.91, 35 dof) and the per-key baseline values b exactly. Raw n=100 collection data for **keys 0-1** is in the repo (`sdc_realchannel_reconciliation_allkeys_asymptotic_fixed.csv`, 1600 rows) and is verified identical, row for row, to the corresponding rows of the clean file. Raw n=100 data for **keys 2-4** is **not in the repo**, so `02_data_cleaning_and_integrity` regenerates only the 1600-row, two-key version. The clean file's values for keys 2-4 are internally consistent with keys 0-1 (mean `total_corrections` 32-35 across all five keys). This is a known provenance gap, not a flagged data-quality issue.
 
 ## Future Work: Beyond BB84
 <!-- TODO: Audrey to draft -->

@@ -18,9 +18,9 @@ Command-line code that **runs on or against FABRIC nodes**, plus environment set
 
 ## How this relates to the notebooks (core / exploratory)
 
-* The **core** notebooks in `notebooks/core/` that *collect* data (`10_sdc_real`, `30_scale_up_experiments`, `mitigation_v2_redundant_pa_tmr`) call these scripts indirectly: the notebooks upload the project to the nodes (`deploy.upload_project`), `qne/cascade/sweep_utils.py` executes `bob_cascade_driver.py` / `alice_cascade_responder.py` there over SSH, and the result files are downloaded into `results/data/`.
-* The core notebooks that *analyse* data (`paper_figures_and_reconciliation_fit`, `sdc_sweeps_all5keys`, `23_finitekey_vs_asymptotic`, ...) and the **`master_reproduction.ipynb`** need **none** of these scripts. They read `results/data/` and import `qne`.
-* The **exploratory** notebooks (setup walkthroughs `01`-`05`, network-effect sweeps `06`-`08`, netem tests `16`-`18`, ...) use `deploy_fabric.py` and the netem helpers to drive FABRIC experiments.
+* The **core** notebooks in `notebooks/core/` that *collect* data (`01_real_channel_setup_and_collection`, `05_scale_up_tmr_n100_and_keys_5_9`, `04_mitigation_redundant_pa_tmr`) call these scripts indirectly: the notebooks upload the project to the nodes (`deploy.upload_project`), `qne/cascade/sweep_utils.py` executes `bob_cascade_driver.py` / `alice_cascade_responder.py` there over SSH, and the result files are downloaded into `results/data/`.
+* The core notebooks that *analyse* data (`08_paper_figures_and_reconciliation_fit`, `03_sdc_fault_models_and_statistics`, `07_finitekey_vs_asymptotic`, ...) and the **`00_master_reproduction.ipynb`** need **none** of these scripts. They read `results/data/` and import `qne`.
+* The **exploratory** notebooks (setup walkthroughs `x01`-`x05`, network-effect sweeps `x06`-`x08`, netem tests `x23`-`x26`, ...) use `deploy_fabric.py` and the netem helpers to drive FABRIC experiments.
 
 ## Path conventions
 

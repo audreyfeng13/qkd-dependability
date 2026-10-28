@@ -1313,7 +1313,7 @@ def run_pf_topup(slice_obj, pf, conditions, n_runs, start_run,
     (classical loss_pct conditions), continuing run numbering from start_run,
     appending to `out_csv`.
 
-    General-purpose replacement for run_pf08_topup (notebooks/06_network_effects.ipynb
+    General-purpose replacement for run_pf08_topup (notebooks/x06_network_effects.ipynb
     cell 18), parameterized on pf instead of hardcoding 0.8, so any (pf, loss)
     cell can be topped up. Also ports over run_joint_axis_sweep's per-run
     stale-process cleanup + port-wait check -- run_pf08_topup delegated
