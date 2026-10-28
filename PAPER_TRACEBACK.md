@@ -158,3 +158,14 @@ Applied after Tier A. Indices below are the indices **after Tier A and before th
 | `10_sdc_real` | c4, c5, c6, c9, c12 |
 
 B1, B2 and B5 wrote result files that are still on disk (`sdc_mock_doseresponse_withverification.csv`, `sdc_mock_allkeys_finitekey.csv`, `fig_allkeys_pooled.png`); the code that produced them is now gone from the notebook (still in git history). B9 held the arbitrary-bit result "49/49 self-corrected" (also in git history). Verified: all 182 surviving code cells in the two notebooks keep identical execution status.
+
+## Third index shift: approved Tier B removals (B6, B7, B8, B10, B11, B12)
+
+Applied after the second shift. Whole cells deleted; indices below are those *after* the Tier A and first Tier B shifts and *before* this one. Rule: `new = old - (number of removed indices below old)`.
+
+| Notebook | Removed (pre-this-shift indices) | Clutter IDs |
+|---|---|---|
+| `sdc_sweeps_all5keys` | 79, 80, 86, 156 | B6, B7, B8, B10 |
+| `mitigation_v2_redundant_pa_tmr` | 12, 23 | B11, B12 |
+
+Notes: B10 was the failed `synthetic_local` sweep (`synthetic_local_recon_sweep.csv` is still on disk; the remaining `synthetic_local` cells are kept). B11 made `results/figures/heatmaps/redundant_pa_sweep.png` (PNG still on disk, referenced nowhere). Safety check: 170 + 15 surviving code cells in the two notebooks have identical execution status before and after.
