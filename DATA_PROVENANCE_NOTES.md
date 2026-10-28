@@ -36,3 +36,7 @@ Re-running `20_data_cleaning_and_integrity` **alone** in a fresh copy of the rep
 ## 4. `all_results.tar.gz` vs. other copies
 
 The tarball is an early archived set of 5 JSON files. The differences are **different experiments, not metadata**: e.g. `fabric_alice_results.json` in the tar has `scenario_name='polarization_fidelity=1.0'`, 100000 photons sent, QBER 0.0, whereas `results/data/` has `fabric_1km`, 10000 photons, QBER 0.0105, and `old messy results/` has `dist_50`, QBER 0.0052. `network_effects.json` in the tar is a 167-key list (many conditions); the other copies hold a single run (`baseline_run_1` or `lhs_0`). `fabric_bob_results.json` exists only in the tar. These file names are overwritten by each run, so the tar preserves values the current copies lost.
+
+## Resolved: Table 5 reports 5 keys (author confirmation)
+
+The paper's Table 5 reports **5 keys**. The master notebook's Table 5 section therefore stays on `results/data/key_pairs_metadata_table5_5keys.csv` (93.76%). `finitekey_vs_asymptotic_table2_10keys.csv` (B13's output, 10 keys, 96.05%) answers a different reviewer question (feedback #9, all 10 keys); it is exploratory and not used by the master notebook. B13 itself is still in `30_scale_up_experiments` (undecided).
