@@ -2,7 +2,6 @@
 
 Materials to reproduce results from a systematic fault-injection study of silent data corruptions on quantum key distribution protocols, run on the NSF FABRIC testbed.
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 
 **QFabric** is a quantum network emulation framework that models **BB84 Quantum Key Distribution (QKD)** over programmable hardware (**P4 / BMv2 switches**) and real-world testbeds (such as **FABRIC**). This repository contains the node emulation software, P4 data-plane specifications, cross-validation suite, deployment scripts, parameter sweeps, and analysis notebooks.
@@ -182,13 +181,3 @@ seed: 42
 
 **Figs 4 and 6b (reconciliation): provenance of `reconciliation_clean.csv`.**
 `results/data/reconciliation_clean.csv` (4000 rows: keys 0-4, 8 firing probabilities, 100 runs each, seeds 42-141) is the authoritative input for Figs 4 and 6b and the reconciliation fits. It reproduces the cited chi-square (7.91, 35 dof) and the per-key baseline values b exactly. Raw n=100 collection data for **keys 0-1** is in the repo (`sdc_realchannel_reconciliation_allkeys_asymptotic_fixed.csv`, 1600 rows) and is verified identical, row for row, to the corresponding rows of the clean file. Raw n=100 data for **keys 2-4** is **not in the repo**, so `02_data_cleaning_and_integrity` regenerates only the 1600-row, two-key version. The clean file's values for keys 2-4 are internally consistent with keys 0-1 (mean `total_corrections` 32-35 across all five keys). This is a known provenance gap, not a flagged data-quality issue.
-
-## Future Work: Beyond BB84
-<!-- TODO: Audrey to draft -->
-
-## Generalizing beyond QKD
-<!-- TODO: Audrey to draft -->
-
-## 📜 License
-
-This project is licensed under the [Apache 2.0 License](LICENSE).
