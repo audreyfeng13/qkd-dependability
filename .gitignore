@@ -75,3 +75,11 @@ _local_archive/
 
 # Exception: irreplaceable early results (only copy of fabric_bob_results.json etc.); keep tracked
 !results/data/archive/all_results.tar.gz
+
+# Root-level working docs and scratch: kept on disk, not published
+/CLEANUP_CHANGES.md
+/CLUTTER_REVIEW.md
+/DATA_PROVENANCE_NOTES.md
+/PAPER_TEXT_DISCREPANCIES.md
+/PAPER_TRACEBACK.md
+/test_real_channel_local.py
