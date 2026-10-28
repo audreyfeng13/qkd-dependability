@@ -69,3 +69,6 @@ master_repro_*/
 fabric_config/
 fabric_rc
 *_token.json
+
+# Local-only archive (backups, superseded raw runs); never tracked
+_local_archive/

@@ -100,8 +100,7 @@ qkd-dependability/
 │
 ├── results/
 │   ├── figures/              # All generated figures (heatmaps/, poster_figures/ inside)
-│   ├── data/                 # All CSV / JSON data (incl. key_pairs_metadata.csv and the Table 5 snapshot)
-│   └── _review_before_delete/# Backups and superseded raw runs, kept only until reviewed
+│   └── data/                 # All CSV / JSON data (incl. key_pairs_metadata.csv and the Table 5 snapshot)
 │
 └── tests/                    # Unit tests for QNE and validation modules
     ├── test_qne.py           # QNE package unit tests

@@ -35,7 +35,7 @@ Which core notebooks need FABRIC: cells that call `deploy.get_fablib()`, `bob.ex
 ## Conventions
 
 * **Project root.** Every notebook finds the repo root with `next(p for p in [Path.cwd(), *Path.cwd().parents] if (p / "pyproject.toml").exists())`, so it works from `core/`, `exploratory/` or `exploratory/archive/`. Run Jupyter from anywhere inside the repo.
-* **Where data lives.** CSV/JSON inputs and outputs: `results/data/`. Figures: `results/figures/`. Backups and superseded raw runs awaiting review: `results/_review_before_delete/`.
+* **Where data lives.** CSV/JSON inputs and outputs: `results/data/`. Figures: `results/figures/`. Backups and superseded raw runs live in `_local_archive/` at the repo root (untracked, gitignored, on disk only).
 * **Table 5 input.** `results/data/key_pairs_metadata.csv` now has 10 keys (keys 5-9 were appended later). Table 5 must use `results/data/key_pairs_metadata_table5_5keys.csv` (93.76%); the live file gives 96.05%.
 * **rcParams leakage.** `paper_figures_and_reconciliation_fit` sets global matplotlib styles in several cells, so running it top-to-bottom changes Fig 6b and the per-key fit figures compared with the committed PNGs. `master_reproduction.ipynb` uses an explicit `rc_context` per figure and does not have this problem.
 * **Remote paths** like `results/bob_sifted_bits.json` in commands sent to FABRIC nodes are the nodes' own directories; see `scripts/README.md`.
