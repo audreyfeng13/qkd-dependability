@@ -72,3 +72,6 @@ fabric_rc
 
 # Local-only archive (backups, superseded raw runs); never tracked
 _local_archive/
+
+# Exception: irreplaceable early results (only copy of fabric_bob_results.json etc.); keep tracked
+!results/data/archive/all_results.tar.gz
